@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<protocol>
+			<BinProperty type="int" name="count"/>
+			<BinProperty type="int" name="goodType"/>
+			<BinProperty type="int" name="shopGoodsId"/>
+			<BinProperty type="int" name="type"/>
+			<BinProperty type="string" name="color"/>
+			<BinProperty type="boolean" name="isDress"/>
+			<BinProperty type="string" name="skin"/>
+			<BinProperty type="int" name="place"/>
+			<BinProperty type="boolean" name="isBindMoney"/>
+			<BinProperty type="int" name="buyFrom"/>
+</protocol>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<ProtoConfig type='UP/DOWN' code='一级协议' subCode='二级协议' protocolType="协议类型:bin/pb" desc='测试'  pbClazzName='pb协议类'/>
+</root>

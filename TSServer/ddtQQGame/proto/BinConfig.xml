@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<module name="player" desc="登录模块">
+		<protocol  key="down_0xc2_0" desc="等待登录个数">
+			<BinProperty type="int" name="count"  desc="等待登录的个数" /> 
+		</protocol>
+	</module>
+
+	<module name="example" desc="示例">
+		<protocol key="up_1000_2_RemoveOverlord" desc="协议描述(协议头字段有什么用)"> 
+			<BinProperty type="boolean"  name="name1" desc="测试描述" />
+			<BinProperty type="byte"     name="name2"  desc="测试描述" />
+			<BinProperty type="ubyte"    name="name3"  desc="测试描述" /> 
+			<BinProperty type="short"    name="name4" desc="测试描述" />
+			<BinProperty type="char"     name="name5"  desc="测试描述" />
+			<BinProperty type="int"      name="name6"  desc="测试描述" /> 
+			<BinProperty type="string"   name="name7" desc="测试描述" />
+			<BinProperty type="long"     name="name8"  desc="测试描述" /> 
+			<BinProperty type="date"     name="name9"  desc="测试描述" /> 
+			<BinProperty type="float"    name="name10"  desc="测试描述" /> 
+			<BinProperty type="double"   name="name11"  desc="测试描述" /> 
+
+			<BinProperty name="friendList" type="list" sizeType="int" desc="好友列表" >
+				<BinProperty type="int" desc="层数" name="floor"/>
+				<BinProperty type="long" desc="人物id" name="roleId" /> 
+			</BinProperty>
+		</protocol>
+
+	</module>
+
+	<module name="pet" desc="宠物">
+		<protocol key="up_1000_1_RemoveOverlord" desc="协议描述(协议头字段有什么用)"> 
+			<BinProperty type="int"      name="skillID"  desc="测试描述" /> 
+		</protocol>
+
+		<protocol key="up_0x200_0x0a_PetsOpenSkillBox" desc="开启被动技能栏位,p1宠物ID"> 
+			<BinProperty type="boolean" name="isGold"  desc="是否使用金币" /> 
+		</protocol>
+		<protocol key="down_0x200_0x0a_PetsOpenSkillBox" desc="开启被动技能栏位结果,p1宠物ID"> 
+			<BinProperty type="boolean" name="success"  desc="成功失败" /> 
+		</protocol>
+		<protocol key="down_0x200_0x03_PetsRelease" desc="放生宠物结果,p1宠物ID"> 
+			<BinProperty type="boolean" name="success"  desc="成功失败" /> 
+		</protocol>
+		<protocol key="up_0x200_0x02_PetsRename" desc="宠物改名,p1宠物ID"> 
+			<BinProperty type="boolean" name="isBind"  desc="是否使用绑定点券" /> 
+			<BinProperty type="string" name="nickname"  desc="宠物昵称" /> 
+		</protocol>
+		<protocol key="down_0x200_0x02_PetsRename" desc="宠物改名结果,p1宠物ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+		</protocol>
+		<protocol key="down_0x200_0x04_PetsSetFight" desc="宠物出战结果,p1宠物ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+		</protocol>
+		<protocol key="up_0x200_0x09_PetsUseBornEgg" desc="使用宠物蛋,p1背包开始位置"> 
+			<BinProperty type="int" name="templateId"  desc="宠物蛋模版ID" /> 
+		</protocol>
+		<protocol key="up_0x200_0x09_PetsUseSkillBook" desc="使用宠物技能书,p1宠物ID"> 
+			<BinProperty type="int" name="templateId"  desc="技能书模版ID" /> 
+		</protocol>
+		<protocol key="up_0x200_0x09_PetsUseTrainLiquid" desc="使用宠物药水,p1宠物ID"> 
+			<BinProperty type="int" name="templateId"  desc="药水模版ID" /> 
+		</protocol>
+	</module>
+	<module name="pet" desc="社交">
+		<protocol key="up_0x201_0x01_AddFriendsGroup" desc="添加好友分组"> 
+			<BinProperty type="string" name="groupName"  desc="分组名称" /> 
+		</protocol>
+		<protocol key="down_0x201_0x08_AddMemberToSocialGroup" desc="添加成员到群组结果,p1群组ID,p2用户ID"> 
+			<BinProperty type="boolean" name="success"  desc="成功失败" />
+			<BinProperty type="int" name="online"  desc="在线人数（失败不传）" />
+			<BinProperty type="int" name="total"  desc="总人数（失败不传）" /> 
+		</protocol>
+		<protocol key="up_0x201_0x04_AddSocialGroup" desc="创建群组"> 
+			<BinProperty type="string" name="groupName"  desc="群组名称" /> 
+		</protocol>
+		<protocol key="down_0x201_0x13_AddSocialSiteStep" desc="踩空间结果,p1用户ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+		</protocol>
+		<protocol key="up_0x201_0x0f_AddSocialTrend" desc="发空间动态"> 
+			<BinProperty type="string" name="content"  desc="动态内容" /> 
+		</protocol>
+		<protocol key="up_0x201_0x11_AddSocialTrendComment" desc="评论空间动态,p1动态ID,p2评论的评论ID"> 
+			<BinProperty type="string" name="content"  desc="评论内容" /> 
+		</protocol>
+		<protocol key="down_0x201_0x10_AddSocialTrendLike" desc="动态点赞结果,p1动态ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+		</protocol>
+		<protocol key="down_0x201_0x02_DelFriendsGroup" desc="删除好友分组结果,p1分组ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+		</protocol>
+		<protocol key="down_0x201_0x07_DelSocialGroup" desc="删除群组结果,p1群组ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+		</protocol>
+		<protocol key="down_0x201_0x16_DelSocialTrend" desc="删除空间动态结果,p1动态ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+		</protocol>
+		<protocol key="down_0x201_0x17_DelSocialTrendComment" desc="删除空间评论结果,p1评论ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+		</protocol>
+		<protocol key="up_0x201_0x06_DescribeSocialGroup" desc="写群组简介,p1群组ID"> 
+			<BinProperty type="string" name="description"  desc="简介内容" /> 
+		</protocol>
+		<protocol key="down_0x201_0x06_DescribeSocialGroup" desc="写群组简介结果,p1群组ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+			<BinProperty type="string" name="description"  desc="简介内容" /> 
+		</protocol>
+		<protocol key="up_0x201_0x21_OnkeyAddFriends" desc="一键添加好友"> 
+			<BinProperty type="string" name="ids"  desc="用户ID，逗号隔开" /> 
+		</protocol>
+		<protocol key="up_0x201_0x03_RenameFriendsGroup" desc="好友分组改名,p1好友分组ID"> 
+			<BinProperty type="string" name="groupName"  desc="分组名称" /> 
+		</protocol>
+		<protocol key="down_0x201_0x03_RenameFriendsGroup" desc="好友分组改名结果,p1好友分组ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+			<BinProperty type="string" name="description"  desc="分组名称" /> 
+		</protocol>
+		<protocol key="up_0x201_0x05_RenameSocialGroup" desc="群组改名,p1群组ID"> 
+			<BinProperty type="string" name="groupName"  desc="群组名称" /> 
+		</protocol>
+		<protocol key="down_0x201_0x05_RenameSocialGroup" desc="群组改名结果,p1群组ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+			<BinProperty type="string" name="description"  desc="群组名称" /> 
+		</protocol>
+		<protocol key="up_0x201_0x0a_ScoialGroupChatStyle" desc="设置群组聊天字体颜色"> 
+			<BinProperty type="string" name="chatStyle"  desc="字体颜色" /> 
+		</protocol>
+		<protocol key="up_0x201_0x20_SocialCenterInfo" desc="设置群组聊天字体颜色"> 
+			<BinProperty type="string" name="nickName"  desc="昵称（p1=2时才传）" /> 
+			<BinProperty type="int" name="subType"  desc="子类型（p1=1和2时才传,p1=1时1查徒弟2查师傅,p1=2时1查好友2查师徒）" /> 
+			<BinProperty type="int" name="page"  desc="页码（从0开始）" /> 
+		</protocol>
+		<protocol key="up_0x201_0x26_SocialGiveGift2" desc="从背包赠送礼品,p1用ID,p2礼品模版ID"> 
+			<BinProperty type="int" name="count"  desc="赠送数量" /> 
+		</protocol>
+		<protocol key="down_0x201_0x26_SocialGiveGift2" desc="从背包赠送礼品结果,p1用ID,p2礼品模版ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" />
+		</protocol>
+		<protocol key="up_0x201_0x26_SocialGiveGift" desc="赠送礼品,p1用ID,p2礼品模版ID"> 
+			<BinProperty type="int" name="count"  desc="赠送数量" /> 
+		</protocol>
+		<protocol key="down_0x201_0x26_SocialGiveGift" desc="赠送礼品结果,p1用ID,p2礼品模版ID"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" />
+		</protocol>
+		<protocol key="up_0x201_0x09_SocialGroupChat" desc="群组聊天,p1群组ID"> 
+			<BinProperty type="string" name="message"  desc="聊天消息" /> 
+		</protocol>
+		<protocol key="down_0x201_0x09_SocialGroupChat" desc="群组聊天结果,p1群组ID"> 
+			<BinProperty type="string" name="nickname"  desc="发消息人的昵称" /> 
+			<BinProperty type="string" name="datetime"  desc="发消息时间" /> 
+			<BinProperty type="string" name="message"  desc="聊天消息" /> 
+			<BinProperty type="string" name="chatStyle"  desc="字体颜色" /> 
+		</protocol>
+		<protocol key="up_0x201_0x14_SocialSitePersonalText" desc="写个性签名"> 
+			<BinProperty type="string" name="text"  desc="个性签名内容" /> 
+		</protocol>
+		<protocol key="down_0x201_0x14_SocialSitePersonalText" desc="写个性签名结果"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" /> 
+			<BinProperty type="string" name="text"  desc="个性签名内容" /> 
+		</protocol>
+		<protocol key="down_0x8d_0x0b_ApprenticeQuestAward" desc="师徒任务奖励领取结果,p1自己的id或徒弟的id,p2任务id"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" />
+		</protocol>
+		<protocol key="up_0x8d_0x02_SocialSitePersonalText" desc="请求拜师收徒,p1对方id,p2类型（1拜师2收徒）"> 
+			<BinProperty type="string" name="content"  desc="收徒或拜师留言" /> 
+		</protocol>
+		<protocol key="down_0x8d_0x03_ApprenticeRequest" desc="拜师收徒请求,p1对方id,p2类型（1拜师2收徒）"> 
+			<BinProperty type="string" name="nickname"  desc="对方昵称" /> 
+			<BinProperty type="string" name="content"  desc="收徒或拜师留言" /> 
+		</protocol>
+		<protocol key="up_0x8d_0x03_ApprenticeResponse" desc="师徒任务奖励领取结果,p1自己的id或徒弟的id,p2任务id"> 
+			<BinProperty type="boolean" name="accept"  desc="是否同意" />
+		</protocol>
+		<protocol key="down_0x8d_0x04_ApprenticeResponse" desc="拜师收徒结果,p1对方id,p2类型1成功0失败"> 
+			<BinProperty type="string" name="nickname"  desc="对方昵称" /> 
+		</protocol>
+		<protocol key="down_0x8d_0x07_ApprenticeshipRemove" desc="删除师傅或徒弟结果,p1对方id,p2类型(1删除师傅2删除徒弟)"> 
+			<BinProperty type="boolean" name="success"  desc="是否成功" />
+		</protocol>
+	</module>
+	<module name='gem' desc='宝石模块'>
+		<protocol key="up_0x260_0_GemInfo" desc="查看玩家已镶嵌上的宝石信息"> 
+			<BinProperty type="long"     name="userID"  desc="玩家ID" /> 
+			<BinProperty type="string"   name="userName"  desc="玩家昵称" /> 
+		</protocol>
+		<protocol key="down_0x261_0_GemCompound" desc="宝石合成"> 
+			<BinProperty type="int"     name="result"  desc="0 合成成功  1 满级宝石不能再合成" /> 
+		</protocol>
+		<protocol key="up_0x262_0_GemSplit" desc="宝石拆分"> 
+			<BinProperty type="int"     name="place"  desc="宝石位置" /> 
+		</protocol>
+		<protocol key="down_0x262_0_GemSplit" desc="宝石拆分"> 
+			<BinProperty type="int"     name="result"  desc="0 拆分成功  1 最低级宝石不能拆分  2 背包已满" /> 
+		</protocol>
+	</module>
+	<module name='necklace' desc='项链培养模块'>
+		<protocol key="down_0x271_0_NecklaceFoster" desc="项链培养"> 
+			<BinProperty type="int"     name="result"  desc="0 成功 1 培养值已满 2 材料不足" /> 
+		</protocol>
+		<protocol key="up_0x272_0_NecklaceDegreeRaising" desc="项链升阶"> 
+			<BinProperty type="boolean"     name="useItem"  desc="是否使用提高概率的物品" /> 
+		</protocol>
+		<protocol key="down_0x272_0_NecklaceDegreeRaising" desc="项链升阶"> 
+			<BinProperty type="int"     name="result"  desc="0 成功 1 失败 2 已是最高阶 3 培养值还没满 4 材料不足" /> 
+		</protocol>
+	</module>
+	<module name='datashow' desc='个人战绩数据展示模块'>
+		<protocol key="down_0x291_0_DataShowReward" desc="全服战绩奖励领取"> 
+			<BinProperty type="int"     name="type"  desc="奖励类型" /> 
+			<BinProperty type="int"     name="rewardId"  desc="奖励ID" /> 
+			<BinProperty type="boolean"     name="canGet"  desc="是否可领取" /> 
+			<BinProperty type="string"   name="rewardStr"  desc="奖励内容" /> 
+		</protocol>
+	</module>
+	<module name='marryfere' desc='伴侣系统模块'>
+		<protocol key="down_0x601_0_LootRedbag" desc="婚礼抢红包(Param1为物品ID,Param2为物品数量)"> 
+			<BinProperty type="boolean"     name="result"  desc="是否抢到红包" /> 
+		</protocol>
+		<protocol key="up_0x611_0_FeelingsValueReward" desc="领取情义值礼包"> 
+			<BinProperty type="int"     name="rewardId"  desc="领取的奖励ID" /> 
+		</protocol>
+	</module>
+	<module name="AnswerQuestions" desc="答题模块">
+		<protocol key="up_110_1_getQuestions" desc="获取答题数据"> 
+			<BinProperty type="int"      name="questType"  desc="答题类型 1,2,3" /> 
+		</protocol>
+		<protocol key="up_110_2_getQuestions" desc="回答问题"> 
+			<BinProperty type="int"      name="questType"  desc="答题类型 1,2,3" /> 
+			<BinProperty type="int"      name="option"  desc="选项 1,2,3,4" /> 
+		</protocol>
+		<protocol key="up_110_3_getQuestions" desc="去假存真"> 
+			<BinProperty type="int"      name="questType"  desc="答题类型 1,2,3" /> 
+			<BinProperty type="int"      name="coinType"  desc="货币模板id" /> 
+		</protocol>
+		<protocol key="up_110_4_getQuestions" desc="去假存真"> 
+			<BinProperty type="int"      name="questType"  desc="答题类型 1,2,3" /> 
+			<BinProperty type="int"      name="coinType"  desc="货币模板id" /> 
+		</protocol>
+		<protocol key="up_110_5_getQuestions" desc="领取基础奖励"> 
+			<BinProperty type="int"      name="questType"  desc="答题类型 1,2,3" /> 
+		</protocol>
+		<protocol key="up_110_6_getQuestions" desc="开始答题"> 
+			<BinProperty type="int"      name="questType"  desc="答题类型 1,2,3" /> 
+		</protocol>
+	</module>
+	<module name="shop">
+		<protocol key="up_10f_1_vip" desc="请求商城数据"> 
+			<BinProperty type="int"      name="questType"  desc="答题类型 1,2,3" /> 
+		</protocol>
+		<protocol key="up_10f_1_vip" desc="请求商城数据"> 
+		</protocol>
+	</module>
+	<module name="VIP" desc="VIP模块">
+		<protocol key="up_10f_2_vip" desc="领vip奖励"> 
+			<BinProperty type="int"      name="type"  desc="奖励类型 1 日奖励，2 周奖励，3 等级奖励" /> 
+			<BinProperty type="int"      name="vipLevel"  desc="vip等级" /> 
+		</protocol>
+		<protocol key="up_10f_3_vip" desc="vip续费"> 
+			<BinProperty type="int"      name="day"  desc="天数" /> 
+			<BinProperty type="long"      name="userId"  desc="玩家id 0为自己购买" /> 
+		</protocol>
+		<protocol key="up_10f_4_vip" desc="vip商城购买"> 
+			<BinProperty type="int"      name="vipLevel"  desc="vip等级" /> 
+			<BinProperty type="long"      name="resourceId"  desc="资源id" /> 
+		</protocol>
+	</module>
+	<module name='ConsortiaSkill' desc='公会技能模块'>
+		<protocol key="up_10e_1_ConsortiaSkill" desc="获取公会技能数据"> 
+		</protocol>
+		<protocol key="up_10e_2_ConsortiaSkill" desc="公会技能升级"> 
+			<BinProperty type="int"      name="skillId"  desc="技能id" /> 
+		</protocol>
+	</module>
+	<module name='Quest' desc='任务模块'>
+		<protocol key="up_b3_0_getQuestReward" desc="领取任务奖励"> 
+			<BinProperty type="int"      name="questId"  desc="任务id" /> 
+			<BinProperty type="int"      name="rewardItemID"  desc="奖励id" /> 
+		</protocol>
+		<protocol key="up_10c_0_getAtIveReward" desc="领取活跃度奖励"> 
+			<BinProperty type="int"      name="rewardID"  desc="奖励id" /> 
+		</protocol>
+	</module>
+	<module name="consortia" desc="">
+		<protocol key="up_0x81_0_ConsortiaApplyLogin" desc="入会申请"> 
+			<BinProperty type="long" name="ConsortiaID" desc="公会ID" /> 
+		</protocol>
+		<protocol key="down_0x81_0_ConsortiaApplyLogin" desc="入会申请结果"> 
+			<BinProperty type="long" name="ConsortiaID" desc="公会ID" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x86_0_ConsortiaApplyLoginDelete" desc="取消入会申请"> 
+			<BinProperty type="long" name="ConsortiaID" desc="公会ID" /> 
+		</protocol>
+		<protocol key="down_0x86_0_ConsortiaApplyLoginDelete" desc="取消入会申请结果"> 
+			<BinProperty type="long" name="ConsortiaID" desc="公会ID" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x85_0_ConsortiaApplyLoginPass" desc="同意入会申请"> 
+			<BinProperty type="long" name="ConsortiaID" desc="公会ID" /> 
+		</protocol>
+		<protocol key="down_0x85_0_ConsortiaApplyLoginPass" desc="同意入会申请结果"> 
+			<BinProperty type="long" name="ConsortiaID" desc="公会ID" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="down_0x405_0_ConsortiaBuyBadge" desc="购买公会徽章结果,p1公会ID"> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+			<BinProperty type="int" name="money" desc="消耗点券" /> 
+		</protocol>
+		<protocol key="up_0x9a_0_ConsortiaChangeChairman" desc="公会转让"> 
+			<BinProperty type="string" name="nickname" desc="转让给谁" /> 
+		</protocol>
+		<protocol key="down_0x9a_0_ConsortiaChangeChairman" desc="公会转让结果"> 
+			<BinProperty type="string" name="nickname" desc="转让给谁" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x82_0_ConsortiaCreate" desc="创建公会"> 
+			<BinProperty type="string" name="ConsortiaName" desc="公会名称" /> 
+		</protocol>
+		<protocol key="up_0x95_0_ConsortiaDescriptionUpdate" desc="更新公会宣言"> 
+			<BinProperty type="string" name="description" desc="公会宣言" /> 
+		</protocol>
+		<protocol key="down_0x95_0_ConsortiaDescriptionUpdate" desc="更新公会宣言结果"> 
+			<BinProperty type="string" name="description" desc="转让给谁" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x8c_0_ConsortiaInviteAdd" desc="邀请入会"> 
+			<BinProperty type="string" name="nickname" desc="邀请谁" /> 
+		</protocol>
+		<protocol key="down_0x8c_0_ConsortiaInviteAdd" desc="邀请入会结果"> 
+			<BinProperty type="string" name="nickname" desc="邀请谁" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x8f_0_ConsortiaInviteDelete" desc="删除入会邀请"> 
+			<BinProperty type="long" name="InviteID" desc="邀请ID" /> 
+		</protocol>
+		<protocol key="down_0x8f_0_ConsortiaInviteDelete" desc="删除入会邀请结果"> 
+			<BinProperty type="long" name="InviteID" desc="邀请ID" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x8e_0_ConsortiaInvitePass" desc="通过入会邀请"> 
+			<BinProperty type="long" name="InviteID" desc="邀请ID" /> 
+		</protocol>
+		<protocol key="up_0x97_0_ConsortiaIsBanChat" desc="公会禁言"> 
+			<BinProperty type="long" name="userID" desc="用户ID" /> 
+			<BinProperty type="boolean" name="isBanchat" desc="是否禁言" />
+		</protocol>
+		<protocol key="down_0x97_0_ConsortiaIsBanChat" desc="公会禁言结果"> 
+			<BinProperty type="long" name="userID" desc="用户ID" /> 
+			<BinProperty type="boolean" name="isBanchat" desc="是否禁言" />
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0xd7_0_ConsortiaMail" desc="发送公会邮件"> 
+			<BinProperty type="string" name="title" desc="邮件标题" /> 
+			<BinProperty type="string" name="content" desc="邮件内容" />
+		</protocol>
+		<protocol key="down_0xd7_0_ConsortiaMail" desc="发送公会邮件结果"> 
+			<BinProperty type="boolean" name="userID" desc="用户ID" /> 
+			<BinProperty type="int" name="riches" desc="公会财富" />
+		</protocol>
+		<protocol key="up_0x96_0_ConsortiaPlacardUpdate" desc="更新公会公告"> 
+			<BinProperty type="string" name="description" desc="公会宣言" /> 
+		</protocol>
+		<protocol key="down_0x96_0_ConsortiaPlacardUpdate" desc="更新公会公告结果"> 
+			<BinProperty type="string" name="description" desc="转让给谁" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x09_0x01_ConsortiaQuest" desc="支付公会使命"> 
+			<BinProperty type="int" name="level" desc="使命等级" />
+		</protocol>
+		<protocol key="down_0x110_0_ConsortiaQuestRank" desc="公会使命排行"> 
+			<BinProperty type="int" name="count" desc="数量" /> 
+			<BinProperty name="rankList" type="list" sizeType="int" desc="排行列表" >
+				<BinProperty type="int" desc="排名" name="index"/>
+				<BinProperty type="string" desc="昵称" name="nickname" /> 
+				<BinProperty type="int" desc="进度" name="progress"/>
+			</BinProperty>
+		</protocol>
+		<protocol key="up_0x87_0_ConsortiaRichesOffer" desc="公会捐献,p1类型1金币2点券"> 
+			<BinProperty type="int" name="count" desc="数量" /> 
+		</protocol>
+		<protocol key="down_0x87_0_ConsortiaRichesOffer" desc="公会捐献结果,p1类型1金币2点券,p2增长财富"> 
+			<BinProperty type="int" name="count" desc="数量" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="down_0x9e_0_ConsortiaShopUpGrade" desc="公会商城升级"> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="down_0x9c_0_ConsortiaSkillTowerUpGrade" desc="公会技能塔升级"> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="down_0x9f_0_ConsortiaUpGrade" desc="公会升级"> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x84_0_ConsortiaUserDelete" desc="开除公会成员"> 
+			<BinProperty type="long" name="userId" desc="用户ID" /> 
+		</protocol>
+		<protocol key="down_0x84_0_ConsortiaUserDelete" desc="开除公会成员结果"> 
+			<BinProperty type="long" name="userId" desc="用户ID" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x88_0_ConsotiaApplyState" desc="设置公会是否可申请"> 
+			<BinProperty type="boolean" name="state" desc="是否可申请" /> 
+		</protocol>
+		<protocol key="down_0x88_0_ConsotiaApplyState" desc="设置公会是否可申请结果"> 
+			<BinProperty type="boolean" name="state" desc="是否可申请" /> 
+			<BinProperty type="boolean" name="result" desc="成功失败" /> 
+			<BinProperty type="string" name="message" desc="提示消息" /> 
+		</protocol>
+		<protocol key="up_0x99_0_ConsortiaUserGradeUpdate" desc="公会职务修改"> 
+			<property type="long" name="userID" desc="用户ID" /> 
+			<property type="boolean" name="isUpgrade" desc="是否升职" />
+		</protocol>
+		<protocol key="down_0x99_0_ConsortiaUserGradeUpdate" desc="公会职务修改结果"> 
+			<property type="boolean" name="isUpgrade" desc="是否升职" />
+			<property type="boolean" name="result" desc="成功失败" /> 
+			<property type="string" name="message" desc="提示消息" /> 
+		</protocol>
+	</module>
+	<module name="Marry" desc="结婚模块">
+		<protocol key="up_f8_0_divorce" desc="离婚请求"> 
+			<BinProperty type="boolean"      name="isInMovie"  desc="是否在婚礼中" /> 
+			<BinProperty type="byte"      name="type"  desc="离婚类型 1 强制，2 协议" /> 
+			<BinProperty type="long"      name="userId"  desc="玩家id 0为自己支付" />
+		</protocol>
+		<protocol key="up_108_0_divorce" desc="离婚好友支付答复"> 
+			<BinProperty type="boolean"      name="result"  desc="是否同意" /> 
+			<BinProperty type="long"      name="answerId"  desc="数据库记录id" />
+		</protocol>
+		<protocol key="up_55_0_marry" desc="获取伴侣信息"> 
+		</protocol>
+		<protocol key="up_e9_0_marry" desc="结婚场景切换"> 
+			<BinProperty type="int"      name="sceneID"  desc="场景id" /> 
+		</protocol>
+		<protocol key="up_f6_0_marry" desc="获取玩家结婚状态"> 
+			<BinProperty type="long"      name="userId"  desc="玩家id" />
+		</protocol>
+		<protocol key="up_f4_0_marry" desc="退出礼堂"> 
+		</protocol>
+		<protocol key="up_f9_3_marry" desc="延长结婚时间"> 
+			<BinProperty type="int"      name="hour"  desc="时间" />
+		</protocol>
+		<protocol key="up_f9_8_marry" desc="禁止玩家进入婚礼房间"> 
+			<BinProperty type="long"      name="userId"  desc="玩家id" />
+		</protocol>
+		<protocol key="up_f9_2_marry" desc="举行结婚典礼"> 
+		</protocol>
+		<protocol key="up_f9_4_marry" desc="邀请宾客"> 
+			<BinProperty type="long"      name="userId"  desc="玩家id" />
+		</protocol>
+		<protocol key="up_f9_7_marry" desc="结婚礼堂踢人"> 
+			<BinProperty type="long"      name="userId"  desc="玩家id" />
+		</protocol>
+		<protocol key="up_f9_5_marry" desc="发放礼金"> 
+			<BinProperty type="int"      name="num"  desc="钱数" />
+		</protocol>
+		<protocol key="up_f9_1_marry" desc="婚礼房间移动"> 
+			<BinProperty type="int"      name="x"  desc="x坐标" />
+			<BinProperty type="int"      name="y"  desc="y坐标" />
+			<BinProperty type="string"   name="str"  desc="客户端用参数" />
+		</protocol>
+		<protocol key="up_f9_10_marry" desc="婚礼房间玩家位置更新"> 
+			<BinProperty type="int"      name="x"  desc="x坐标" />
+			<BinProperty type="int"      name="y"  desc="y坐标" />
+		</protocol>
+		<protocol key="up_f9_6_marry" desc="放烟花"> 
+			<BinProperty type="long"      name="userId"  desc="玩家id" />
+			<BinProperty type="int"      name="templateId"  desc="烟花模板id" />
+		</protocol>
+	</module>
+	<module name='Bag' desc='背包模块'>
+		<protocol key="up_7c_0_bag" desc="出售物品"> 
+			<BinProperty type="byte"      name="bagType"  desc="背包类型" />
+			<BinProperty type="int"      name="place"  desc="位置" />
+			<BinProperty type="int"      name="count"  desc="数量" />
+		</protocol>
+		<protocol key="up_29_6_cloth" desc="整理时装背包"> 
+			<BinProperty type="int"      name="count"  desc="list数量" />
+			<BinProperty name="clothBagList" type="list" sizeType="int" desc="合并列表" >
+				<BinProperty type="int" desc="起始背包位置" name="place"/>
+				<BinProperty type="int" desc="目的背包位置" name="otherplace" /> 
+			</BinProperty>
+		</protocol>
+		<protocol key="up_29_2_cloth" desc="设置使用时装组"> 
+			<BinProperty type="int"      name="groupId"  desc="时装组id" />
+		</protocol>
+		<protocol  key="down_0x2c_0" desc="购买物品">
+			<BinProperty type="int" name="buyResult"  desc="购买结果" /> 
+			<BinProperty type="int" name="buyFrom"  desc="来源" /> 
+		</protocol>
+	</module>
+</root>

@@ -1,0 +1,34 @@
+<ClientCfg>
+   <Columns length="10">
+      <Column>action</Column>
+      <Column>id</Column>
+      <Column>directType</Column>
+      <Column>ip</Column>
+      <Column>userName</Column>
+      <Column>length</Column>
+      <Column>code</Column>
+      <Column>subCode</Column>
+      <Column>config</Column>
+      <Column>desc</Column>
+   </Columns>
+   <HideColumn length="0"/>
+   <IsFixed>false</IsFixed>
+   <parametric>
+      <String length="1">
+         <Value>aaa</Value>
+      </String>
+      <Number length="2">
+         <Value>23223</Value>
+         <Value>55</Value>
+      </Number>
+      <Decimal length="3">
+         <Value>234.23</Value>
+         <Value>234.0</Value>
+         <Value>324.23</Value>
+      </Decimal>
+      <Boolean length="2">
+         <Value>true</Value>
+         <Value>false</Value>
+      </Boolean>
+   </parametric>
+</ClientCfg>

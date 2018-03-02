@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root >
+	<modlule name='player' desc='玩家模块'>
+		<ProtoConfig loginName='logic' updateKey='true' type='UP' code='1' subCode='0' protocolType="BIN_FILE" desc='测试' bodyClazzName='bin/up_1_0_playerLogin.xml'/>
+		
+		<ProtoConfig type='DOWN' code='0x05' subCode='0' protocolType="BIN_FILE" desc='测试' bodyClazzName='bin/up_5_0_sysdate.xml'/>
+		<ProtoConfig type='DOWN' code='80' subCode='0' protocolType="BIN_FILE" desc='测试' bodyClazzName='bin/up_80_0_switch.xml'/>
+		<ProtoConfig type='UP' code='0x159' subCode='0' protocolType="BIN_FILE" desc='购买' bodyClazzName='bin/up_345_0_buy.xml'/>
+	</modlule>
+</root>
+ 

@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root >
+
+	<module name='brave' desc='brave'>
+		<ProtoConfig   type='DOWN' code='133' subCode='0' protocolType="PB" desc='勇者挑战赛信息' bodyClazzName='com.road.ddt.gen.BraveOutMsg$BraveFightInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1403' subCode='0' protocolType="PB" desc='首胜宝箱奖励信息提示' bodyClazzName='com.road.ddt.gen.BraveOutMsg$BraveFightBoxOutProto'/>
+		<ProtoConfig   type='UP' code='3809' subCode='0' protocolType="PB" desc='勇者挑战赛开启首胜宝箱' bodyClazzName='com.road.ddt.gen.BraveInMsg$BraveFightOpenBoxProto'/>
+	</module>
+	<module name='craft' desc='craft'>
+		<ProtoConfig   type='DOWN' code='2401' subCode='0' protocolType="PB" desc='合成操作' bodyClazzName='com.road.ddt.gen.CraftOutMsg$MaterialCompoundOutProto'/>
+		<ProtoConfig   type='DOWN' code='2402' subCode='0' protocolType="PB" desc='分解操作' bodyClazzName='com.road.ddt.gen.CraftOutMsg$MaterialDecomposeOutProto'/>
+		<ProtoConfig   type='DOWN' code='2403' subCode='0' protocolType="PB" desc='宝箱使用' bodyClazzName='com.road.ddt.gen.CraftOutMsg$MaterialChestUseOutProto'/>
+		<ProtoConfig   type='UP' code='6001' subCode='0' protocolType="PB" desc='合成操作' bodyClazzName='com.road.ddt.gen.CraftInMsg$MaterialCompoundInProto'/>
+		<ProtoConfig   type='UP' code='6002' subCode='0' protocolType="PB" desc='分解操作' bodyClazzName='com.road.ddt.gen.CraftInMsg$MaterialDecomposeInProto'/>
+		<ProtoConfig   type='UP' code='6003' subCode='0' protocolType="PB" desc='材料宝箱使用' bodyClazzName='com.road.ddt.gen.CraftInMsg$MaterialChestUseInProto'/>
+	</module>
+	<module name='single' desc='single'>
+		<ProtoConfig   type='DOWN' code='15' subCode='0' protocolType="PB" desc='pve推图基础信息' bodyClazzName='com.road.ddt.gen.SinglePVEOutMsg$SinglePVEBaseOutProto'/>
+		<ProtoConfig   type='DOWN' code='13' subCode='0' protocolType="PB" desc='pve推图信息列表' bodyClazzName='com.road.ddt.gen.SinglePVEOutMsg$SinglePVEInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='16' subCode='0' protocolType="PB" desc='pve推图信息改变列表' bodyClazzName='com.road.ddt.gen.SinglePVEOutMsg$SinglePVEInfoChangeListOutProto'/>
+		<ProtoConfig   type='DOWN' code='113' subCode='0' protocolType="PB" desc='进入单人副本检查' bodyClazzName='com.road.ddt.gen.SinglePVEOutMsg$SinglePVEMissionEnterOutProto'/>
+		<ProtoConfig   type='UP' code='2101' subCode='0' protocolType="PB" desc='pve推图请求列表' bodyClazzName='com.road.ddt.gen.SinglePVEInMsg$SinglePVEUserRequestListInProto'/>
+		<ProtoConfig   type='UP' code='2102' subCode='0' protocolType="PB" desc='pve推图购买挑战次数' bodyClazzName='com.road.ddt.gen.SinglePVEInMsg$SinglePVEBuyChallengeCountInProto'/>
+		<ProtoConfig   type='UP' code='2103' subCode='0' protocolType="PB" desc='pve推图扫荡关卡' bodyClazzName='com.road.ddt.gen.SinglePVEInMsg$SinglePVEMopUpMissionInProto'/>
+		<ProtoConfig   type='UP' code='2104' subCode='0' protocolType="PB" desc='pve关卡扫荡CD时间加速' bodyClazzName='com.road.ddt.gen.SinglePVEInMsg$SinglePVEQuickenMopUpCdTimeInProto'/>
+		<ProtoConfig   type='UP' code='2105' subCode='0' protocolType="PB" desc='pve关卡扫荡领取奖励' bodyClazzName='com.road.ddt.gen.SinglePVEInMsg$SinglePVEDrawMopUpRewardInProto'/>
+		<ProtoConfig   type='UP' code='2106' subCode='0' protocolType="PB" desc='单人副本结算' bodyClazzName='com.road.ddt.gen.SinglePVEInMsg$SinglePVEGameResultInProto'/>
+		<ProtoConfig   type='UP' code='2107' subCode='0' protocolType="PB" desc='进入单人副本' bodyClazzName='com.road.ddt.gen.SinglePVEInMsg$SinglePVEMissionEnterInProto'/>
+		<ProtoConfig   type='UP' code='2108' subCode='0' protocolType="PB" desc='推图章节宝箱奖励领取' bodyClazzName='com.road.ddt.gen.SinglePVEInMsg$SinglePVEGetChapterBoxInProto'/>
+	</module>
+	<module name='chat' desc='chat'>
+		<ProtoConfig   type='DOWN' code='350' subCode='0' protocolType="PB" desc='频道消息广播' bodyClazzName='com.road.ddt.gen.ChatOutMsg$ChatOutProto'/>
+		<ProtoConfig   type='DOWN' code='351' subCode='0' protocolType="PB" desc='登录聊天服' bodyClazzName='com.road.ddt.gen.ChatOutMsg$LoginChatServerOutProto'/>
+		<ProtoConfig   type='DOWN' code='352' subCode='0' protocolType="PB" desc='退出聊天服' bodyClazzName='com.road.ddt.gen.ChatOutMsg$LogoutChatServerOutProto'/>
+		<ProtoConfig   type='DOWN' code='353' subCode='0' protocolType="PB" desc='频道订阅' bodyClazzName='com.road.ddt.gen.ChatOutMsg$ChatChannelSubscibeOutProto'/>
+		<ProtoConfig   type='DOWN' code='354' subCode='0' protocolType="PB" desc='频道心跳消息' bodyClazzName='com.road.ddt.gen.ChatOutMsg$PlayerPingChatBackOutProto'/>
+		<ProtoConfig   type='DOWN' code='355' subCode='0' protocolType="PB" desc='频道心跳消息' bodyClazzName='com.road.ddt.gen.ChatOutMsg$PlayerOfflineChatRecordOutProto'/>
+		<ProtoConfig   type='DOWN' code='902' subCode='0' protocolType="PB" desc='清除玩家发言' bodyClazzName='com.road.ddt.gen.ChatOutMsg$RemoveChatOutProto'/>
+		<ProtoConfig   type='DOWN' code='2054' subCode='0' protocolType="PB" desc='群组消息(游戏服协议)' bodyClazzName='com.road.ddt.gen.ChatOutMsg$GroupChatRecordOutProto'/>
+		<ProtoConfig   type='DOWN' code='2055' subCode='0' protocolType="PB" desc='修改发言' bodyClazzName='com.road.ddt.gen.ChatOutMsg$ChatDirtyOutProto'/>
+		<ProtoConfig   type='DOWN' code='472' subCode='0' protocolType="PB" desc='聊天频道消息' bodyClazzName='com.road.ddt.gen.ChatOutMsg$GuildTalkRecordOutProto'/>
+		<ProtoConfig   type='UP' code='3500' subCode='0' protocolType="PB" desc='频道订阅' bodyClazzName='com.road.ddt.gen.ChatInMsg$ChatChannelSubscibeInProto'/>
+		<ProtoConfig   type='UP' code='3501' subCode='0' protocolType="PB" desc='登录聊天服' bodyClazzName='com.road.ddt.gen.ChatInMsg$LoginChatServerInProto'/>
+		<ProtoConfig   type='UP' code='3502' subCode='0' protocolType="PB" desc='退出聊天服' bodyClazzName='com.road.ddt.gen.ChatInMsg$LogoutChatServerInProto'/>
+		<ProtoConfig   type='UP' code='3503' subCode='0' protocolType="PB" desc='发送频道消息' bodyClazzName='com.road.ddt.gen.ChatInMsg$PlayerChatInProto'/>
+		<ProtoConfig   type='UP' code='3504' subCode='0' protocolType="PB" desc='频道心跳消息' bodyClazzName='com.road.ddt.gen.ChatInMsg$PlayerPingChatInProto'/>
+		<ProtoConfig   type='UP' code='3505' subCode='0' protocolType="PB" desc='新登玩家数据' bodyClazzName='com.road.ddt.gen.ChatInMsg$LoginChatServerLoginInProto'/>
+		<ProtoConfig   type='UP' code='3454' subCode='0' protocolType="PB" desc='发送频道消息' bodyClazzName='com.road.ddt.gen.ChatInMsg$PlayerWorldChatInProto'/>
+	</module>
+	<module name='vip' desc='vip'>
+		<ProtoConfig   type='DOWN' code='2300' subCode='0' protocolType="PB" desc='头像框列表' bodyClazzName='com.road.ddt.gen.VipOutMsg$HeadFrameListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2301' subCode='0' protocolType="PB" desc='头像框列表更新' bodyClazzName='com.road.ddt.gen.VipOutMsg$HeadFrameListUpdateOutProto'/>
+		<ProtoConfig   type='UP' code='9507' subCode='0' protocolType="PB" desc='Vip头像框设置' bodyClazzName='com.road.ddt.gen.VipInMsg$VipHeadInProto'/>
+	</module>
+	<module name='rank' desc='rank'>
+		<ProtoConfig   type='DOWN' code='1000' subCode='0' protocolType="PB" desc='排行榜列表' bodyClazzName='com.road.ddt.gen.RankingOutMsg$RankingInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1001' subCode='0' protocolType="PB" desc='天梯排行信息' bodyClazzName='com.road.ddt.gen.RankingOutMsg$LadderRankOutProto'/>
+		<ProtoConfig   type='DOWN' code='1002' subCode='0' protocolType="PB" desc='公会排行信息' bodyClazzName='com.road.ddt.gen.RankingOutMsg$GuildRankingInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1003' subCode='0' protocolType="PB" desc='魅力值排行的空间信息' bodyClazzName='com.road.ddt.gen.RankingOutMsg$CharmRankingZoneInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1004' subCode='0' protocolType="PB" desc='魅力兑换钻石' bodyClazzName='com.road.ddt.gen.RankingOutMsg$CharmExchangeOutProto'/>
+		<ProtoConfig   type='DOWN' code='1005' subCode='0' protocolType="PB" desc='排行榜列表' bodyClazzName='com.road.ddt.gen.RankingOutMsg$GlobalRankingInfoListOutProto'/>
+		<ProtoConfig   type='UP' code='3701' subCode='0' protocolType="PB" desc='排行榜请求' bodyClazzName='com.road.ddt.gen.RankingInMsg$RankingInfoListInProto'/>
+		<ProtoConfig   type='UP' code='3750' subCode='0' protocolType="PB" desc='魅力排行榜空间请求' bodyClazzName='com.road.ddt.gen.RankingInMsg$CharmRankingZoneReqInProto'/>
+		<ProtoConfig   type='UP' code='3751' subCode='0' protocolType="PB" desc='魅力排行榜踩空间' bodyClazzName='com.road.ddt.gen.RankingInMsg$CharmRankingZoneStepInProto'/>
+		<ProtoConfig   type='UP' code='3752' subCode='0' protocolType="PB" desc='魅力兑换钻石' bodyClazzName='com.road.ddt.gen.RankingInMsg$CharmExchangeInProto'/>
+		<ProtoConfig   type='UP' code='3753' subCode='0' protocolType="PB" desc='全区排行榜请求' bodyClazzName='com.road.ddt.gen.RankingInMsg$GlobalRankingInfoListInProto'/>
+	</module>
+	<module name='report' desc='report'>
+		<ProtoConfig   type='UP' code='9600' subCode='0' protocolType="PB" desc='举报' bodyClazzName='com.road.ddt.gen.ReportInMsg$ReportInProto'/>
+	</module>
+	<module name='richman' desc='richman'>
+		<ProtoConfig   type='DOWN' code='136' subCode='0' protocolType="PB" desc='大富翁相关信息' bodyClazzName='com.road.ddt.gen.RichManOutMsg$RichManRewardOutProto'/>
+		<ProtoConfig   type='DOWN' code='137' subCode='0' protocolType="PB" desc='所有的大富翁的奖励记录信息' bodyClazzName='com.road.ddt.gen.RichManOutMsg$RichManAllRewardRecordProto'/>
+		<ProtoConfig   type='DOWN' code='138' subCode='0' protocolType="PB" desc='大富翁掷骰奖励记录信息' bodyClazzName='com.road.ddt.gen.RichManOutMsg$RichManRewardRecordProto'/>
+		<ProtoConfig   type='UP' code='1043' subCode='0' protocolType="PB" desc='开始投掷大富翁骰子' bodyClazzName='com.road.ddt.gen.RichManInMsg$StartThrowDiceInProto'/>
+		<ProtoConfig   type='UP' code='1044' subCode='0' protocolType="PB" desc='重置大富翁的奖励' bodyClazzName='com.road.ddt.gen.RichManInMsg$RefreshRichRewardInProto'/>
+		<ProtoConfig   type='UP' code='1045' subCode='0' protocolType="PB" desc='获取大富翁奖励记录信息' bodyClazzName='com.road.ddt.gen.RichManInMsg$RichRewardRecordInProto'/>
+	</module>
+	<module name='train' desc='train'>
+		<ProtoConfig   type='UP' code='2202' subCode='0' protocolType="PB" desc='副本奖励请求' bodyClazzName='com.road.ddt.gen.TrainInMsg$MissionRewardRequestInProto'/>
+	</module>
+	<module name='medalshop' desc='medalshop'>
+		<ProtoConfig   type='DOWN' code='750' subCode='0' protocolType="PB" desc='商品信息' bodyClazzName='com.road.ddt.gen.MedalShopOutMsg$MedalShopGoodsListOutProto'/>
+		<ProtoConfig   type='DOWN' code='751' subCode='0' protocolType="PB" desc='交易信息' bodyClazzName='com.road.ddt.gen.MedalShopOutMsg$MedalShopExchangeListOutProto'/>
+		<ProtoConfig   type='UP' code='3301' subCode='0' protocolType="PB" desc='兑换物品' bodyClazzName='com.road.ddt.gen.MedalShopInMsg$MedalShopExchangeGoodsInProto'/>
+	</module>
+	<module name='assault' desc='assault'>
+		<ProtoConfig   type='DOWN' code='950' subCode='0' protocolType="PB" desc='关卡列表' bodyClazzName='com.road.ddt.gen.AssaultOutMsg$AssaultListOutProto'/>
+		<ProtoConfig   type='DOWN' code='951' subCode='0' protocolType="PB" desc='进入关卡反馈' bodyClazzName='com.road.ddt.gen.AssaultOutMsg$AssaultMissionEnterOutProto'/>
+		<ProtoConfig   type='UP' code='4001' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.AssaultInMsg$AssaultMissionResultInProto'/>
+		<ProtoConfig   type='UP' code='4002' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.AssaultInMsg$AssaultMissionEnterInProto'/>
+		<ProtoConfig   type='UP' code='4003' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.AssaultInMsg$AssaultMissionRewardInProto'/>
+	</module>
+	<module name='fightset' desc='fightset'>
+		<ProtoConfig   type='DOWN' code='121' subCode='0' protocolType="PB" desc='战斗：道具技能' bodyClazzName='com.road.ddt.gen.FightSetOutMsg$PropSkillListProto'/>
+		<ProtoConfig   type='DOWN' code='122' subCode='0' protocolType="PB" desc='战斗道具技能数据' bodyClazzName='com.road.ddt.gen.FightSetOutMsg$PropSkillInfoProto'/>
+		<ProtoConfig   type='UP' code='2008' subCode='0' protocolType="PB" desc='战斗：道具技能' bodyClazzName='com.road.ddt.gen.FightSetInMsg$PropSkillSetProto'/>
+	</module>
+	<module name='guild' desc='guild'>
+		<ProtoConfig   type='DOWN' code='400' subCode='0' protocolType="PB" desc='公会列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildListProto'/>
+		<ProtoConfig   type='DOWN' code='403' subCode='0' protocolType="PB" desc='用户申请列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPlayerApplyListProto'/>
+		<ProtoConfig   type='DOWN' code='10107' subCode='0' protocolType="PB" desc='公会申请数据' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildApplyInfoProto'/>
+		<ProtoConfig   type='DOWN' code='10103' subCode='0' protocolType="PB" desc='公会申请列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildApplyListProto'/>
+		<ProtoConfig   type='DOWN' code='10106' subCode='0' protocolType="PB" desc='公会成员数据' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildMemberInfoProto'/>
+		<ProtoConfig   type='DOWN' code='10104' subCode='0' protocolType="PB" desc='公会成员列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildMemeberListProto'/>
+		<ProtoConfig   type='DOWN' code='10108' subCode='0' protocolType="PB" desc='公会事件' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildEventInfoProto'/>
+		<ProtoConfig   type='DOWN' code='10102' subCode='0' protocolType="PB" desc='公会事件列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildEventListProto'/>
+		<ProtoConfig   type='DOWN' code='450' subCode='0' protocolType="PB" desc='玩家的公会数据' bodyClazzName='com.road.ddt.gen.GuildOutMsg$PlayerGuildInfoProto'/>
+		<ProtoConfig   type='DOWN' code='408' subCode='0' protocolType="PB" desc='公会信息' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildDetailProto'/>
+		<ProtoConfig   type='DOWN' code='10105' subCode='0' protocolType="PB" desc='公会商店列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildBuildShopListProto'/>
+		<ProtoConfig   type='DOWN' code='418' subCode='0' protocolType="PB" desc='公会请求增援列表(公会黑市)' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildBuildHelpListProto'/>
+		<ProtoConfig   type='DOWN' code='10100' subCode='0' protocolType="PB" desc='公会请求增援同步' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildBuildHelpInfoProto'/>
+		<ProtoConfig   type='DOWN' code='10101' subCode='0' protocolType="PB" desc='公会名称验证' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildCheckNameProto'/>
+		<ProtoConfig   type='DOWN' code='10110' subCode='0' protocolType="PB" desc='公会活动列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildQuestListProto'/>
+		<ProtoConfig   type='DOWN' code='452' subCode='0' protocolType="PB" desc='用户公会活动' bodyClazzName='com.road.ddt.gen.GuildOutMsg$PlayerQuestListProto'/>
+		<ProtoConfig   type='DOWN' code='453' subCode='0' protocolType="PB" desc='公会活动完成' bodyClazzName='com.road.ddt.gen.GuildOutMsg$PlayerQuestFinshProto'/>
+		<ProtoConfig   type='DOWN' code='454' subCode='0' protocolType="PB" desc='物品购买记录' bodyClazzName='com.road.ddt.gen.GuildOutMsg$PlayerGuildShopJournalProto'/>
+		<ProtoConfig   type='DOWN' code='455' subCode='0' protocolType="PB" desc='物品购买记录' bodyClazzName='com.road.ddt.gen.GuildOutMsg$PlayerGuildShopJournalUpdateProto'/>
+		<ProtoConfig   type='DOWN' code='456' subCode='0' protocolType="PB" desc='领取过的的工会活动奖励' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildActivityRewardListProto'/>
+		<ProtoConfig   type='DOWN' code='457' subCode='0' protocolType="PB" desc='工会任务奖励领取结果' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildQuestRewardResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='458' subCode='0' protocolType="PB" desc='工会奖励领取' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildActivityRewardResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='459' subCode='0' protocolType="PB" desc='工会基础信息' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildBaseInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='460' subCode='0' protocolType="PB" desc='公会聚会房间来宾列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyRoomGuestListOutProto'/>
+		<ProtoConfig   type='DOWN' code='461' subCode='0' protocolType="PB" desc='公会聚会房间来宾变更' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyRoomGuestChangeOutProto'/>
+		<ProtoConfig   type='DOWN' code='462' subCode='0' protocolType="PB" desc='公会聚会来宾移动' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyGuestMoveOutProto'/>
+		<ProtoConfig   type='DOWN' code='464' subCode='0' protocolType="PB" desc='公会聚会场景信息' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyRoomInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='465' subCode='0' protocolType="PB" desc='公会聚会开启通知' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyOpenNotifyOutProto'/>
+		<ProtoConfig   type='DOWN' code='466' subCode='0' protocolType="PB" desc='公会聚会红包发放' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyEnvelopeSendOutProto'/>
+		<ProtoConfig   type='DOWN' code='467' subCode='0' protocolType="PB" desc='公会聚会红包领取' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyEnvelopeGetOutProto'/>
+		<ProtoConfig   type='DOWN' code='468' subCode='0' protocolType="PB" desc='公会聚会红包领取记录' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyEnvelopeRecordOutProto'/>
+		<ProtoConfig   type='DOWN' code='469' subCode='0' protocolType="PB" desc='公会聚会来宾红包记录' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyEnvelopeListOutProto'/>
+		<ProtoConfig   type='DOWN' code='470' subCode='0' protocolType="PB" desc='公会聚会玩家自己领取记录' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyEnvelopeGetRecordOutProto'/>
+		<ProtoConfig   type='DOWN' code='471' subCode='0' protocolType="PB" desc='来宾说话' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildPartyGuestTalkOutProto'/>
+		<ProtoConfig   type='DOWN' code='473' subCode='0' protocolType="PB" desc='公会副本列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildMissionListOutProto'/>
+		<ProtoConfig   type='DOWN' code='474' subCode='0' protocolType="PB" desc='公会副本操作类型' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildMissionOperationOutProto'/>
+		<ProtoConfig   type='DOWN' code='479' subCode='0' protocolType="PB" desc='返回清空离开公会的CD时间' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildCleanLeaveCdOutProto'/>
+		<ProtoConfig   type='DOWN' code='481' subCode='0' protocolType="PB" desc='公会加群奖励' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildEnterGroupRewardOutProto'/>
+		<ProtoConfig   type='DOWN' code='482' subCode='0' protocolType="PB" desc='公会加群领奖结果' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildGroupRewardResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='483' subCode='0' protocolType="PB" desc='公会租借列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildRentListOutProto'/>
+		<ProtoConfig   type='DOWN' code='484' subCode='0' protocolType="PB" desc='我的公会租借列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$MyGuildRentListOutProto'/>
+		<ProtoConfig   type='DOWN' code='485' subCode='0' protocolType="PB" desc='昨日租借收益' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildRentIncomeOutProto'/>
+		<ProtoConfig   type='DOWN' code='486' subCode='0' protocolType="PB" desc='已经租赁武器列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$BuyGuildRentListOutProto'/>
+		<ProtoConfig   type='DOWN' code='487' subCode='0' protocolType="PB" desc='选拔赛信息同步' bodyClazzName='com.road.ddt.gen.GuildOutMsg$SelectWarInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='488' subCode='0' protocolType="PB" desc='请求可装备租赁物品列表' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildEquipRentListOutProto'/>
+		<ProtoConfig   type='DOWN' code='489' subCode='0' protocolType="PB" desc='公会战装备租赁物品' bodyClazzName='com.road.ddt.gen.GuildOutMsg$GuildEquipRentOutProto'/>
+		<ProtoConfig   type='UP' code='4201' subCode='0' protocolType="PB" desc='工会列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildListInProto'/>
+		<ProtoConfig   type='UP' code='4202' subCode='0' protocolType="PB" desc='创建工会' bodyClazzName='com.road.ddt.gen.GuildInMsg$CreateGuildInProto'/>
+		<ProtoConfig   type='UP' code='4203' subCode='0' protocolType="PB" desc='申请加入工会' bodyClazzName='com.road.ddt.gen.GuildInMsg$ApplyGuildInProto'/>
+		<ProtoConfig   type='UP' code='4206' subCode='0' protocolType="PB" desc='公会申请列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildApplyListInProto'/>
+		<ProtoConfig   type='UP' code='4207' subCode='0' protocolType="PB" desc='用户申请列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPlayerApplyListInProto'/>
+		<ProtoConfig   type='UP' code='4208' subCode='0' protocolType="PB" desc='公会成员列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildMemberListInProto'/>
+		<ProtoConfig   type='UP' code='4209' subCode='0' protocolType="PB" desc='公会事件列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildEventListInProto'/>
+		<ProtoConfig   type='UP' code='4210' subCode='0' protocolType="PB" desc='公会信息列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildInfoInProto'/>
+		<ProtoConfig   type='UP' code='4204' subCode='0' protocolType="PB" desc='公会查找' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildSearchInProto'/>
+		<ProtoConfig   type='UP' code='4211' subCode='0' protocolType="PB" desc='处理工会申请数据' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildApplyHandleInProto'/>
+		<ProtoConfig   type='UP' code='4212' subCode='0' protocolType="PB" desc='退出公会' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildExitInProto'/>
+		<ProtoConfig   type='UP' code='4213' subCode='0' protocolType="PB" desc='修改公会成员职位' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildUpdatePositionInProto'/>
+		<ProtoConfig   type='UP' code='4214' subCode='0' protocolType="PB" desc='踢出公会' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildKickPlayerInProto'/>
+		<ProtoConfig   type='UP' code='4215' subCode='0' protocolType="PB" desc='修改公会宣言等数据' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildUpdateInfoInProto'/>
+		<ProtoConfig   type='UP' code='4216' subCode='0' protocolType="PB" desc='修改公会设置' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildUpdateSetInProto'/>
+		<ProtoConfig   type='UP' code='4217' subCode='0' protocolType="PB" desc='公会升级' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildUpgradeInProto'/>
+		<ProtoConfig   type='UP' code='4218' subCode='0' protocolType="PB" desc='公会捐献' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildDonateInProto'/>
+		<ProtoConfig   type='UP' code='4219' subCode='0' protocolType="PB" desc='公会商店' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildShopInProto'/>
+		<ProtoConfig   type='UP' code='4220' subCode='0' protocolType="PB" desc='公会商店购买' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildShopBuyInProto'/>
+		<ProtoConfig   type='UP' code='4221' subCode='0' protocolType="PB" desc='公会黑市列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildHelpListInProto'/>
+		<ProtoConfig   type='UP' code='4222' subCode='0' protocolType="PB" desc='公会请求增援' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildAskHelpInProto'/>
+		<ProtoConfig   type='UP' code='4223' subCode='0' protocolType="PB" desc='公会增援道具' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildAskAssistanceInProto'/>
+		<ProtoConfig   type='UP' code='4205' subCode='0' protocolType="PB" desc='公会一键加入' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildOneKeyJoinInProto'/>
+		<ProtoConfig   type='UP' code='4224' subCode='0' protocolType="PB" desc='检测公会名称' bodyClazzName='com.road.ddt.gen.GuildInMsg$CheckGuildNameInProto'/>
+		<ProtoConfig   type='UP' code='4225' subCode='0' protocolType="PB" desc='公会训练场' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildTrainInProto'/>
+		<ProtoConfig   type='UP' code='4226' subCode='0' protocolType="PB" desc='公会活动列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildQuestListInProto'/>
+		<ProtoConfig   type='UP' code='4227' subCode='0' protocolType="PB" desc='公会任务奖励' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildQuestRewardInProto'/>
+		<ProtoConfig   type='UP' code='4228' subCode='0' protocolType="PB" desc='领取的工会活动奖励' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildActivityRewardInProto'/>
+		<ProtoConfig   type='UP' code='4229' subCode='0' protocolType="PB" desc='获取工会的基本信息' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildBaseInfoInProto'/>
+		<ProtoConfig   type='UP' code='4230' subCode='0' protocolType="PB" desc='公会聚会开启' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyOpenInProto'/>
+		<ProtoConfig   type='UP' code='4231' subCode='0' protocolType="PB" desc='公会聚会进入房间' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyRoomEnterInProto'/>
+		<ProtoConfig   type='UP' code='4232' subCode='0' protocolType="PB" desc='公会聚会退出房间' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyRoomExitInProto'/>
+		<ProtoConfig   type='UP' code='4233' subCode='0' protocolType="PB" desc='公会聚会红包大炮开炮' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyCannonShootInProto'/>
+		<ProtoConfig   type='UP' code='4234' subCode='0' protocolType="PB" desc='公会聚会红包雨领红包' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyRainPacketGetInProto'/>
+		<ProtoConfig   type='UP' code='4235' subCode='0' protocolType="PB" desc='公会聚会宾客列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyGuestListInProto'/>
+		<ProtoConfig   type='UP' code='4236' subCode='0' protocolType="PB" desc='来宾移动' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyGuestMoveInProto'/>
+		<ProtoConfig   type='UP' code='4237' subCode='0' protocolType="PB" desc='公会聚会红包赠送' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyEnvelopeSendInProto'/>
+		<ProtoConfig   type='UP' code='4238' subCode='0' protocolType="PB" desc='公会聚会红包领取' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyEnvelopeGetInProto'/>
+		<ProtoConfig   type='UP' code='4239' subCode='0' protocolType="PB" desc='公会聚会单个红包的领取记录' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyEnvelopeRecordInProto'/>
+		<ProtoConfig   type='UP' code='4240' subCode='0' protocolType="PB" desc='公会聚会红包列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyEnvelopeListInProto'/>
+		<ProtoConfig   type='UP' code='4241' subCode='0' protocolType="PB" desc='公会聚会玩家红包领取记录' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyPlayerEnvelopeGetRecordInProto'/>
+		<ProtoConfig   type='UP' code='4242' subCode='0' protocolType="PB" desc='公会聚会结束' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyTimeOutInProto'/>
+		<ProtoConfig   type='UP' code='4243' subCode='0' protocolType="PB" desc='公会聚会聊天' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPartyGuestTalkInProto'/>
+		<ProtoConfig   type='UP' code='4244' subCode='0' protocolType="PB" desc='公会聊天频道消息获取' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildMsgListInProto'/>
+		<ProtoConfig   type='UP' code='4245' subCode='0' protocolType="PB" desc='公会副本列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildMissionListInProto'/>
+		<ProtoConfig   type='UP' code='4246' subCode='0' protocolType="PB" desc='选择关卡难度类型' bodyClazzName='com.road.ddt.gen.GuildInMsg$SelectMissionTypeInProto'/>
+		<ProtoConfig   type='UP' code='4247' subCode='0' protocolType="PB" desc='公会副本操作类型' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildMissionOperationInProto'/>
+		<ProtoConfig   type='UP' code='4250' subCode='0' protocolType="PB" desc='清空离开公会的CD时间' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildCleanLeaveCdInProto'/>
+		<ProtoConfig   type='UP' code='4251' subCode='0' protocolType="PB" desc='聚会分享' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildPushInProto'/>
+		<ProtoConfig   type='UP' code='4252' subCode='0' protocolType="PB" desc='公会加群奖励' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildEnterGroupRewardInProto'/>
+		<ProtoConfig   type='UP' code='4253' subCode='0' protocolType="PB" desc='公会改名' bodyClazzName='com.road.ddt.gen.GuildInMsg$ModifyGuildNameInProto'/>
+		<ProtoConfig   type='UP' code='4254' subCode='0' protocolType="PB" desc='公会加群领奖' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildGetGroupRewardInProto'/>
+		<ProtoConfig   type='UP' code='4255' subCode='0' protocolType="PB" desc='公会租借列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildRentListInProto'/>
+		<ProtoConfig   type='UP' code='4256' subCode='0' protocolType="PB" desc='我的公会租借列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$MyGuildRentListInProto'/>
+		<ProtoConfig   type='UP' code='4261' subCode='0' protocolType="PB" desc='请求可使用租赁物品列表' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildEquipRentListInProto'/>
+		<ProtoConfig   type='UP' code='4262' subCode='0' protocolType="PB" desc='装备租赁物品' bodyClazzName='com.road.ddt.gen.GuildInMsg$GuildEquipRentInProto'/>
+	</module>
+	<module name='video' desc='video'>
+		<ProtoConfig   type='DOWN' code='2201' subCode='0' protocolType="PB" desc='录像文件' bodyClazzName='com.road.ddt.gen.VideoOutMsg$VideoFileOutProto'/>
+		<ProtoConfig   type='DOWN' code='2202' subCode='0' protocolType="PB" desc='录像key' bodyClazzName='com.road.ddt.gen.VideoOutMsg$VideoKeyOutProto'/>
+		<ProtoConfig   type='DOWN' code='2203' subCode='0' protocolType="PB" desc='玩家分享录像列表' bodyClazzName='com.road.ddt.gen.VideoOutMsg$VideoShareInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2205' subCode='0' protocolType="PB" desc='大咖秀板块分享录像列表' bodyClazzName='com.road.ddt.gen.VideoOutMsg$VideoShareInfoRankListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2206' subCode='0' protocolType="PB" desc='玩家分享录像信息' bodyClazzName='com.road.ddt.gen.VideoOutMsg$VideoShareInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='2207' subCode='0' protocolType="PB" desc='热门分享玩家列表' bodyClazzName='com.road.ddt.gen.VideoOutMsg$VideoHotSharePlayerListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2208' subCode='0' protocolType="PB" desc='录像url返回' bodyClazzName='com.road.ddt.gen.VideoOutMsg$VideoUrlOutProto'/>
+		<ProtoConfig   type='UP' code='7401' subCode='0' protocolType="PB" desc='录像分享' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoShareInProto'/>
+		<ProtoConfig   type='UP' code='7402' subCode='0' protocolType="PB" desc='录像锁定' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoLockInProto'/>
+		<ProtoConfig   type='UP' code='7403' subCode='0' protocolType="PB" desc='录像改名' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoChangeNameInProto'/>
+		<ProtoConfig   type='UP' code='7404' subCode='0' protocolType="PB" desc='录像增加观看次数' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoAddViewCountInProto'/>
+		<ProtoConfig   type='UP' code='7405' subCode='0' protocolType="PB" desc='录像列表请求' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoListRequestInProto'/>
+		<ProtoConfig   type='UP' code='7406' subCode='0' protocolType="PB" desc='录像文件请求' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoRequestInProto'/>
+		<ProtoConfig   type='UP' code='7407' subCode='0' protocolType="PB" desc='录像排行榜请求' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoRankListRequestInProto'/>
+		<ProtoConfig   type='UP' code='7409' subCode='0' protocolType="PB" desc='单个录像分享信息请求' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoShareInfoRequestInProto'/>
+		<ProtoConfig   type='UP' code='7410' subCode='0' protocolType="PB" desc='录像url请求' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoUrlRequestInProto'/>
+		<ProtoConfig   type='UP' code='7411' subCode='0' protocolType="PB" desc='录像url发送' bodyClazzName='com.road.ddt.gen.VideoInMsg$VideoUrlSendInProto'/>
+	</module>
+	<module name='marry' desc='marry'>
+		<ProtoConfig   type='DOWN' code='1701' subCode='0' protocolType="PB" desc='婚礼房间信息' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryRoomDetailOutProto'/>
+		<ProtoConfig   type='DOWN' code='1702' subCode='0' protocolType="PB" desc='婚礼来宾信息' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryGuestListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1703' subCode='0' protocolType="PB" desc='婚礼来宾说话' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryGuestTalkOutProto'/>
+		<ProtoConfig   type='DOWN' code='1704' subCode='0' protocolType="PB" desc='婚礼来宾移动' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryGuestMoveOutProto'/>
+		<ProtoConfig   type='DOWN' code='1705' subCode='0' protocolType="PB" desc='婚礼来宾变更' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryGuestChangeOutProto'/>
+		<ProtoConfig   type='DOWN' code='1706' subCode='0' protocolType="PB" desc='婚礼庆典状态' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryRoomStateChangeOutProto'/>
+		<ProtoConfig   type='DOWN' code='1707' subCode='0' protocolType="PB" desc='婚礼庆典邀请' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryRoomGuestInviteOutProto'/>
+		<ProtoConfig   type='DOWN' code='1708' subCode='0' protocolType="PB" desc='婚礼房间信息列表' bodyClazzName='com.road.ddt.gen.MarryOutMsg$WeddingRoomListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1709' subCode='0' protocolType="PB" desc='婚礼庆典信息' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryRoomNotifyOutProto'/>
+		<ProtoConfig   type='DOWN' code='1710' subCode='0' protocolType="PB" desc='婚礼红包发放' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryEnvelopeGiveOutProto'/>
+		<ProtoConfig   type='DOWN' code='1711' subCode='0' protocolType="PB" desc='婚礼礼品列表' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryGiftListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1712' subCode='0' protocolType="PB" desc='婚礼红包领取' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryEnvelopeGetOutProto'/>
+		<ProtoConfig   type='DOWN' code='1713' subCode='0' protocolType="PB" desc='婚礼红包领取记录' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryEnvelopeRecordOutProto'/>
+		<ProtoConfig   type='DOWN' code='1714' subCode='0' protocolType="PB" desc='婚礼来宾红包记录' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryEnvelopeListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1715' subCode='0' protocolType="PB" desc='婚礼来宾礼品记录' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryGiftGiveOutProto'/>
+		<ProtoConfig   type='DOWN' code='1716' subCode='0' protocolType="PB" desc='婚礼玩家自己领取记录' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryEnvelopeGetRecordOutProto'/>
+		<ProtoConfig   type='DOWN' code='1717' subCode='0' protocolType="PB" desc='婚礼红包免费信息' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryEnvelopeFreeOutProto'/>
+		<ProtoConfig   type='DOWN' code='1718' subCode='0' protocolType="PB" desc='婚礼庆典反馈' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryRoomGuestInviteResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='1719' subCode='0' protocolType="PB" desc='婚礼重连通知' bodyClazzName='com.road.ddt.gen.MarryOutMsg$MarryRoomReconnectNotifyOutProto'/>
+		<ProtoConfig   type='UP' code='5001' subCode='0' protocolType="PB" desc='终止婚礼庆典' bodyClazzName='com.road.ddt.gen.MarryInMsg$WeddingStopDoingInProto'/>
+		<ProtoConfig   type='UP' code='5002' subCode='0' protocolType="PB" desc='来宾离场' bodyClazzName='com.road.ddt.gen.MarryInMsg$WeddingRoomListInProto'/>
+		<ProtoConfig   type='UP' code='5003' subCode='0' protocolType="PB" desc='来宾列表' bodyClazzName='com.road.ddt.gen.MarryInMsg$GuestListInProto'/>
+		<ProtoConfig   type='UP' code='5004' subCode='0' protocolType="PB" desc='来宾移动' bodyClazzName='com.road.ddt.gen.MarryInMsg$GuestMoveInProto'/>
+		<ProtoConfig   type='UP' code='5005' subCode='0' protocolType="PB" desc='来宾谈话' bodyClazzName='com.road.ddt.gen.MarryInMsg$GuestTalkInProto'/>
+		<ProtoConfig   type='UP' code='5006' subCode='0' protocolType="PB" desc='婚礼房间创建' bodyClazzName='com.road.ddt.gen.MarryInMsg$WeddingRoomCreateInProto'/>
+		<ProtoConfig   type='UP' code='5007' subCode='0' protocolType="PB" desc='婚礼房间重连' bodyClazzName='com.road.ddt.gen.MarryInMsg$WeddingRoomReconnectInProto'/>
+		<ProtoConfig   type='UP' code='5008' subCode='0' protocolType="PB" desc='婚礼房间进入' bodyClazzName='com.road.ddt.gen.MarryInMsg$WeddingRoomEnterInProto'/>
+		<ProtoConfig   type='UP' code='5009' subCode='0' protocolType="PB" desc='婚礼房间退出' bodyClazzName='com.road.ddt.gen.MarryInMsg$WeddingRoomExitInProto'/>
+		<ProtoConfig   type='UP' code='5010' subCode='0' protocolType="PB" desc='举行婚礼庆典' bodyClazzName='com.road.ddt.gen.MarryInMsg$WeddingHoldDoingInProto'/>
+		<ProtoConfig   type='UP' code='5011' subCode='0' protocolType="PB" desc='婚礼庆典邀请' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryRoomGuestInviteInProto'/>
+		<ProtoConfig   type='UP' code='5012' subCode='0' protocolType="PB" desc='婚礼来宾踢除' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryGuestKickInProto'/>
+		<ProtoConfig   type='UP' code='5013' subCode='0' protocolType="PB" desc='婚礼房间设置' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryRoomSetInProto'/>
+		<ProtoConfig   type='UP' code='5014' subCode='0' protocolType="PB" desc='婚礼礼物赠送' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryGiftGiveInProto'/>
+		<ProtoConfig   type='UP' code='5015' subCode='0' protocolType="PB" desc='婚礼红包发送' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryEnvelopeGiveInProto'/>
+		<ProtoConfig   type='UP' code='5016' subCode='0' protocolType="PB" desc='婚礼领取红包' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryEnvelopeGetInProto'/>
+		<ProtoConfig   type='UP' code='5017' subCode='0' protocolType="PB" desc='婚礼礼品列表' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryGiftListInProto'/>
+		<ProtoConfig   type='UP' code='5018' subCode='0' protocolType="PB" desc='婚礼红包领取记录' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryEnvelopeRecordInProto'/>
+		<ProtoConfig   type='UP' code='5019' subCode='0' protocolType="PB" desc='婚礼自己红包列表' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryEnvelopeListInProto'/>
+		<ProtoConfig   type='UP' code='5020' subCode='0' protocolType="PB" desc='婚礼领取红包记录' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryEnvelopeGetRecordInProto'/>
+		<ProtoConfig   type='UP' code='5021' subCode='0' protocolType="PB" desc='婚礼红包免费记录' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryEnvelopeFreeInProto'/>
+		<ProtoConfig   type='UP' code='5022' subCode='0' protocolType="PB" desc='婚礼庆典邀请反馈' bodyClazzName='com.road.ddt.gen.MarryInMsg$MarryRoomGuestInviteResultInProto'/>
+	</module>
+	<module name='champion' desc='champion'>
+		<ProtoConfig   type='DOWN' code='1353' subCode='0' protocolType="PB" desc='达人奖励列表' bodyClazzName='com.road.ddt.gen.ChampionOutMsg$ChampionListOutProto'/>
+		<ProtoConfig   type='UP' code='2552' subCode='0' protocolType="PB" desc='装备达人称号' bodyClazzName='com.road.ddt.gen.ChampionInMsg$EquipChampionInProto'/>
+	</module>
+	<module name='bag' desc='bag'>
+		<ProtoConfig   type='DOWN' code='300' subCode='0' protocolType="PB" desc='更新背包物品信息' bodyClazzName='com.road.ddt.gen.BagOperateOutMsg$BagUpdateItemListProto'/>
+		<ProtoConfig   type='DOWN' code='301' subCode='0' protocolType="PB" desc='武器分解list' bodyClazzName='com.road.ddt.gen.BagOperateOutMsg$WeaponResolveListProto'/>
+		<ProtoConfig   type='DOWN' code='302' subCode='0' protocolType="PB" desc='礼包使用后获得的物品列表' bodyClazzName='com.road.ddt.gen.BagOperateOutMsg$ItemIdListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1036' subCode='0' protocolType="PB" desc='武器碎片回收' bodyClazzName='com.road.ddt.gen.BagOperateOutMsg$WeaponFragmentRecycleOutProto'/>
+		<ProtoConfig   type='DOWN' code='1037' subCode='0' protocolType="PB" desc='武器皮肤购买' bodyClazzName='com.road.ddt.gen.BagOperateOutMsg$WeaponSkinBuyOutProto'/>
+		<ProtoConfig   type='DOWN' code='1038' subCode='0' protocolType="PB" desc='道具天赋技能列表信息' bodyClazzName='com.road.ddt.gen.BagOperateOutMsg$PropTalentOutProto'/>
+		<ProtoConfig   type='DOWN' code='1039' subCode='0' protocolType="PB" desc='道具天赋技能更新' bodyClazzName='com.road.ddt.gen.BagOperateOutMsg$PropTalentUpdateOutProto'/>
+		<ProtoConfig   type='UP' code='1001' subCode='0' protocolType="PB" desc='玩家使用道具' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerUseItemProto'/>
+		<ProtoConfig   type='UP' code='1002' subCode='0' protocolType="PB" desc='玩家穿戴装备' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerFastEquipProto'/>
+		<ProtoConfig   type='UP' code='1003' subCode='0' protocolType="PB" desc='玩家出售道具列表' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerSellItemListProto'/>
+		<ProtoConfig   type='UP' code='1004' subCode='0' protocolType="PB" desc='玩家续费道具' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerRenewItemProto'/>
+		<ProtoConfig   type='UP' code='1005' subCode='0' protocolType="PB" desc='玩家强化道具' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerStrengthenItemProto'/>
+		<ProtoConfig   type='UP' code='1006' subCode='0' protocolType="PB" desc='玩家预设装备组' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerEquipSetSaveProto'/>
+		<ProtoConfig   type='UP' code='1007' subCode='0' protocolType="PB" desc='一键换装' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerEquipSetSwitchProto'/>
+		<ProtoConfig   type='UP' code='1008' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$ShopBuyItemProto'/>
+		<ProtoConfig   type='UP' code='1009' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerRefreshItemProto'/>
+		<ProtoConfig   type='UP' code='1010' subCode='0' protocolType="PB" desc='设置武器技能' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerWeaponSkillSetInProto'/>
+		<ProtoConfig   type='UP' code='1011' subCode='0' protocolType="PB" desc='装备升级' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerEquipUpgradeInProto'/>
+		<ProtoConfig   type='UP' code='1012' subCode='0' protocolType="PB" desc='装备槽一键装载' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerEquipAllSlotLoadInProto'/>
+		<ProtoConfig   type='UP' code='1013' subCode='0' protocolType="PB" desc='装备合成' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerEquipComposeInProto'/>
+		<ProtoConfig   type='UP' code='1014' subCode='0' protocolType="PB" desc='武器进阶' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerWeaponAdvancedInProto'/>
+		<ProtoConfig   type='UP' code='1015' subCode='0' protocolType="PB" desc='武器材料一键装载' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerWeaponMaterialAllSlotLoadInProto'/>
+		<ProtoConfig   type='UP' code='1016' subCode='0' protocolType="PB" desc='武器锻造' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerWeaponForgeInProto'/>
+		<ProtoConfig   type='UP' code='1017' subCode='0' protocolType="PB" desc='武器使用' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerWeaponUseInProto'/>
+		<ProtoConfig   type='UP' code='1018' subCode='0' protocolType="PB" desc='武器激活' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerWeaponActivateProto'/>
+		<ProtoConfig   type='UP' code='1021' subCode='0' protocolType="PB" desc='物品过期请求' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$ItemsExpireInProto'/>
+		<ProtoConfig   type='UP' code='1024' subCode='0' protocolType="PB" desc='武器购买' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerWeaponBoxBuyInProto'/>
+		<ProtoConfig   type='UP' code='1025' subCode='0' protocolType="PB" desc='玩家打开礼包' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerOpenPackageProto'/>
+		<ProtoConfig   type='UP' code='1026' subCode='0' protocolType="PB" desc='武器升星' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PlayerWeaponUpClassLevelInProto'/>
+		<ProtoConfig   type='UP' code='1027' subCode='0' protocolType="PB" desc='武器碎片回收' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$WeaponFragmentRecycleInProto'/>
+		<ProtoConfig   type='UP' code='1028' subCode='0' protocolType="PB" desc='武器碎片解锁武器' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$WeaponFragmentUnlockWeaponInProto'/>
+		<ProtoConfig   type='UP' code='1029' subCode='0' protocolType="PB" desc='物品皮肤' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$WeaponSkinInProto'/>
+		<ProtoConfig   type='UP' code='1031' subCode='0' protocolType="PB" desc='玩家打开可选奖励礼包' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$OpenOptionalAwardPackageProto'/>
+		<ProtoConfig   type='UP' code='1032' subCode='0' protocolType="PB" desc='道具天赋升级' bodyClazzName='com.road.ddt.gen.BagOperateInMsg$PropTalentLevelUpProto'/>
+	</module>
+	<module name='career' desc='career'>
+		<ProtoConfig   type='DOWN' code='2450' subCode='0' protocolType="PB" desc='新生涯数据返回' bodyClazzName='com.road.ddt.gen.CareerOutMsg$CareerInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='2451' subCode='0' protocolType="PB" desc='武器数据数据返回' bodyClazzName='com.road.ddt.gen.CareerOutMsg$WeaponRecordOutProto'/>
+		<ProtoConfig   type='UP' code='4350' subCode='0' protocolType="PB" desc='修改勋章状态' bodyClazzName='com.road.ddt.gen.CareerInProto$CareerChangeMedalInProto'/>
+	</module>
+	<module name='welfare' desc='welfare'>
+		<ProtoConfig   type='DOWN' code='134' subCode='0' protocolType="PB" desc='许愿树信息' bodyClazzName='com.road.ddt.gen.WelfareOutMsg$WishTreeOutProto'/>
+		<ProtoConfig   type='DOWN' code='135' subCode='0' protocolType="PB" desc='每周福利信息' bodyClazzName='com.road.ddt.gen.WelfareOutMsg$WeeklyRewardOutProto'/>
+		<ProtoConfig   type='UP' code='1040' subCode='0' protocolType="PB" desc='客户端选择许愿树的奖励' bodyClazzName='com.road.ddt.gen.WelfareInMsg$SelectWishRewardInProto'/>
+		<ProtoConfig   type='UP' code='1041' subCode='0' protocolType="PB" desc='领取许愿树的奖励' bodyClazzName='com.road.ddt.gen.WelfareInMsg$GetWishRewardInProto'/>
+		<ProtoConfig   type='UP' code='1042' subCode='0' protocolType="PB" desc='领取每周福利奖励' bodyClazzName='com.road.ddt.gen.WelfareInMsg$GetWeekRewardInProto'/>
+	</module>
+	<module name='recharge' desc='recharge'>
+		<ProtoConfig   type='DOWN' code='1652' subCode='0' protocolType="PB" desc='充值更新' bodyClazzName='com.road.ddt.gen.RechargeOutMsg$RechargeDetailProto'/>
+		<ProtoConfig   type='DOWN' code='1651' subCode='0' protocolType="PB" desc='充值列表' bodyClazzName='com.road.ddt.gen.RechargeOutMsg$RechargeListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1653' subCode='0' protocolType="PB" desc='月卡周卡的剩余天数' bodyClazzName='com.road.ddt.gen.RechargeOutMsg$RechargetCardDayOutProto'/>
+		<ProtoConfig   type='DOWN' code='1654' subCode='0' protocolType="PB" desc='钻石兑换成功' bodyClazzName='com.road.ddt.gen.RechargeOutMsg$ExchangeDiamondOutProto'/>
+		<ProtoConfig   type='DOWN' code='1655' subCode='0' protocolType="PB" desc='米大师参数请求' bodyClazzName='com.road.ddt.gen.RechargeOutMsg$MidasParaReqProto'/>
+		<ProtoConfig   type='DOWN' code='1656' subCode='0' protocolType="PB" desc='直购回应' bodyClazzName='com.road.ddt.gen.RechargeOutMsg$BuyGoodsOutProto'/>
+		<ProtoConfig   type='UP' code='3650' subCode='0' protocolType="PB" desc='获取充值列表' bodyClazzName='com.road.ddt.gen.RechargeInMsg$RechargeListInProto'/>
+		<ProtoConfig   type='UP' code='3651' subCode='0' protocolType="PB" desc='充值检查' bodyClazzName='com.road.ddt.gen.RechargeInMsg$RechargeCheckInProto'/>
+		<ProtoConfig   type='UP' code='3652' subCode='0' protocolType="PB" desc='查询余额' bodyClazzName='com.road.ddt.gen.RechargeInMsg$GetBalanceMPara'/>
+		<ProtoConfig   type='UP' code='3653' subCode='0' protocolType="PB" desc='扣除游戏币' bodyClazzName='com.road.ddt.gen.RechargeInMsg$payMPara'/>
+		<ProtoConfig   type='UP' code='3654' subCode='0' protocolType="PB" desc='充值信息' bodyClazzName='com.road.ddt.gen.RechargeInMsg$RechargeInfo'/>
+		<ProtoConfig   type='UP' code='3656' subCode='0' protocolType="PB" desc='钻石兑换' bodyClazzName='com.road.ddt.gen.RechargeInMsg$ExchangeDiamondInProto'/>
+		<ProtoConfig   type='UP' code='3657' subCode='0' protocolType="PB" desc='直购' bodyClazzName='com.road.ddt.gen.RechargeInMsg$BuyGoodsInProto'/>
+		<ProtoConfig   type='UP' code='3658' subCode='0' protocolType="PB" desc='支付流程优化-支付失败通知邮件' bodyClazzName='com.road.ddt.gen.RechargeInMsg$PaymentFailedMailProto'/>
+	</module>
+	<module name='battle' desc='battle'>
+		<ProtoConfig   type='DOWN' code='131' subCode='0' protocolType="PB" desc='齐射模式玩家购买挑战次数' bodyClazzName='com.road.ddt.gen.SalvoOutMsg$SalvoPlayerInfoProto'/>
+		<ProtoConfig   type='DOWN' code='132' subCode='0' protocolType="PB" desc='齐射军衔等级奖励' bodyClazzName='com.road.ddt.gen.SalvoOutMsg$SalvoMilitaryRewardProto'/>
+		<ProtoConfig   type='DOWN' code='18' subCode='0' protocolType="PB" desc='副本列表' bodyClazzName='com.road.ddt.gen.TeamPVEOutMsg$TeamMissionDetailListOutProto'/>
+		<ProtoConfig   type='DOWN' code='19' subCode='0' protocolType="PB" desc='多人奖励' bodyClazzName='com.road.ddt.gen.TeamPVEOutMsg$TeamMissionRewardOutProto'/>
+		<ProtoConfig   type='DOWN' code='707' subCode='0' protocolType="PB" desc='开启的团队副本' bodyClazzName='com.road.ddt.gen.TeamPVEOutMsg$TeamMissionOpenListOutProto'/>
+		<ProtoConfig   type='DOWN' code='23' subCode='0' protocolType="PB" desc='副本列表' bodyClazzName='com.road.ddt.gen.TrainPVEOutMsg$TrainMissionDetailListOutProto'/>
+		<ProtoConfig   type='DOWN' code='25' subCode='0' protocolType="PB" desc='副本奖励(新手关和训练营)' bodyClazzName='com.road.ddt.gen.TrainPVEOutMsg$MissionRewardOutProto'/>
+		<ProtoConfig   type='UP' code='2350' subCode='0' protocolType="PB" desc='齐射模式玩家购买挑战次数' bodyClazzName='com.road.ddt.gen.SalvoInMsg$SalvoBuyInProto'/>
+		<ProtoConfig   type='UP' code='2351' subCode='0' protocolType="PB" desc='军衔等级奖励领取' bodyClazzName='com.road.ddt.gen.SalvoInMsg$SalvoMilitaryRewardInProto'/>
+		<ProtoConfig   type='UP' code='2301' subCode='0' protocolType="PB" desc='多人副本详细列表' bodyClazzName='com.road.ddt.gen.TeamPVEInMsg$TeamPveDetailListInProto'/>
+		<ProtoConfig   type='UP' code='2302' subCode='0' protocolType="PB" desc='多人副本领取奖励' bodyClazzName='com.road.ddt.gen.TeamPVEInMsg$TeamPveRewardInProto'/>
+		<ProtoConfig   type='UP' code='2303' subCode='0' protocolType="PB" desc='购买多人副本次数' bodyClazzName='com.road.ddt.gen.TeamPVEInMsg$TeamPveChallengeCountBuyInProto'/>
+	</module>
+	<module name='skill' desc='skill'>
+		<ProtoConfig   type='DOWN' code='451' subCode='0' protocolType="PB" desc='技能信息列表' bodyClazzName='com.road.ddt.gen.SkillOutMsg$SkillInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='10' subCode='0' protocolType="PB" desc='技能点信息' bodyClazzName='com.road.ddt.gen.SkillOutMsg$SkillPointOutProto'/>
+		<ProtoConfig   type='DOWN' code='11' subCode='0' protocolType="PB" desc='技能默认组合信息' bodyClazzName='com.road.ddt.gen.SkillOutMsg$SkillDefaultCombinationOutProto'/>
+		<ProtoConfig   type='UP' code='2001' subCode='0' protocolType="PB" desc='升级技能' bodyClazzName='com.road.ddt.gen.SkillInMsg$UpdateSkillInfoInProto'/>
+		<ProtoConfig   type='UP' code='2006' subCode='0' protocolType="PB" desc='技能激活' bodyClazzName='com.road.ddt.gen.SkillInMsg$SkillActivateInProto'/>
+		<ProtoConfig   type='UP' code='2007' subCode='0' protocolType="PB" desc='技能选择' bodyClazzName='com.road.ddt.gen.SkillInMsg$SkillEquipInProto'/>
+	</module>
+	<module name='tencent' desc='tencent'>
+		<ProtoConfig   type='DOWN' code='9001' subCode='0' protocolType="PB" desc='平台好友列表' bodyClazzName='com.road.ddt.gen.TencentOutMsg$PlatformFriendListOutProto'/>
+		<ProtoConfig   type='DOWN' code='9002' subCode='0' protocolType="PB" desc='安全sdk返回数据' bodyClazzName='com.road.ddt.gen.TencentOutMsg$TsssdkDataOutProto'/>
+		<ProtoConfig   type='DOWN' code='9003' subCode='0' protocolType="PB" desc='禁玩列表' bodyClazzName='com.road.ddt.gen.TencentOutMsg$ModuleLimitProto'/>
+		<ProtoConfig   type='DOWN' code='9010' subCode='0' protocolType="PB" desc='全服禁玩功能列表(针对所有玩家)' bodyClazzName='com.road.ddt.gen.TencentOutMsg$GlobalLimitProto'/>
+		<ProtoConfig   type='DOWN' code='9004' subCode='0' protocolType="PB" desc='查询公会绑群状态' bodyClazzName='com.road.ddt.gen.TencentOutMsg$GuildGroupOperateOutProto'/>
+		<ProtoConfig   type='DOWN' code='9005' subCode='0' protocolType="PB" desc='上传相片的结果返回' bodyClazzName='com.road.ddt.gen.TencentOutMsg$ShareWXUploadOutResult'/>
+		<ProtoConfig   type='DOWN' code='9006' subCode='0' protocolType="PB" desc='分享结果返回' bodyClazzName='com.road.ddt.gen.TencentOutMsg$ShareOutResult'/>
+		<ProtoConfig   type='DOWN' code='9007' subCode='0' protocolType="PB" desc='防沉迷' bodyClazzName='com.road.ddt.gen.TencentOutMsg$IndulgeOutProto'/>
+		<ProtoConfig   type='DOWN' code='9009' subCode='0' protocolType="PB" desc='腾讯cos上传签名' bodyClazzName='com.road.ddt.gen.TencentOutMsg$TencentCosSignOutProto'/>
+		<ProtoConfig   type='DOWN' code='9012' subCode='0' protocolType="PB" desc='idip跳过新手节点' bodyClazzName='com.road.ddt.gen.TencentOutMsg$TencentIDIPSkipNodeOutProto'/>
+		<ProtoConfig   type='DOWN' code='9013' subCode='0' protocolType="PB" desc='腾讯cos cdn 配置信息' bodyClazzName='com.road.ddt.gen.TencentOutMsg$TencentCosCdnOutProto'/>
+		<ProtoConfig   type='DOWN' code='9015' subCode='0' protocolType="PB" desc='同城玩家' bodyClazzName='com.road.ddt.gen.TencentOutMsg$LbsMembersOutProto'/>
+		<ProtoConfig   type='UP' code='9001' subCode='0' protocolType="PB" desc='腾讯平台好友' bodyClazzName='com.road.ddt.gen.TencentInMsg$PlatformFriendListInProto'/>
+		<ProtoConfig   type='UP' code='9005' subCode='0' protocolType="PB" desc='腾讯未注册平台好友' bodyClazzName='com.road.ddt.gen.TencentInMsg$NoRegisterFriendListInProto'/>
+		<ProtoConfig   type='UP' code='9002' subCode='0' protocolType="PB" desc='安全sdk返回数据' bodyClazzName='com.road.ddt.gen.TencentInMsg$TsssdkDataInProto'/>
+		<ProtoConfig   type='UP' code='9003' subCode='0' protocolType="PB" desc='请求禁玩数据' bodyClazzName='com.road.ddt.gen.TencentInMsg$LimitReqProto'/>
+		<ProtoConfig   type='UP' code='9004' subCode='0' protocolType="PB" desc='公会绑腾讯群组件功能相关' bodyClazzName='com.road.ddt.gen.TencentInMsg$GuildGroupOperateInProto'/>
+		<ProtoConfig   type='UP' code='9007' subCode='0' protocolType="PB" desc='QQ分享' bodyClazzName='com.road.ddt.gen.TencentInMsg$ShareQQInProto'/>
+		<ProtoConfig   type='UP' code='9008' subCode='0' protocolType="PB" desc='WX上传相片' bodyClazzName='com.road.ddt.gen.TencentInMsg$ShareWXUploadInProto'/>
+		<ProtoConfig   type='UP' code='9009' subCode='0' protocolType="PB" desc='WX分享' bodyClazzName='com.road.ddt.gen.TencentInMsg$ShareWXInProto'/>
+		<ProtoConfig   type='UP' code='9010' subCode='0' protocolType="PB" desc='分享成功' bodyClazzName='com.road.ddt.gen.TencentInMsg$ShareSuccessInProto'/>
+		<ProtoConfig   type='UP' code='9011' subCode='0' protocolType="PB" desc='防沉迷提示成功' bodyClazzName='com.road.ddt.gen.TencentInMsg$IndulgePopupInProto'/>
+		<ProtoConfig   type='UP' code='10023' subCode='0' protocolType="PB" desc='腾讯cos上传签名生成' bodyClazzName='com.road.ddt.gen.TencentInMsg$TencentCosSignInProto'/>
+		<ProtoConfig   type='UP' code='9012' subCode='0' protocolType="PB" desc='请求禁玩数据(针对所有玩家)' bodyClazzName='com.road.ddt.gen.TencentInMsg$LimitFuncReqProto'/>
+		<ProtoConfig   type='UP' code='9013' subCode='0' protocolType="PB" desc='客户端同步Lbs坐标' bodyClazzName='com.road.ddt.gen.TencentInMsg$LbsPositionInProto'/>
+		<ProtoConfig   type='UP' code='9014' subCode='0' protocolType="PB" desc='Lbs同城玩家' bodyClazzName='com.road.ddt.gen.TencentInMsg$LbsMembersInProto'/>
+		<ProtoConfig   type='UP' code='9015' subCode='0' protocolType="PB" desc='DataMore领取礼包' bodyClazzName='com.road.ddt.gen.TencentInMsg$DataMoreGetGiftInProto'/>
+		<ProtoConfig   type='UP' code='9016' subCode='0' protocolType="PB" desc='DataMore统计信息' bodyClazzName='com.road.ddt.gen.TencentInMsg$DataMoreStatProto'/>
+		<ProtoConfig   type='UP' code='9006' subCode='0' protocolType="PB" desc='要发未注册好友注册邀请，或者领取奖励' bodyClazzName='com.road.ddt.gen.TencentInMsg$InviteRegisterOrRewardProto'/>
+	</module>
+	<module name='medal' desc='medal'>
+		<ProtoConfig   type='DOWN' code='2350' subCode='0' protocolType="PB" desc='勋章数据返回' bodyClazzName='com.road.ddt.gen.MedalOutMsg$MedalInfoOutProto'/>
+	</module>
+	<module name='golden' desc='golden'>
+		<ProtoConfig   type='DOWN' code='2612' subCode='0' protocolType="PB" desc='金色狂欢节用户信息' bodyClazzName='com.road.ddt.gen.GoldenOutMsg$GoldenInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='2613' subCode='0' protocolType="PB" desc='金色狂欢节奖池' bodyClazzName='com.road.ddt.gen.GoldenOutMsg$RedisGoldenPoolProto'/>
+		<ProtoConfig   type='DOWN' code='2614' subCode='0' protocolType="PB" desc='金色狂欢节排行榜' bodyClazzName='com.road.ddt.gen.GoldenOutMsg$RedisGoldenRankListProto'/>
+		<ProtoConfig   type='DOWN' code='2615' subCode='0' protocolType="PB" desc='金色狂欢节中奖名单' bodyClazzName='com.road.ddt.gen.GoldenOutMsg$RedisGoldenRewardListProto'/>
+		<ProtoConfig   type='DOWN' code='2616' subCode='0' protocolType="PB" desc='金色狂欢节领奖' bodyClazzName='com.road.ddt.gen.GoldenOutMsg$GoldenGetRewardProto'/>
+		<ProtoConfig   type='UP' code='2613' subCode='0' protocolType="PB" desc='金色狂欢节用户信息' bodyClazzName='com.road.ddt.gen.GoldenInMsg$GoldenInfoInProto'/>
+		<ProtoConfig   type='UP' code='2614' subCode='0' protocolType="PB" desc='金色狂欢节奖池' bodyClazzName='com.road.ddt.gen.GoldenInMsg$GoldenPoolInProto'/>
+		<ProtoConfig   type='UP' code='2615' subCode='0' protocolType="PB" desc='金色狂欢节排行榜' bodyClazzName='com.road.ddt.gen.GoldenInMsg$GoldenRankInProto'/>
+		<ProtoConfig   type='UP' code='2616' subCode='0' protocolType="PB" desc='金色狂欢节奖励名单' bodyClazzName='com.road.ddt.gen.GoldenInMsg$GoldenRewardListProto'/>
+		<ProtoConfig   type='UP' code='2617' subCode='0' protocolType="PB" desc='金色狂欢节领奖' bodyClazzName='com.road.ddt.gen.GoldenInMsg$GoldenGetRewardProto'/>
+	</module>
+	<module name='friend' desc='friend'>
+		<ProtoConfig   type='DOWN' code='500' subCode='0' protocolType="PB" desc='好友信息列表' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='501' subCode='0' protocolType="PB" desc='玩家邀请好友' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendAskOutProto'/>
+		<ProtoConfig   type='DOWN' code='502' subCode='0' protocolType="PB" desc='玩家拒绝邀请' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendRefuseOutProto'/>
+		<ProtoConfig   type='DOWN' code='508' subCode='0' protocolType="PB" desc='好友详细' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendDetailOutProto'/>
+		<ProtoConfig   type='DOWN' code='510' subCode='0' protocolType="PB" desc='好友搜索' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendSearchOutProto'/>
+		<ProtoConfig   type='DOWN' code='513' subCode='0' protocolType="PB" desc='好友推荐' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendRecommendOutProto'/>
+		<ProtoConfig   type='DOWN' code='514' subCode='0' protocolType="PB" desc='好友通知' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendNotifyOutProto'/>
+		<ProtoConfig   type='DOWN' code='515' subCode='0' protocolType="PB" desc='好友求婚请示' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendProposeAskOutProto'/>
+		<ProtoConfig   type='DOWN' code='516' subCode='0' protocolType="PB" desc='好友求婚应答' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendProposeRspOutProto'/>
+		<ProtoConfig   type='DOWN' code='517' subCode='0' protocolType="PB" desc='好友送礼系统通知' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendGiftNotifyOutProto'/>
+		<ProtoConfig   type='DOWN' code='518' subCode='0' protocolType="PB" desc='好友离婚请示' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendDivorceAskOutProto'/>
+		<ProtoConfig   type='DOWN' code='519' subCode='0' protocolType="PB" desc='好友离婚应答' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendDivorceRspOutProto'/>
+		<ProtoConfig   type='DOWN' code='520' subCode='0' protocolType="PB" desc='好友排行列表返回' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendRankListOutProto'/>
+		<ProtoConfig   type='DOWN' code='521' subCode='0' protocolType="PB" desc='黑名单信息列表' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendBlackListOutProto'/>
+		<ProtoConfig   type='DOWN' code='524' subCode='0' protocolType="PB" desc='好友召回' bodyClazzName='com.road.ddt.gen.FriendOutMsg$RecallFriendListOutProto'/>
+		<ProtoConfig   type='DOWN' code='525' subCode='0' protocolType="PB" desc='好友送礼' bodyClazzName='com.road.ddt.gen.FriendOutMsg$PresentFriendListOutProto'/>
+		<ProtoConfig   type='DOWN' code='526' subCode='0' protocolType="PB" desc='好友添加通知取消' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendCancelNotifyProto'/>
+		<ProtoConfig   type='DOWN' code='528' subCode='0' protocolType="PB" desc='送礼记录集' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendGiftRecordProto'/>
+		<ProtoConfig   type='DOWN' code='529' subCode='0' protocolType="PB" desc='玩家状态同步' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendStatusProto'/>
+		<ProtoConfig   type='DOWN' code='531' subCode='0' protocolType="PB" desc='召回列表' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendRecallListOutProto'/>
+		<ProtoConfig   type='DOWN' code='536' subCode='0' protocolType="PB" desc='好友时装' bodyClazzName='com.road.ddt.gen.FriendOutMsg$RecallFriendInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='532' subCode='0' protocolType="PB" desc='召回中列表' bodyClazzName='com.road.ddt.gen.FriendOutMsg$FriendRecallingListOutProto'/>
+		<ProtoConfig   type='DOWN' code='533' subCode='0' protocolType="PB" desc='邀请平台好友信息' bodyClazzName='com.road.ddt.gen.FriendOutMsg$InviteFriendInfoInitOutProto'/>
+		<ProtoConfig   type='DOWN' code='534' subCode='0' protocolType="PB" desc='平台好友数量变化' bodyClazzName='com.road.ddt.gen.FriendOutMsg$InviteFriendNumUpdateProto'/>
+		<ProtoConfig   type='DOWN' code='535' subCode='0' protocolType="PB" desc='平台好友奖励领取变化' bodyClazzName='com.road.ddt.gen.FriendOutMsg$InviteFriendReceiveListProto'/>
+		<ProtoConfig   type='DOWN' code='537' subCode='0' protocolType="PB" desc='无验证加好友的通知' bodyClazzName='com.road.ddt.gen.FriendOutMsg$NoVerifyAddFriendNotifyProto'/>
+		<ProtoConfig   type='UP' code='3001' subCode='0' protocolType="PB" desc='请求好友列表的状态' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendInfoListInProto'/>
+		<ProtoConfig   type='UP' code='3002' subCode='0' protocolType="PB" desc='添加好友' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendAddInProto'/>
+		<ProtoConfig   type='UP' code='3003' subCode='0' protocolType="PB" desc='删除好友' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRemoveInProto'/>
+		<ProtoConfig   type='UP' code='3004' subCode='0' protocolType="PB" desc='好友详细' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendDetailInProto'/>
+		<ProtoConfig   type='UP' code='3005' subCode='0' protocolType="PB" desc='好友更新' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendUpdateInProto'/>
+		<ProtoConfig   type='UP' code='3006' subCode='0' protocolType="PB" desc='拒绝好友请求(废弃)' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRefuseInProto'/>
+		<ProtoConfig   type='UP' code='3007' subCode='0' protocolType="PB" desc='接受好友请求(废弃)' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendAcceptInProto'/>
+		<ProtoConfig   type='UP' code='3008' subCode='0' protocolType="PB" desc='搜索好友请求' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendSearchProto'/>
+		<ProtoConfig   type='UP' code='3009' subCode='0' protocolType="PB" desc='好友送礼物' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendGiftsInProto'/>
+		<ProtoConfig   type='UP' code='3010' subCode='0' protocolType="PB" desc='好友推荐' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRecommendInProto'/>
+		<ProtoConfig   type='UP' code='3011' subCode='0' protocolType="PB" desc='好友求婚请示' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendProposeAskInProto'/>
+		<ProtoConfig   type='UP' code='3012' subCode='0' protocolType="PB" desc='好友求婚应答' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendProposeRspInProto'/>
+		<ProtoConfig   type='UP' code='3013' subCode='0' protocolType="PB" desc='好友离婚请示' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendDivorceAskInProto'/>
+		<ProtoConfig   type='UP' code='3014' subCode='0' protocolType="PB" desc='好友离婚应答' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendDivorceRspInProto'/>
+		<ProtoConfig   type='UP' code='3015' subCode='0' protocolType="PB" desc='请求好友排行列表' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRankListInProto'/>
+		<ProtoConfig   type='UP' code='3016' subCode='0' protocolType="PB" desc='添加好友验证' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendAddVerifyInProto'/>
+		<ProtoConfig   type='UP' code='3017' subCode='0' protocolType="PB" desc='添加好友应答' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendAddRspInProto'/>
+		<ProtoConfig   type='UP' code='3018' subCode='0' protocolType="PB" desc='玩家拉黑' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendMoveBlackProto'/>
+		<ProtoConfig   type='UP' code='3019' subCode='0' protocolType="PB" desc='玩家解除拉黑' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRemoveBlackProto'/>
+		<ProtoConfig   type='UP' code='3020' subCode='0' protocolType="PB" desc='玩家建立挚友关系' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendSetupRelationInProto'/>
+		<ProtoConfig   type='UP' code='3021' subCode='0' protocolType="PB" desc='玩家解除挚友关系' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRemoveRelationInProto'/>
+		<ProtoConfig   type='UP' code='3022' subCode='0' protocolType="PB" desc='玩家关注' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendAttentionInProto'/>
+		<ProtoConfig   type='UP' code='3023' subCode='0' protocolType="PB" desc='玩家取消关注' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRemoveAttentionInProto'/>
+		<ProtoConfig   type='UP' code='3024' subCode='0' protocolType="PB" desc='好友召回' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRecallInProto'/>
+		<ProtoConfig   type='UP' code='3025' subCode='0' protocolType="PB" desc='好友送礼' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendPresentInProto'/>
+		<ProtoConfig   type='UP' code='3026' subCode='0' protocolType="PB" desc='好友召回列表' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRecallListInProto'/>
+		<ProtoConfig   type='UP' code='3027' subCode='0' protocolType="PB" desc='好友召回中列表' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendRecallingListInProto'/>
+		<ProtoConfig   type='UP' code='3028' subCode='0' protocolType="PB" desc='召唤好友' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendCallInProto'/>
+		<ProtoConfig   type='UP' code='3029' subCode='0' protocolType="PB" desc='平台好友奖励领取' bodyClazzName='com.road.ddt.gen.FriendInMsg$InviteFriendReceiveProto'/>
+		<ProtoConfig   type='UP' code='3030' subCode='0' protocolType="PB" desc='好友时装' bodyClazzName='com.road.ddt.gen.FriendInMsg$FriendFashionInProto'/>
+	</module>
+	<module name='rewardpve' desc='rewardpve'>
+		<ProtoConfig   type='DOWN' code='30' subCode='0' protocolType="PB" desc='副本列表' bodyClazzName='com.road.ddt.gen.RewardPVEOutMsg$RewardPVEMissionListOutProto'/>
+		<ProtoConfig   type='UP' code='2251' subCode='0' protocolType="PB" desc='悬赏副本列表' bodyClazzName='com.road.ddt.gen.RewardPVEInMsg$RewardPVEMissionListInProto'/>
+	</module>
+	<module name='room' desc='room'>
+		<ProtoConfig   type='DOWN' code='101' subCode='0' protocolType="PB" desc='房间添加玩家' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomAddPlayerProto'/>
+		<ProtoConfig   type='DOWN' code='106' subCode='0' protocolType="PB" desc='房间邀请' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomInviteProto'/>
+		<ProtoConfig   type='DOWN' code='107' subCode='0' protocolType="PB" desc='房间邀请结果' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomInviteResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='108' subCode='0' protocolType="PB" desc='房间元素设置' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomSetOutProto'/>
+		<ProtoConfig   type='DOWN' code='109' subCode='0' protocolType="PB" desc='撮合返回结果' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomPickUpOutProto'/>
+		<ProtoConfig   type='DOWN' code='102' subCode='0' protocolType="PB" desc='房间移除玩家' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomRemovePlayerProto'/>
+		<ProtoConfig   type='DOWN' code='103' subCode='0' protocolType="PB" desc='房间内玩家状态' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomPlayerStateProto'/>
+		<ProtoConfig   type='DOWN' code='105' subCode='0' protocolType="PB" desc='获得房间列表' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomWaitingListProto'/>
+		<ProtoConfig   type='DOWN' code='110' subCode='0' protocolType="PB" desc='玩家退出游戏' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$GameExitOutProto'/>
+		<ProtoConfig   type='DOWN' code='111' subCode='0' protocolType="PB" desc='玩家退出游戏' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomReconnectResultProto'/>
+		<ProtoConfig   type='DOWN' code='114' subCode='0' protocolType="PB" desc='房间错误' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomErrorProto'/>
+		<ProtoConfig   type='DOWN' code='124' subCode='0' protocolType="PB" desc='房间成功' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomSuccessProto'/>
+		<ProtoConfig   type='DOWN' code='115' subCode='0' protocolType="PB" desc='房间玩家更新' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomUpdatePlayerProto'/>
+		<ProtoConfig   type='DOWN' code='117' subCode='0' protocolType="PB" desc='房间位置设置' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomPlaceSetOutProto'/>
+		<ProtoConfig   type='DOWN' code='125' subCode='0' protocolType="PB" desc='用户多人副本快速加入房间结果' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomQuickJoinResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='126' subCode='0' protocolType="PB" desc='用户查找房间加入返回' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomJoinByIDResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='127' subCode='0' protocolType="PB" desc='战斗重连通知' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomReconnectNotifyOutProto'/>
+		<ProtoConfig   type='DOWN' code='128' subCode='0' protocolType="PB" desc='调整房间位置' bodyClazzName='com.road.ddt.gen.RoomOperateOutMsg$RoomPlaceSwapOutProto'/>
+		<ProtoConfig   type='UP' code='100' subCode='0' protocolType="PB" desc='房间创建' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomCreateProto'/>
+		<ProtoConfig   type='UP' code='101' subCode='0' protocolType="PB" desc='房间进入' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomEnterProto'/>
+		<ProtoConfig   type='UP' code='115' subCode='0' protocolType="PB" desc='快速进入房间' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomQuickEnterProto'/>
+		<ProtoConfig   type='UP' code='106' subCode='0' protocolType="PB" desc='房间邀请' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomInviteFightProto'/>
+		<ProtoConfig   type='UP' code='108' subCode='0' protocolType="PB" desc='拒绝房间邀请' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomInviteResultProto'/>
+		<ProtoConfig   type='UP' code='109' subCode='0' protocolType="PB" desc='房间踢人' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomKickPlayerProto'/>
+		<ProtoConfig   type='UP' code='107' subCode='0' protocolType="PB" desc='房间元素设置' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomSetInProto'/>
+		<ProtoConfig   type='UP' code='112' subCode='0' protocolType="PB" desc='房间位置设置' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomPlaceSetInProto'/>
+		<ProtoConfig   type='UP' code='103' subCode='0' protocolType="PB" desc='房间离开' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomExitProto'/>
+		<ProtoConfig   type='UP' code='102' subCode='0' protocolType="PB" desc='房间准备' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomPrepareProto'/>
+		<ProtoConfig   type='UP' code='104' subCode='0' protocolType="PB" desc='房间开始' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomStartProto'/>
+		<ProtoConfig   type='UP' code='110' subCode='0' protocolType="PB" desc='房间取消撮合' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomCancelProto'/>
+		<ProtoConfig   type='UP' code='111' subCode='0' protocolType="PB" desc='房间玩家说话' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomTalkInProto'/>
+		<ProtoConfig   type='UP' code='105' subCode='0' protocolType="PB" desc='请求进入房间' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomJoinRequestInProto'/>
+		<ProtoConfig   type='UP' code='113' subCode='0' protocolType="PB" desc='进入房间请求反馈' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomJoinResultInProto'/>
+		<ProtoConfig   type='UP' code='114' subCode='0' protocolType="PB" desc='进入房间请求列表' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomJoinListInProto'/>
+		<ProtoConfig   type='UP' code='116' subCode='0' protocolType="PB" desc='进入指定房间' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomPlayerJoinByIDProto'/>
+		<ProtoConfig   type='UP' code='117' subCode='0' protocolType="PB" desc='调整房间位置' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomPlaceSwapInProto'/>
+		<ProtoConfig   type='UP' code='502' subCode='0' protocolType="PB" desc='房间准备' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomPVEPrepareProto'/>
+		<ProtoConfig   type='UP' code='500' subCode='0' protocolType="PB" desc='pve房间开始' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomPVEStartProto'/>
+		<ProtoConfig   type='UP' code='503' subCode='0' protocolType="PB" desc='room重连' bodyClazzName='com.road.ddt.gen.RoomOperateInMsg$RoomReconnectProto'/>
+	</module>
+	<module name='fashion' desc='fashion'>
+		<ProtoConfig   type='DOWN' code='1500' subCode='0' protocolType="PB" desc='套装方案信息列表' bodyClazzName='com.road.ddt.gen.FashionOperateOutMsg$FashionPlanInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1501' subCode='0' protocolType="PB" desc='增加套装方案' bodyClazzName='com.road.ddt.gen.FashionOperateOutMsg$FashionAddPlanOutProto'/>
+		<ProtoConfig   type='DOWN' code='1502' subCode='0' protocolType="PB" desc='时装图鉴列表' bodyClazzName='com.road.ddt.gen.FashionOperateOutMsg$FashionIllustrateListOutProto'/>
+		<ProtoConfig   type='UP' code='4100' subCode='0' protocolType="PB" desc='套装方案列表' bodyClazzName='com.road.ddt.gen.FashionOperateInMsg$FashionPlanInfoListInProto'/>
+		<ProtoConfig   type='UP' code='4101' subCode='0' protocolType="PB" desc='增加套装方案' bodyClazzName='com.road.ddt.gen.FashionOperateInMsg$FashionPlanAddProto'/>
+		<ProtoConfig   type='UP' code='4102' subCode='0' protocolType="PB" desc='保存套装方案' bodyClazzName='com.road.ddt.gen.FashionOperateInMsg$FashionPlanSaveProto'/>
+		<ProtoConfig   type='UP' code='4103' subCode='0' protocolType="PB" desc='选择套装方案' bodyClazzName='com.road.ddt.gen.FashionOperateInMsg$FashionPlanChooseProto'/>
+		<ProtoConfig   type='UP' code='4104' subCode='0' protocolType="PB" desc='套装方案改名' bodyClazzName='com.road.ddt.gen.FashionOperateInMsg$FashionPlanRenameProto'/>
+		<ProtoConfig   type='UP' code='4107' subCode='0' protocolType="PB" desc='套装方案设置成展示在外' bodyClazzName='com.road.ddt.gen.FashionOperateInMsg$FashionSetShowPlanProto'/>
+		<ProtoConfig   type='UP' code='4108' subCode='0' protocolType="PB" desc='时装图鉴列表' bodyClazzName='com.road.ddt.gen.FashionOperateInMsg$FashionIllustrateInProto'/>
+	</module>
+	<module name='trochal' desc='trochal'>
+		<ProtoConfig   type='DOWN' code='714' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.TrochalOutMsg$TrochalPropertiesUpdataProto'/>
+		<ProtoConfig   type='DOWN' code='716' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.TrochalOutMsg$TrochalResultProto'/>
+		<ProtoConfig   type='DOWN' code='718' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.TrochalOutMsg$TrochalResultProto'/>
+		<ProtoConfig   type='DOWN' code='720' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.TrochalOutMsg$TrochalExpiredResultProto'/>
+		<ProtoConfig   type='UP' code='715' subCode='0' protocolType="PB" desc='请求属性轮盘抽奖' bodyClazzName='com.road.ddt.gen.TrochalInMsg$TrochalRequestProto'/>
+		<ProtoConfig   type='UP' code='717' subCode='0' protocolType="PB" desc='请求替换临时属性' bodyClazzName='com.road.ddt.gen.TrochalInMsg$TrochalReplaceRequestProto'/>
+		<ProtoConfig   type='UP' code='719' subCode='0' protocolType="PB" desc='临时属性过期请求' bodyClazzName='com.road.ddt.gen.TrochalInMsg$TrochalExpiredRequestProto'/>
+	</module>
+	<module name='activitymission' desc='activitymission'>
+		<ProtoConfig   type='DOWN' code='1101' subCode='0' protocolType="PB" desc='活动副本扫荡' bodyClazzName='com.road.ddt.gen.ActivityMissionOutMsg$ActivityMissionSweepOutProto'/>
+		<ProtoConfig   type='DOWN' code='752' subCode='0' protocolType="PB" desc='活动副本扫荡' bodyClazzName='com.road.ddt.gen.ActivityMissionOutMsg$LimitTimeMissionListOutProto'/>
+		<ProtoConfig   type='UP' code='3901' subCode='0' protocolType="PB" desc='扫荡' bodyClazzName='com.road.ddt.gen.ActivityMissionInMsg$ActivityMissionSweepInProto'/>
+		<ProtoConfig   type='UP' code='2203' subCode='0' protocolType="PB" desc='限时副本列表' bodyClazzName='com.road.ddt.gen.ActivityMissionInMsg$LimitTimeMissionListInProto'/>
+	</module>
+	<module name='debug' desc='debug'>
+		<ProtoConfig   type='DOWN' code='506' subCode='0' protocolType="PB" desc='好友信息' bodyClazzName='com.road.ddt.gen.OnlinePlayerOutMsg$OnlinePlayerListOutProto'/>
+		<ProtoConfig   type='UP' code='8' subCode='0' protocolType="PB" desc='在线玩家列表' bodyClazzName='com.road.ddt.gen.OnlinePlayerInMsg$OnlinePlayerListInProto'/>
+		<ProtoConfig   type='UP' code='8000' subCode='0' protocolType="PB" desc='提交统计信息' bodyClazzName='com.road.ddt.gen.OnlinePlayerInMsg$SubmitStatInProto'/>
+	</module>
+	<module name='intensify' desc='intensify'>
+		<ProtoConfig   type='DOWN' code='1302' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.IntensiveOutMsg$SlotEnhanceOutProto'/>
+		<ProtoConfig   type='DOWN' code='1303' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.IntensiveOutMsg$IntensiveResultProto'/>
+		<ProtoConfig   type='DOWN' code='1035' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.IntensiveOutMsg$WeaponAttriSendOutProto'/>
+		<ProtoConfig   type='DOWN' code='1307' subCode='0' protocolType="PB" desc='强化精炼结果' bodyClazzName='com.road.ddt.gen.IntensiveOutMsg$EnhanceRefineResultProto'/>
+		<ProtoConfig   type='DOWN' code='1308' subCode='0' protocolType="PB" desc='强化精炼初始化' bodyClazzName='com.road.ddt.gen.IntensiveOutMsg$EnhanceRefineInitProto'/>
+		<ProtoConfig   type='UP' code='1019' subCode='0' protocolType="PB" desc='武器槽强化' bodyClazzName='com.road.ddt.gen.IntensiveInMsg$SlotEnhanceInProto'/>
+		<ProtoConfig   type='UP' code='1020' subCode='0' protocolType="PB" desc='强化石合成' bodyClazzName='com.road.ddt.gen.IntensiveInMsg$SmithingInProto'/>
+		<ProtoConfig   type='UP' code='1022' subCode='0' protocolType="PB" desc='强化石合成' bodyClazzName='com.road.ddt.gen.IntensiveInMsg$WeaponExchangeAttributeInProto'/>
+		<ProtoConfig   type='UP' code='1023' subCode='0' protocolType="PB" desc='武器属性请求' bodyClazzName='com.road.ddt.gen.IntensiveInMsg$WeaponPropertyRequestInProto'/>
+		<ProtoConfig   type='UP' code='1030' subCode='0' protocolType="PB" desc='强化精炼' bodyClazzName='com.road.ddt.gen.IntensiveInMsg$EnhanceRefineInProto'/>
+	</module>
+	<module name='Melting' desc='Melting'>
+		<ProtoConfig   type='UP' code='1038' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.MeltingOutProto$MeltingOrQuenchRequestInProto'/>
+	</module>
+	<module name='title' desc='title'>
+		<ProtoConfig   type='DOWN' code='2150' subCode='0' protocolType="PB" desc='称号列表' bodyClazzName='com.road.ddt.gen.TitleOutMsg$TitleListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2151' subCode='0' protocolType="PB" desc='称号条件统计信息' bodyClazzName='com.road.ddt.gen.TitleOutMsg$TitleConditionStatInfoOutProto'/>
+		<ProtoConfig   type='UP' code='3352' subCode='0' protocolType="PB" desc='请求称号条件统计信息' bodyClazzName='com.road.ddt.gen.TitleInMsg$TitleConditionStatReqInProto'/>
+		<ProtoConfig   type='UP' code='3351' subCode='0' protocolType="PB" desc='装备称号' bodyClazzName='com.road.ddt.gen.TitleInMsg$EquipTitleInProto'/>
+		<ProtoConfig   type='UP' code='3354' subCode='0' protocolType="PB" desc='称号过期' bodyClazzName='com.road.ddt.gen.TitleInMsg$ExpireTitleInProto'/>
+		<ProtoConfig   type='UP' code='3355' subCode='0' protocolType="PB" desc='是否显示称号' bodyClazzName='com.road.ddt.gen.TitleInMsg$IsShowTitleInProto'/>
+	</module>
+	<module name='melting' desc='melting'>
+		<ProtoConfig   type='DOWN' code='1032' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.MeltingOutMsg$MeltingOrQuenchInitProto'/>
+		<ProtoConfig   type='DOWN' code='1033' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.MeltingOutMsg$MeltingOrQuenchResultProto'/>
+	</module>
+	<module name='growup' desc='growup'>
+		<ProtoConfig   type='DOWN' code='1551' subCode='0' protocolType="PB" desc='成长奖励列表' bodyClazzName='com.road.ddt.gen.GrowUpOutMsg$GrowUpRewardInfoListOutProto'/>
+		<ProtoConfig   type='UP' code='4150' subCode='0' protocolType="PB" desc='成长奖励领取' bodyClazzName='com.road.ddt.gen.GrowUpInMsg$GrowUpRewardDrawInProto'/>
+	</module>
+	<module name='supply' desc='supply'>
+		<ProtoConfig   type='DOWN' code='10120' subCode='0' protocolType="PB" desc='地图补给生成' bodyClazzName='com.road.ddt.gen.SupplyOutMsg$SupplyInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='10121' subCode='0' protocolType="PB" desc='地图补给删除' bodyClazzName='com.road.ddt.gen.SupplyOutMsg$SupplyRemoveOutProto'/>
+	</module>
+	<module name='trial' desc='trial'>
+		<ProtoConfig   type='DOWN' code='2500' subCode='0' protocolType="PB" desc='用户活动奖励信息' bodyClazzName='com.road.ddt.gen.TrialMissionOutMsg$TrialMissionListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2501' subCode='0' protocolType="PB" desc='奖励信息提示' bodyClazzName='com.road.ddt.gen.TrialMissionOutMsg$TrialSweepOutProto'/>
+		<ProtoConfig   type='UP' code='2700' subCode='0' protocolType="PB" desc='领取活动奖励' bodyClazzName='com.road.ddt.gen.TrialInMsg$TrailRewardGetInProto'/>
+	</module>
+	<module name='activity' desc='activity'>
+		<ProtoConfig   type='DOWN' code='703' subCode='0' protocolType="PB" desc='用户活动奖励信息' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityTaskListOutProto'/>
+		<ProtoConfig   type='DOWN' code='704' subCode='0' protocolType="PB" desc='开启的活动列表' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityListOutProto'/>
+		<ProtoConfig   type='DOWN' code='705' subCode='0' protocolType="PB" desc='奖励信息提示' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityRewardOutProto'/>
+		<ProtoConfig   type='DOWN' code='709' subCode='0' protocolType="PB" desc='奖励信息提示' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityLotteryRewardOutProto'/>
+		<ProtoConfig   type='DOWN' code='712' subCode='0' protocolType="PB" desc='奖励信息提示' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityTreasureAwardOutProto'/>
+		<ProtoConfig   type='DOWN' code='710' subCode='0' protocolType="PB" desc='奖励信息提示' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityLotteryRecordProto'/>
+		<ProtoConfig   type='DOWN' code='706' subCode='0' protocolType="PB" desc='活动数据' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityTemplateOutProto'/>
+		<ProtoConfig   type='DOWN' code='708' subCode='0' protocolType="PB" desc='活动数据' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityConditionListProto'/>
+		<ProtoConfig   type='DOWN' code='711' subCode='0' protocolType="PB" desc='活动任务数据' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityTaskListProto'/>
+		<ProtoConfig   type='DOWN' code='713' subCode='0' protocolType="PB" desc='活动任务数据' bodyClazzName='com.road.ddt.gen.ActivityOutMsg$ActivityEndTimeProto'/>
+		<ProtoConfig   type='DOWN' code='700' subCode='0' protocolType="PB" desc='用户活动奖励信息' bodyClazzName='com.road.ddt.gen.ActivityRewardOperateOutMsg$UserActivityRewardOutProto'/>
+		<ProtoConfig   type='DOWN' code='701' subCode='0' protocolType="PB" desc='周登陆领取奖励状态' bodyClazzName='com.road.ddt.gen.ActivityRewardOperateOutMsg$WeekRewardStatProto'/>
+		<ProtoConfig   type='DOWN' code='702' subCode='0' protocolType="PB" desc='在线领取奖励状态' bodyClazzName='com.road.ddt.gen.ActivityRewardOperateOutMsg$OnlineRewardStatProto'/>
+		<ProtoConfig   type='UP' code='2602' subCode='0' protocolType="PB" desc='领取活动奖励' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivityRewardGetInProto'/>
+		<ProtoConfig   type='UP' code='2603' subCode='0' protocolType="PB" desc='签到' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivitySigninInProto'/>
+		<ProtoConfig   type='UP' code='2604' subCode='0' protocolType="PB" desc='请求活动信息' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivityTemplateInProto'/>
+		<ProtoConfig   type='UP' code='2605' subCode='0' protocolType="PB" desc='活动抽奖' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivityLotteryInProto'/>
+		<ProtoConfig   type='UP' code='2609' subCode='0' protocolType="PB" desc='活动抽奖' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivityTreausreInProto'/>
+		<ProtoConfig   type='UP' code='2606' subCode='0' protocolType="PB" desc='抽奖获取列表' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivityLotteryRecordInProto'/>
+		<ProtoConfig   type='UP' code='2607' subCode='0' protocolType="PB" desc='活动兑换' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivityExchangeInProto'/>
+		<ProtoConfig   type='UP' code='2608' subCode='0' protocolType="PB" desc='成长基金活动' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivityGroupFundProto'/>
+		<ProtoConfig   type='UP' code='2610' subCode='0' protocolType="PB" desc='7天大活动购买活动' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivitySenvenBuyProto'/>
+		<ProtoConfig   type='UP' code='2611' subCode='0' protocolType="PB" desc='好友召回活动奖励' bodyClazzName='com.road.ddt.gen.ActivityInMsg$ActivityRecallProto'/>
+		<ProtoConfig   type='UP' code='2600' subCode='0' protocolType="PB" desc='七天登陆奖励' bodyClazzName='com.road.ddt.gen.ActivityRewardOperateInMsg$GetWeekLoginRewardProto'/>
+		<ProtoConfig   type='UP' code='2601' subCode='0' protocolType="PB" desc='在线奖励' bodyClazzName='com.road.ddt.gen.ActivityRewardOperateInMsg$GetOnlineRewardProto'/>
+	</module>
+	<module name='ladder' desc='ladder'>
+		<ProtoConfig   type='DOWN' code='52' subCode='0' protocolType="PB" desc='天梯信息更新' bodyClazzName='com.road.ddt.gen.LadderOutMsg$LadderInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1400' subCode='0' protocolType="PB" desc='宝箱奖励信息提示' bodyClazzName='com.road.ddt.gen.LadderOutMsg$LadderChestInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1401' subCode='0' protocolType="PB" desc='周奖励提示' bodyClazzName='com.road.ddt.gen.LadderOutMsg$LadderWeekChestInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1402' subCode='0' protocolType="PB" desc='赛季结算' bodyClazzName='com.road.ddt.gen.LadderOutMsg$LadderSeasonOverOutProto'/>
+		<ProtoConfig   type='DOWN' code='1404' subCode='0' protocolType="PB" desc='开启排位赛首胜宝箱返回' bodyClazzName='com.road.ddt.gen.LadderOutMsg$LadderFightBoxOutProto'/>
+		<ProtoConfig   type='UP' code='3801' subCode='0' protocolType="PB" desc='请求天梯赛排行' bodyClazzName='com.road.ddt.gen.LadderInMsg$LadderRankInProto'/>
+		<ProtoConfig   type='UP' code='3802' subCode='0' protocolType="PB" desc='天梯解锁宝箱' bodyClazzName='com.road.ddt.gen.LadderInMsg$LadderUnlockChestInProto'/>
+		<ProtoConfig   type='UP' code='3803' subCode='0' protocolType="PB" desc='天梯打开宝箱' bodyClazzName='com.road.ddt.gen.LadderInMsg$LadderOpenChestInProto'/>
+		<ProtoConfig   type='UP' code='3804' subCode='0' protocolType="PB" desc='天梯加速解锁宝箱' bodyClazzName='com.road.ddt.gen.LadderInMsg$LadderSpeedUpChestInProto'/>
+		<ProtoConfig   type='UP' code='3805' subCode='0' protocolType="PB" desc='天梯删除宝箱' bodyClazzName='com.road.ddt.gen.LadderInMsg$LadderDelChestInProto'/>
+		<ProtoConfig   type='UP' code='3806' subCode='0' protocolType="PB" desc='天梯领取宝箱' bodyClazzName='com.road.ddt.gen.LadderInMsg$LadderGetChestInProto'/>
+		<ProtoConfig   type='UP' code='3807' subCode='0' protocolType="PB" desc='天梯周领取宝箱' bodyClazzName='com.road.ddt.gen.LadderInMsg$LadderWeekGetChestInProto'/>
+		<ProtoConfig   type='UP' code='3808' subCode='0' protocolType="PB" desc='设置读取标识' bodyClazzName='com.road.ddt.gen.LadderInMsg$LadderChangeFlagClearInProto'/>
+		<ProtoConfig   type='UP' code='3810' subCode='0' protocolType="PB" desc='排位赛开启首胜宝箱' bodyClazzName='com.road.ddt.gen.LadderInMsg$LadderFightOpenBoxProto'/>
+	</module>
+	<module name='mail' desc='mail'>
+		<ProtoConfig   type='DOWN' code='800' subCode='0' protocolType="PB" desc='邮件列表' bodyClazzName='com.road.ddt.gen.MailOutMsg$MailListOutProto'/>
+		<ProtoConfig   type='DOWN' code='801' subCode='0' protocolType="PB" desc='邮件更新' bodyClazzName='com.road.ddt.gen.MailOutMsg$MailStateUpdateOutProto'/>
+		<ProtoConfig   type='DOWN' code='802' subCode='0' protocolType="PB" desc='邮件更新' bodyClazzName='com.road.ddt.gen.MailOutMsg$MailIdOutProto'/>
+		<ProtoConfig   type='DOWN' code='803' subCode='0' protocolType="PB" desc='邮件一键领取' bodyClazzName='com.road.ddt.gen.MailOutMsg$MailOneKeyReceiveOutProto'/>
+		<ProtoConfig   type='DOWN' code='804' subCode='0' protocolType="PB" desc='邮件批量更新，' bodyClazzName='com.road.ddt.gen.MailOutMsg$MailStateListOutProto'/>
+		<ProtoConfig   type='UP' code='3400' subCode='0' protocolType="PB" desc='邮件状态更新' bodyClazzName='com.road.ddt.gen.MailInMsg$MailStateUpdateInProto'/>
+		<ProtoConfig   type='UP' code='3401' subCode='0' protocolType="PB" desc='商城物品支付方式' bodyClazzName='com.road.ddt.gen.MailInMsg$MailMallPaymentInProto'/>
+		<ProtoConfig   type='UP' code='3402' subCode='0' protocolType="PB" desc='索取邮件付款' bodyClazzName='com.road.ddt.gen.MailInMsg$PaymentAskMailInProto'/>
+		<ProtoConfig   type='UP' code='3403' subCode='0' protocolType="PB" desc='索取邮件拒绝' bodyClazzName='com.road.ddt.gen.MailInMsg$RefuseAskMailInProto'/>
+		<ProtoConfig   type='UP' code='3404' subCode='0' protocolType="PB" desc='邮件列表，分页邮件列表' bodyClazzName='com.road.ddt.gen.MailInMsg$MailListInProto'/>
+		<ProtoConfig   type='UP' code='3405' subCode='0' protocolType="PB" desc='一键领取邮件附件' bodyClazzName='com.road.ddt.gen.MailInMsg$MailOneKeyReceiveInProto'/>
+	</module>
+	<module name='announcement' desc='announcement'>
+		<ProtoConfig   type='DOWN' code='900' subCode='0' protocolType="PB" desc='公告列表' bodyClazzName='com.road.ddt.gen.AnnouncementOutMsg$AnnouncementListOutProto'/>
+		<ProtoConfig   type='DOWN' code='901' subCode='0' protocolType="PB" desc='弹出窗口' bodyClazzName='com.road.ddt.gen.AnnouncementOutMsg$TipsWindowProto'/>
+		<ProtoConfig   type='UP' code='3450' subCode='0' protocolType="PB" desc='世界喇叭消息' bodyClazzName='com.road.ddt.gen.AnnouncementInMsg$WorldHornInProto'/>
+		<ProtoConfig   type='UP' code='3451' subCode='0' protocolType="PB" desc='战斗邀请消息' bodyClazzName='com.road.ddt.gen.AnnouncementInMsg$FightInviteInProto'/>
+		<ProtoConfig   type='UP' code='3452' subCode='0' protocolType="PB" desc='频道管理' bodyClazzName='com.road.ddt.gen.AnnouncementInMsg$TalkChannelSetInProto'/>
+		<ProtoConfig   type='UP' code='3453' subCode='0' protocolType="PB" desc='婚礼邀请消息' bodyClazzName='com.road.ddt.gen.AnnouncementInMsg$WeddingInviteInProto'/>
+	</module>
+	<module name='task' desc='task'>
+		<ProtoConfig   type='DOWN' code='1201' subCode='0' protocolType="PB" desc='任务信息列表' bodyClazzName='com.road.ddt.gen.TaskOutMsg$TaskInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1202' subCode='0' protocolType="PB" desc='新增任务信息' bodyClazzName='com.road.ddt.gen.TaskOutMsg$TaskInfoAddOutProto'/>
+		<ProtoConfig   type='DOWN' code='1203' subCode='0' protocolType="PB" desc='完成任务信息' bodyClazzName='com.road.ddt.gen.TaskOutMsg$TaskInfoFinishOutProto'/>
+		<ProtoConfig   type='DOWN' code='1204' subCode='0' protocolType="PB" desc='任务信息' bodyClazzName='com.road.ddt.gen.TaskOutMsg$TaskInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1205' subCode='0' protocolType="PB" desc='更新任务信息' bodyClazzName='com.road.ddt.gen.TaskOutMsg$TaskInfoUpdateOutProto'/>
+		<ProtoConfig   type='DOWN' code='1206' subCode='0' protocolType="PB" desc='宝箱奖励信息提示' bodyClazzName='com.road.ddt.gen.TaskOutMsg$TaskActivityBoxInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1207' subCode='0' protocolType="PB" desc='宝箱奖励信息提示' bodyClazzName='com.road.ddt.gen.TaskOutMsg$TaskActivityBoxGradeInfoOutProto'/>
+		<ProtoConfig   type='UP' code='2501' subCode='0' protocolType="PB" desc='完成任务' bodyClazzName='com.road.ddt.gen.TaskInMsg$TaskInfoFinishInProto'/>
+		<ProtoConfig   type='UP' code='2502' subCode='0' protocolType="PB" desc='任务添加列表' bodyClazzName='com.road.ddt.gen.TaskInMsg$TaskAddListInProto'/>
+		<ProtoConfig   type='UP' code='2503' subCode='0' protocolType="PB" desc='领取活跃度任务奖励' bodyClazzName='com.road.ddt.gen.TaskInMsg$TaskActivityBoxInProto'/>
+	</module>
+	<module name='resource' desc='resource'>
+		<ProtoConfig   type='DOWN' code='1950' subCode='0' protocolType="PB" desc='可领取的资源信息' bodyClazzName='com.road.ddt.gen.ResourceOutMsg$ResourceInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1951' subCode='0' protocolType="PB" desc='领取的奖励列表' bodyClazzName='com.road.ddt.gen.ResourceOutMsg$ResourceRewardOutProto'/>
+		<ProtoConfig   type='UP' code='4301' subCode='0' protocolType="PB" desc='领取资源' bodyClazzName='com.road.ddt.gen.ResourceInMsg$ResourceGetInProto'/>
+	</module>
+	<module name='tmall' desc='tmall'>
+		<ProtoConfig   type='DOWN' code='666' subCode='0' protocolType="PB" desc='商品信息' bodyClazzName='com.road.ddt.gen.TmallOutMsg$TmallGoodsListOutProto'/>
+		<ProtoConfig   type='DOWN' code='667' subCode='0' protocolType="PB" desc='交易信息' bodyClazzName='com.road.ddt.gen.TmallOutMsg$TmallExchangeListOutProto'/>
+		<ProtoConfig   type='UP' code='3300' subCode='0' protocolType="PB" desc='兑换物品' bodyClazzName='com.road.ddt.gen.TmallInMsg$TmallExchangeGoodsInProto'/>
+	</module>
+	<module name='game' desc='game'>
+		<ProtoConfig   type='DOWN' code='10001' subCode='0' protocolType="PB" desc='游戏开始所有玩家信息' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$CreateGameProto'/>
+		<ProtoConfig   type='DOWN' code='10002' subCode='0' protocolType="PB" desc='游戏加载进度' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameLoadingProgressOutProto'/>
+		<ProtoConfig   type='DOWN' code='10003' subCode='0' protocolType="PB" desc='游戏开始信息' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameStartProto'/>
+		<ProtoConfig   type='DOWN' code='10004' subCode='0' protocolType="PB" desc='玩家开炮数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$PlayerFireProto'/>
+		<ProtoConfig   type='DOWN' code='10038' subCode='0' protocolType="PB" desc='齐射玩家开炮数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$PlayerSalvoFireProto'/>
+		<ProtoConfig   type='DOWN' code='10005' subCode='0' protocolType="PB" desc='游戏回合数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameTurnDataProto'/>
+		<ProtoConfig   type='DOWN' code='10009' subCode='0' protocolType="PB" desc='Living移动数据转发' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$LivingMoveTransformProto'/>
+		<ProtoConfig   type='DOWN' code='10010' subCode='0' protocolType="PB" desc='Living掉落数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameLivingFallProto'/>
+		<ProtoConfig   type='DOWN' code='10011' subCode='0' protocolType="PB" desc='玩家使用技能' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$PlayerSkillTransformProto'/>
+		<ProtoConfig   type='DOWN' code='10012' subCode='0' protocolType="PB" desc='游戏加载loading信息' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$StartLoadingProto'/>
+		<ProtoConfig   type='DOWN' code='10013' subCode='0' protocolType="PB" desc='游戏结束详细信息' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameOverDetailProto'/>
+		<ProtoConfig   type='DOWN' code='10014' subCode='0' protocolType="PB" desc='改变方向' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameDirectionTransformProto'/>
+		<ProtoConfig   type='DOWN' code='10016' subCode='0' protocolType="PB" desc='同步血量' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameHPSynchronizeProto'/>
+		<ProtoConfig   type='DOWN' code='10017' subCode='0' protocolType="PB" desc='退出游戏' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameExitTransformProto'/>
+		<ProtoConfig   type='DOWN' code='10018' subCode='0' protocolType="PB" desc='同步信息' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameLivingSyncTransformProto'/>
+		<ProtoConfig   type='DOWN' code='10019' subCode='0' protocolType="PB" desc='玩家掉线' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameDisconnectFlagProto'/>
+		<ProtoConfig   type='DOWN' code='10020' subCode='0' protocolType="PB" desc='玩家断线重连信息' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameReconnectionProto'/>
+		<ProtoConfig   type='DOWN' code='10021' subCode='0' protocolType="PB" desc='Living说话' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameLivingSayProto'/>
+		<ProtoConfig   type='DOWN' code='10022' subCode='0' protocolType="PB" desc='Living Buffer' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameBufferListProto'/>
+		<ProtoConfig   type='DOWN' code='10023' subCode='0' protocolType="PB" desc='更新风力' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameWindProto'/>
+		<ProtoConfig   type='DOWN' code='10025' subCode='0' protocolType="PB" desc='轮数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameRoundProto'/>
+		<ProtoConfig   type='DOWN' code='10026' subCode='0' protocolType="PB" desc='游戏传送门详细信息' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameGateWayOutPorto'/>
+		<ProtoConfig   type='DOWN' code='10027' subCode='0' protocolType="PB" desc='物件创建' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePhysicaCreate'/>
+		<ProtoConfig   type='DOWN' code='10028' subCode='0' protocolType="PB" desc='物件移动' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePhysicaMove'/>
+		<ProtoConfig   type='DOWN' code='10029' subCode='0' protocolType="PB" desc='物件删除' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePhysicaRemove'/>
+		<ProtoConfig   type='DOWN' code='10030' subCode='0' protocolType="PB" desc='翻牌结果' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameCardResultProto'/>
+		<ProtoConfig   type='DOWN' code='10031' subCode='0' protocolType="PB" desc='物件是否可见' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePhysicaVisible'/>
+		<ProtoConfig   type='DOWN' code='10032' subCode='0' protocolType="PB" desc='物件是否可见' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePhysicaOpenState'/>
+		<ProtoConfig   type='DOWN' code='10033' subCode='0' protocolType="PB" desc='游戏添加living' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameAddLiving'/>
+		<ProtoConfig   type='DOWN' code='10035' subCode='0' protocolType="PB" desc='Physical掉落数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePhysicalFallProto'/>
+		<ProtoConfig   type='DOWN' code='10036' subCode='0' protocolType="PB" desc='近战攻击数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$BeatProto'/>
+		<ProtoConfig   type='DOWN' code='10037' subCode='0' protocolType="PB" desc='NPC掉落' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$NpcDropProto'/>
+		<ProtoConfig   type='DOWN' code='10040' subCode='0' protocolType="PB" desc='齐射回合数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$SalvoRoundDataProto'/>
+		<ProtoConfig   type='DOWN' code='10043' subCode='0' protocolType="PB" desc='齐射回合蓄力通知' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$SalvoAccumulatorNotifyProto'/>
+		<ProtoConfig   type='DOWN' code='10044' subCode='0' protocolType="PB" desc='游戏过程异常通知' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameUnusualNotifyProto'/>
+		<ProtoConfig   type='DOWN' code='10046' subCode='0' protocolType="PB" desc='下一轮玩家出手顺序' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameNextRoundProto'/>
+		<ProtoConfig   type='DOWN' code='10047' subCode='0' protocolType="PB" desc='更新本轮玩家出手顺序(本条协议保留未用)' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameUpdateRoundOrderProto'/>
+		<ProtoConfig   type='DOWN' code='10048' subCode='0' protocolType="PB" desc='本轮回合出手结束' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameTurnFireEndProto'/>
+		<ProtoConfig   type='DOWN' code='10051' subCode='0' protocolType="PB" desc='物件创建' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePhysicaCreateInfo'/>
+		<ProtoConfig   type='DOWN' code='10052' subCode='0' protocolType="PB" desc='BUFFER 效果' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameBufferParamDetailProto'/>
+		<ProtoConfig   type='DOWN' code='10054' subCode='0' protocolType="PB" desc='玩家对话开始' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameTalkStartProto'/>
+		<ProtoConfig   type='DOWN' code='10055' subCode='0' protocolType="PB" desc='玩家对话超时' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameTalkTimeoutProto'/>
+		<ProtoConfig   type='DOWN' code='10056' subCode='0' protocolType="PB" desc='切换武器' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameSwitchWeaponOutProto'/>
+		<ProtoConfig   type='DOWN' code='10057' subCode='0' protocolType="PB" desc='游戏生物消失' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameLivingDisappearProto'/>
+		<ProtoConfig   type='DOWN' code='10058' subCode='0' protocolType="PB" desc='玩家开火超时' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameFireTimeoutProto'/>
+		<ProtoConfig   type='DOWN' code='10062' subCode='0' protocolType="PB" desc='广播TIP 更新关卡信息框内动态文本 参照TipUpdate' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameTipUpdateProto'/>
+		<ProtoConfig   type='DOWN' code='10074' subCode='0' protocolType="PB" desc='游戏战斗中，玩家的数据修改' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$UpdatePlayerInfoProto'/>
+		<ProtoConfig   type='DOWN' code='10075' subCode='0' protocolType="PB" desc='播放特定音效' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePlayerSoundProto'/>
+		<ProtoConfig   type='DOWN' code='10078' subCode='0' protocolType="PB" desc='齐射模式开炮顺序' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameSalvoFireSortProto'/>
+		<ProtoConfig   type='DOWN' code='10079' subCode='0' protocolType="PB" desc='齐射模式杀人数' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameSalvoKillInfoProto'/>
+		<ProtoConfig   type='DOWN' code='10111' subCode='0' protocolType="PB" desc='游戏战斗中，living免疫buff状态' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameLivingImmuneBuffProto'/>
+		<ProtoConfig   type='DOWN' code='10113' subCode='0' protocolType="PB" desc='玩家退出房间和战斗' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameRemovePlayerOutProto'/>
+		<ProtoConfig   type='DOWN' code='10114' subCode='0' protocolType="PB" desc='玩家切换战斗场景' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameChangeSceneOutProto'/>
+		<ProtoConfig   type='DOWN' code='10115' subCode='0' protocolType="PB" desc='玩家离线拖管' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePlayerOfflineOutProto'/>
+		<ProtoConfig   type='DOWN' code='10117' subCode='0' protocolType="PB" desc='强制控制镜头 只在一场战斗中生效' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameCaremaControlProto'/>
+		<ProtoConfig   type='DOWN' code='10118' subCode='0' protocolType="PB" desc='战斗日志' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameLogProto'/>
+		<ProtoConfig   type='DOWN' code='10119' subCode='0' protocolType="PB" desc='通知客户端事件 (用于播放特效动画 等)' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameLivingNotifyProto'/>
+		<ProtoConfig   type='DOWN' code='10080' subCode='0' protocolType="PB" desc='同步玩家复活点' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameReviveProto'/>
+		<ProtoConfig   type='DOWN' code='10082' subCode='0' protocolType="PB" desc='Buff数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameBuffInfoProto'/>
+		<ProtoConfig   type='DOWN' code='10083' subCode='0' protocolType="PB" desc='无限塔数据' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameGoalInfoProto'/>
+		<ProtoConfig   type='DOWN' code='10123' subCode='0' protocolType="PB" desc='夺旗积分更新' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$UpdateFlagScoreOutProto'/>
+		<ProtoConfig   type='DOWN' code='10124' subCode='0' protocolType="PB" desc='旗帜物件创建' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameFlagCreateOutProto'/>
+		<ProtoConfig   type='DOWN' code='10125' subCode='0' protocolType="PB" desc='玩家复活' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GamePlayerReliveOutProto'/>
+		<ProtoConfig   type='DOWN' code='10087' subCode='0' protocolType="PB" desc='行为同步' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameObjectActionProto'/>
+		<ProtoConfig   type='DOWN' code='10126' subCode='0' protocolType="PB" desc='流程状态变动' bodyClazzName='com.road.ddt.gen.GameOperateOutMsg$GameProcessStatus'/>
+		<ProtoConfig   type='UP' code='10002' subCode='0' protocolType="PB" desc='游戏加载进度' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameLoadingProgressInProto'/>
+		<ProtoConfig   type='UP' code='10011' subCode='0' protocolType="PB" desc='玩家使用技能' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$PlayerUseSkillProto'/>
+		<ProtoConfig   type='UP' code='10004' subCode='0' protocolType="PB" desc='玩家开炮数据' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$PlayerFireDataProto'/>
+		<ProtoConfig   type='UP' code='10009' subCode='0' protocolType="PB" desc='玩家移动数据' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$PlayerMoveDataProto'/>
+		<ProtoConfig   type='UP' code='10014' subCode='0' protocolType="PB" desc='改变方向' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameDirectionProto'/>
+		<ProtoConfig   type='UP' code='10026' subCode='0' protocolType="PB" desc='传送门' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameGateWayInProto'/>
+		<ProtoConfig   type='UP' code='10015' subCode='0' protocolType="PB" desc='Pass' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GamePassProto'/>
+		<ProtoConfig   type='UP' code='10017' subCode='0' protocolType="PB" desc='离开房间' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameExitProto'/>
+		<ProtoConfig   type='UP' code='10030' subCode='0' protocolType="PB" desc='翻牌' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameFlipCardProto'/>
+		<ProtoConfig   type='UP' code='10020' subCode='0' protocolType="PB" desc='战斗重连' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameReconnectProto'/>
+		<ProtoConfig   type='UP' code='19001' subCode='0' protocolType="PB" desc='buffer测试' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$TestBufferProto'/>
+		<ProtoConfig   type='UP' code='19002' subCode='0' protocolType="PB" desc='living pass测试' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$TestLivingPassProto'/>
+		<ProtoConfig   type='UP' code='10034' subCode='0' protocolType="PB" desc='消耗单位补给' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$ConsumeUnitSupplyProto'/>
+		<ProtoConfig   type='UP' code='10038' subCode='0' protocolType="PB" desc='齐射模式玩家开炮数据' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$SalvoFireDataProto'/>
+		<ProtoConfig   type='UP' code='10039' subCode='0' protocolType="PB" desc='齐射模式玩家使用技能' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$SalvoSkillDataProto'/>
+		<ProtoConfig   type='UP' code='10041' subCode='0' protocolType="PB" desc='齐射模式玩家播放完成' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$SalvoPlayFinishProto'/>
+		<ProtoConfig   type='UP' code='10042' subCode='0' protocolType="PB" desc='齐射模式玩家蓄力' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$SalvoPlayerAccumulatorProto'/>
+		<ProtoConfig   type='UP' code='10045' subCode='0' protocolType="PB" desc='玩家瞬移' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$PlayerTeleportProto'/>
+		<ProtoConfig   type='UP' code='10049' subCode='0' protocolType="PB" desc='出手玩家播放结束' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameTurnPlayEndProto'/>
+		<ProtoConfig   type='UP' code='10053' subCode='0' protocolType="PB" desc='玩家对话结束' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameTalkEndProto'/>
+		<ProtoConfig   type='UP' code='10056' subCode='0' protocolType="PB" desc='玩家对话结束' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameSwitchWeaponInProto'/>
+		<ProtoConfig   type='UP' code='10059' subCode='0' protocolType="PB" desc='玩家暂时游戏' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GamePauseOperateInProto'/>
+		<ProtoConfig   type='UP' code='10060' subCode='0' protocolType="PB" desc='玩家聊天消息' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameBattleChatInProto'/>
+		<ProtoConfig   type='UP' code='10064' subCode='0' protocolType="PB" desc='玩家创建完成' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GamePlayerPerpareInProto'/>
+		<ProtoConfig   type='UP' code='3353' subCode='0' protocolType="PB" desc='游戏结束返回触发特效统计信息' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameOverEffectStatInProto'/>
+		<ProtoConfig   type='UP' code='10112' subCode='0' protocolType="PB" desc='删除道具技能' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameDelPropSkillInProto'/>
+		<ProtoConfig   type='UP' code='10076' subCode='0' protocolType="PB" desc='取消托管' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameAutoCancelProto'/>
+		<ProtoConfig   type='UP' code='10077' subCode='0' protocolType="PB" desc='玩家选择复活点' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameChoseReviveProto'/>
+		<ProtoConfig   type='UP' code='10081' subCode='0' protocolType="PB" desc='是否可以战斗结束' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$SalvoGameOverInProto'/>
+		<ProtoConfig   type='UP' code='10122' subCode='0' protocolType="PB" desc='玩家游戏内称号及激发次数记录' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GamePlayerGainTitleProto'/>
+		<ProtoConfig   type='UP' code='10084' subCode='0' protocolType="PB" desc='换武器修改玩家属性' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GameChangeWeaponProto'/>
+		<ProtoConfig   type='UP' code='10085' subCode='0' protocolType="PB" desc='玩家操作' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GamePlayerOperateProto'/>
+		<ProtoConfig   type='UP' code='10127' subCode='0' protocolType="PB" desc='玩家前奏处理完成' bodyClazzName='com.road.ddt.gen.GameOperateInMsg$GamePlayerPreludeInProto'/>
+	</module>
+	<module name='general' desc='general'>
+		<ProtoConfig   type='DOWN' code='3' subCode='0' protocolType="PB" desc='错误消息' bodyClazzName='com.road.ddt.gen.CommonMsg$ErrorInfoProto'/>
+		<ProtoConfig   type='DOWN' code='8' subCode='0' protocolType="PB" desc='服务器反馈消息' bodyClazzName='com.road.ddt.gen.CommonMsg$OperateResultPorto'/>
+		<ProtoConfig   type='DOWN' code='12' subCode='0' protocolType="PB" desc='系统消息' bodyClazzName='com.road.ddt.gen.CommonMsg$SysMessageInfoProto'/>
+		<ProtoConfig   type='DOWN' code='14' subCode='0' protocolType="PB" desc='奖励信息' bodyClazzName='com.road.ddt.gen.CommonMsg$CommonRewardModelListProto'/>
+		<ProtoConfig   type='DOWN' code='17' subCode='0' protocolType="PB" desc='更新stat信息' bodyClazzName='com.road.ddt.gen.CommonMsg$PlayerStatInfoProto'/>
+		<ProtoConfig   type='DOWN' code='21' subCode='0' protocolType="PB" desc='用户配置' bodyClazzName='com.road.ddt.gen.CommonMsg$UserConfigOutProto'/>
+		<ProtoConfig   type='DOWN' code='22' subCode='0' protocolType="PB" desc='体力' bodyClazzName='com.road.ddt.gen.CommonMsg$UserEnergyTimeOutProto'/>
+		<ProtoConfig   type='DOWN' code='50' subCode='0' protocolType="PB" desc='更新资源信息' bodyClazzName='com.road.ddt.gen.CommonMsg$PlayerResourceProto'/>
+		<ProtoConfig   type='DOWN' code='51' subCode='0' protocolType="PB" desc='更新属性信息' bodyClazzName='com.road.ddt.gen.CommonMsg$PlayerPropertiesProto'/>
+		<ProtoConfig   type='DOWN' code='54' subCode='0' protocolType="PB" desc='更新魅力值信息' bodyClazzName='com.road.ddt.gen.CommonMsg$PlayerCharmProto'/>
+		<ProtoConfig   type='DOWN' code='55' subCode='0' protocolType="PB" desc='用户切换服务器' bodyClazzName='com.road.ddt.gen.CommonMsg$UserSwitchServerOutProto'/>
+		<ProtoConfig   type='DOWN' code='56' subCode='0' protocolType="PB" desc='服务器信息' bodyClazzName='com.road.ddt.gen.CommonMsg$PlayerRegionInfoProto'/>
+		<ProtoConfig   type='DOWN' code='57' subCode='0' protocolType="PB" desc='通知版本更新' bodyClazzName='com.road.ddt.gen.CommonMsg$UserVersionUpdateOutProto'/>
+		<ProtoConfig   type='DOWN' code='2000' subCode='0' protocolType="PB" desc='采用html格式的系统消息' bodyClazzName='com.road.ddt.gen.CommonMsg$CommonSystemMsgOutProto'/>
+		<ProtoConfig   type='DOWN' code='129' subCode='0' protocolType="PB" desc='特权开关标志' bodyClazzName='com.road.ddt.gen.CommonMsg$PrivilegeFlagOutProto'/>
+		<ProtoConfig   type='DOWN' code='9011' subCode='0' protocolType="PB" desc='特权开关列表' bodyClazzName='com.road.ddt.gen.CommonMsg$PrivilegeListOutProto'/>
+		<ProtoConfig   type='DOWN' code='58' subCode='0' protocolType="PB" desc='世界等级' bodyClazzName='com.road.ddt.gen.CommonMsg$WorldLevelOutMsg'/>
+		<ProtoConfig   type='DOWN' code='59' subCode='0' protocolType="PB" desc='用户请求模块信息返回' bodyClazzName='com.road.ddt.gen.CommonMsg$UserModuleInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='9014' subCode='0' protocolType="PB" desc='渠道列表' bodyClazzName='com.road.ddt.gen.CommonMsg$ChannelListOutProto'/>
+		<ProtoConfig   type='DOWN' code='60' subCode='0' protocolType="PB" desc='渠道列表' bodyClazzName='com.road.ddt.gen.CommonMsg$RedisExcetionInfoProto'/>
+		<ProtoConfig   type='DOWN' code='26' subCode='0' protocolType="PB" desc='游戏开关列表' bodyClazzName='com.road.ddt.gen.CommonMsg$FunctionSwitchListOutProto'/>
+		<ProtoConfig   type='DOWN' code='29' subCode='0' protocolType="PB" desc='通用的数据，可传一个Type和2个int值' bodyClazzName='com.road.ddt.gen.CommonMsg$CommonIntMessageProto'/>
+		<ProtoConfig   type='DOWN' code='9019' subCode='0' protocolType="PB" desc='客户端资源更新消息' bodyClazzName='com.road.ddt.gen.CommonMsg$ClientResourceUpdateProto'/>
+		<ProtoConfig   type='DOWN' code='539' subCode='0' protocolType="PB" desc='合区列表' bodyClazzName='com.road.ddt.gen.CommonMsg$ServerCombineListProto'/>
+		<ProtoConfig   type='DOWN' code='1' subCode='0' protocolType="PB" desc='登陆、注册成功' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$UserLoginSuccessProto'/>
+		<ProtoConfig    filter='true' type='DOWN' code='2' subCode='0' protocolType="PB" desc='服务器转发的ping' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$UserPingProto'/>
+		<ProtoConfig   type='DOWN' code='507' subCode='0' protocolType="PB" desc='创建角色成功' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$UserCreateRoleSuccessProto'/>
+		<ProtoConfig   type='DOWN' code='5' subCode='0' protocolType="PB" desc='网络状态' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$NetworkStateProto'/>
+		<ProtoConfig   type='DOWN' code='6' subCode='0' protocolType="PB" desc='物品信息' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$PlayerItemListProto'/>
+		<ProtoConfig   type='DOWN' code='1034' subCode='0' protocolType="PB" desc='武器列表' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$PlayerWeaponListProto'/>
+		<ProtoConfig   type='DOWN' code='7' subCode='0' protocolType="PB" desc='更新强化信息' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$StrengthenInfoListProto'/>
+		<ProtoConfig   type='DOWN' code='505' subCode='0' protocolType="PB" desc='用户注册' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$UserRegisterOutProto'/>
+		<ProtoConfig   type='DOWN' code='509' subCode='0' protocolType="PB" desc='用户重置密码' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$UserResetPasswordOutProto'/>
+		<ProtoConfig   type='DOWN' code='1301' subCode='0' protocolType="PB" desc='武器属性信息' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$WeaponPropertyInfoListProto'/>
+		<ProtoConfig   type='DOWN' code='116' subCode='0' protocolType="PB" desc='登录失败反馈' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$UserLoginFailedProto'/>
+		<ProtoConfig   type='DOWN' code='123' subCode='0' protocolType="PB" desc='登录失败反馈被封号的反馈' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$UserBanProto'/>
+		<ProtoConfig   type='DOWN' code='366' subCode='0' protocolType="PB" desc='成长平台封号' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$GorwUserBanProto'/>
+		<ProtoConfig   type='DOWN' code='53' subCode='0' protocolType="PB" desc='修改头像反馈' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$UserModifyIconOutProto'/>
+		<ProtoConfig   type='DOWN' code='9999' subCode='0' protocolType="PB" desc='主动踢掉玩家' bodyClazzName='com.road.ddt.gen.UserLoginOutMsg$UserKickOutProto'/>
+		<ProtoConfig  loginName='logic' type='UP' code='1' subCode='0' protocolType="PB" desc='登陆、注册' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserLoginProto'/>
+		<ProtoConfig   type='UP' code='9' subCode='0' protocolType="PB" desc='创建角色' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserCreateRoleProto'/>
+		<ProtoConfig  filter='true' type='UP' code='2' subCode='0' protocolType="PB" desc='服务器ping' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserPingBackProto'/>
+		<ProtoConfig   type='UP' code='3' subCode='0' protocolType="PB" desc='GM协议' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserDebugProto'/>
+		<ProtoConfig   type='UP' code='4' subCode='0' protocolType="PB" desc='设置时装隐藏' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserEquipHideProto'/>
+		<ProtoConfig   type='UP' code='7' subCode='0' protocolType="PB" desc='注册帐号' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserRegisterInProto'/>
+		<ProtoConfig   type='UP' code='18' subCode='0' protocolType="PB" desc='客户端日志' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserUploadLogProto'/>
+		<ProtoConfig   type='UP' code='20' subCode='0' protocolType="PB" desc='修改昵称' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserModifyNickNameProto'/>
+		<ProtoConfig   type='UP' code='21' subCode='0' protocolType="PB" desc='修改头像' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserModifyIconInProto'/>
+		<ProtoConfig   type='UP' code='24' subCode='0' protocolType="PB" desc='切换服务器' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserSwitchServer'/>
+		<ProtoConfig   type='UP' code='26' subCode='0' protocolType="PB" desc='请求模块数据' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserModuleInfoInProto'/>
+		<ProtoConfig   type='UP' code='27' subCode='0' protocolType="PB" desc='分享流水记录' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserShareRecordInProto'/>
+		<ProtoConfig   type='UP' code='28' subCode='0' protocolType="PB" desc='修改性别' bodyClazzName='com.road.ddt.gen.UserLoginMsg$UserModifyGenderInProto'/>
+	</module>
+	<module name='master' desc='master'>
+		<ProtoConfig   type='DOWN' code='1351' subCode='0' protocolType="PB" desc='达人信息列表' bodyClazzName='com.road.ddt.gen.MasterOutMsg$MasterInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1352' subCode='0' protocolType="PB" desc='达人信息更新列表' bodyClazzName='com.road.ddt.gen.MasterOutMsg$MasterInfoUpdateListOutProto'/>
+		<ProtoConfig   type='UP' code='2551' subCode='0' protocolType="PB" desc='达人升级' bodyClazzName='com.road.ddt.gen.MasterInMsg$MasterInfoUpgradeInProto'/>
+	</module>
+	<module name='misc' desc='misc'>
+		<ProtoConfig   type='UP' code='10021' subCode='0' protocolType="PB" desc='离开某个界面的操作' bodyClazzName='com.road.ddt.gen.MiscInMsg$ExitViewInProto'/>
+		<ProtoConfig   type='UP' code='22' subCode='0' protocolType="PB" desc='玩家场景停留' bodyClazzName='com.road.ddt.gen.MiscInMsg$UserSceneStayTimeInProto'/>
+		<ProtoConfig   type='UP' code='23' subCode='0' protocolType="PB" desc='玩家聊天行为统计' bodyClazzName='com.road.ddt.gen.MiscInMsg$UserTalkBehaviorStatInProto'/>
+		<ProtoConfig   type='UP' code='10022' subCode='0' protocolType="PB" desc='绑群手Q上报' bodyClazzName='com.road.ddt.gen.MiscInMsg$QQBindGroupInProto'/>
+	</module>
+	<module name='mount' desc='mount'>
+		<ProtoConfig   type='DOWN' code='2601' subCode='0' protocolType="PB" desc='坐骑列表初始化' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountInfoInitOutProto'/>
+		<ProtoConfig   type='DOWN' code='2602' subCode='0' protocolType="PB" desc='坐骑列表' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2603' subCode='0' protocolType="PB" desc='坐骑装备信息' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountEquipOutProto'/>
+		<ProtoConfig   type='DOWN' code='2604' subCode='0' protocolType="PB" desc='坐骑合成' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountCompoundOutProto'/>
+		<ProtoConfig   type='DOWN' code='2605' subCode='0' protocolType="PB" desc='坐骑升级' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountLevelUpOutProto'/>
+		<ProtoConfig   type='DOWN' code='2606' subCode='0' protocolType="PB" desc='坐骑升星' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountStarUpOutProto'/>
+		<ProtoConfig   type='DOWN' code='2607' subCode='0' protocolType="PB" desc='删除坐骑' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountDeleteOutProto'/>
+		<ProtoConfig   type='DOWN' code='2608' subCode='0' protocolType="PB" desc='坐骑转碎片' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountChangeItemOutProto'/>
+		<ProtoConfig   type='DOWN' code='2609' subCode='0' protocolType="PB" desc='坐骑购买结果' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountBuyResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='2610' subCode='0' protocolType="PB" desc='坐骑驯养' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountTrainOutProto'/>
+		<ProtoConfig   type='DOWN' code='2611' subCode='0' protocolType="PB" desc='驯养结果保存' bodyClazzName='com.road.ddt.gen.MountOutMsg$MountTrainSaveOutProto'/>
+		<ProtoConfig   type='UP' code='2802' subCode='0' protocolType="PB" desc='坐骑出战' bodyClazzName='com.road.ddt.gen.MountInMsg$MountBattleInProto'/>
+		<ProtoConfig   type='UP' code='2803' subCode='0' protocolType="PB" desc='碎片合成坐骑' bodyClazzName='com.road.ddt.gen.MountInMsg$MountComposeInProto'/>
+		<ProtoConfig   type='UP' code='2804' subCode='0' protocolType="PB" desc='坐骑出售' bodyClazzName='com.road.ddt.gen.MountInMsg$MountSellInProto'/>
+		<ProtoConfig   type='UP' code='2805' subCode='0' protocolType="PB" desc='坐骑升级' bodyClazzName='com.road.ddt.gen.MountInMsg$MountLvUpInProto'/>
+		<ProtoConfig   type='UP' code='2806' subCode='0' protocolType="PB" desc='坐骑升星' bodyClazzName='com.road.ddt.gen.MountInMsg$MountStarUpInProto'/>
+		<ProtoConfig   type='UP' code='2807' subCode='0' protocolType="PB" desc='坐骑装备穿戴' bodyClazzName='com.road.ddt.gen.MountInMsg$MountEquipPutInProto'/>
+		<ProtoConfig   type='UP' code='2808' subCode='0' protocolType="PB" desc='坐骑装备脱下' bodyClazzName='com.road.ddt.gen.MountInMsg$MountEquipOffInProto'/>
+		<ProtoConfig   type='UP' code='2809' subCode='0' protocolType="PB" desc='坐骑装备出售' bodyClazzName='com.road.ddt.gen.MountInMsg$MountEquipSellInProto'/>
+		<ProtoConfig   type='UP' code='2810' subCode='0' protocolType="PB" desc='坐骑食物出售' bodyClazzName='com.road.ddt.gen.MountInMsg$MountFoodSellInProto'/>
+		<ProtoConfig   type='UP' code='2811' subCode='0' protocolType="PB" desc='坐骑休息' bodyClazzName='com.road.ddt.gen.MountInMsg$MountRestInProto'/>
+		<ProtoConfig   type='UP' code='2812' subCode='0' protocolType="PB" desc='坐骑购买' bodyClazzName='com.road.ddt.gen.MountInMsg$MountBuyInProto'/>
+		<ProtoConfig   type='UP' code='2813' subCode='0' protocolType="PB" desc='坐骑驯养' bodyClazzName='com.road.ddt.gen.MountInMsg$MountTrainInProto'/>
+		<ProtoConfig   type='UP' code='2814' subCode='0' protocolType="PB" desc='驯养结果保存' bodyClazzName='com.road.ddt.gen.MountInMsg$MountTrainSaveInProto'/>
+	</module>
+	<module name='orb' desc='orb'>
+		<ProtoConfig   type='DOWN' code='1518' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.OrbOperateOutMsg$OrbPlanProto'/>
+		<ProtoConfig   type='DOWN' code='1510' subCode='0' protocolType="PB" desc='宝珠信息' bodyClazzName='com.road.ddt.gen.OrbOperateOutMsg$OrbInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1511' subCode='0' protocolType="PB" desc='开启宝珠新方案' bodyClazzName='com.road.ddt.gen.OrbOperateOutMsg$OrbOpenPlanOutProto'/>
+		<ProtoConfig   type='DOWN' code='1512' subCode='0' protocolType="PB" desc='宝珠制作' bodyClazzName='com.road.ddt.gen.OrbOperateOutMsg$OrbMakeOutProto'/>
+		<ProtoConfig   type='DOWN' code='1513' subCode='0' protocolType="PB" desc='更新玩家宝珠数据' bodyClazzName='com.road.ddt.gen.OrbOperateOutMsg$OrbUpdateOutProto'/>
+		<ProtoConfig   type='DOWN' code='1514' subCode='0' protocolType="PB" desc='抽宝珠' bodyClazzName='com.road.ddt.gen.OrbOperateOutMsg$OrbLotteryOutProto'/>
+		<ProtoConfig   type='DOWN' code='1516' subCode='0' protocolType="PB" desc='分解宝珠' bodyClazzName='com.road.ddt.gen.OrbOperateOutMsg$OrbDecomposeOutProto'/>
+		<ProtoConfig   type='DOWN' code='1517' subCode='0' protocolType="PB" desc='装备或卸下宝珠' bodyClazzName='com.road.ddt.gen.OrbOperateOutMsg$OrbEquipOrUnloadOutProto'/>
+		<ProtoConfig   type='DOWN' code='1519' subCode='0' protocolType="PB" desc='宝珠变化' bodyClazzName='com.road.ddt.gen.OrbOperateOutMsg$OrbChangeOutProto'/>
+		<ProtoConfig   type='UP' code='4110' subCode='0' protocolType="PB" desc='加载宝珠信息' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbInfoListInProto'/>
+		<ProtoConfig   type='UP' code='4111' subCode='0' protocolType="PB" desc='花钻石购买宝珠格子' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbBuyGridInProto'/>
+		<ProtoConfig   type='UP' code='4112' subCode='0' protocolType="PB" desc='装备或卸下宝珠' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbEquipOrUnloadInProto'/>
+		<ProtoConfig   type='UP' code='4113' subCode='0' protocolType="PB" desc='更换宝珠(合并4112协议里面)' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbChangeInProto'/>
+		<ProtoConfig   type='UP' code='4114' subCode='0' protocolType="PB" desc='开启宝珠新方案' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbOpenPlanInProto'/>
+		<ProtoConfig   type='UP' code='4115' subCode='0' protocolType="PB" desc='选择宝珠方案' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbPlanChooseInProto'/>
+		<ProtoConfig   type='UP' code='4116' subCode='0' protocolType="PB" desc='宝珠方案改名' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbPlanRenameInProto'/>
+		<ProtoConfig   type='UP' code='4117' subCode='0' protocolType="PB" desc='宝珠制作' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbMakeInProto'/>
+		<ProtoConfig   type='UP' code='4118' subCode='0' protocolType="PB" desc='宝珠分解' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbDecomposeInProto'/>
+		<ProtoConfig   type='UP' code='4119' subCode='0' protocolType="PB" desc='宝珠批量分解' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbBatchDecomposeInProto'/>
+		<ProtoConfig   type='UP' code='4120' subCode='0' protocolType="PB" desc='抽宝珠' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbLotteryInProto'/>
+		<ProtoConfig   type='UP' code='4122' subCode='0' protocolType="PB" desc='一键卸下宝珠' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$OrbAllUnloadInProto'/>
+		<ProtoConfig   type='UP' code='4123' subCode='0' protocolType="PB" desc='客户端已经计算出来结果了，就直接发合成数据给后台，后台做验证即可' bodyClazzName='com.road.ddt.gen.OrbOperateInMsg$CompoundOrbInProto'/>
+	</module>
+	<module name='pet' desc='pet'>
+		<ProtoConfig   type='DOWN' code='600' subCode='0' protocolType="PB" desc='宠物列表' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetListOutProto'/>
+		<ProtoConfig   type='DOWN' code='601' subCode='0' protocolType="PB" desc='宠物合成' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetCompoundOutProto'/>
+		<ProtoConfig   type='DOWN' code='602' subCode='0' protocolType="PB" desc='宠物抽取信息列表' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetExtractListOutProto'/>
+		<ProtoConfig   type='DOWN' code='603' subCode='0' protocolType="PB" desc='宠物抽取总结果' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetExtractResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='604' subCode='0' protocolType="PB" desc='宠物图鉴列表' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetPokedexListProto'/>
+		<ProtoConfig   type='DOWN' code='605' subCode='0' protocolType="PB" desc='宠物升级属性和技能的变化' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetLevelUpProto'/>
+		<ProtoConfig   type='DOWN' code='606' subCode='0' protocolType="PB" desc='宠物超过成功返回，融合，合成等返回' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetFuseOutProto'/>
+		<ProtoConfig   type='DOWN' code='607' subCode='0' protocolType="PB" desc='潜能激发属性加成结果' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetInspireAttributeOutProto'/>
+		<ProtoConfig   type='DOWN' code='608' subCode='0' protocolType="PB" desc='宠物阵法解锁信息' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetMatrixUnLockOutProto'/>
+		<ProtoConfig   type='DOWN' code='609' subCode='0' protocolType="PB" desc='宠物阵法布阵信息' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetFormationResultOutProto'/>
+		<ProtoConfig   type='DOWN' code='610' subCode='0' protocolType="PB" desc='宠物元素之魂信息' bodyClazzName='com.road.ddt.gen.PetOutMsg$PetElementInfoOutProto'/>
+		<ProtoConfig   type='UP' code='2401' subCode='0' protocolType="PB" desc='宠物列表' bodyClazzName='com.road.ddt.gen.PetInMsg$PetListInProto'/>
+		<ProtoConfig   type='UP' code='2402' subCode='0' protocolType="PB" desc='宠物融合' bodyClazzName='com.road.ddt.gen.PetInMsg$PetFuseInProto'/>
+		<ProtoConfig   type='UP' code='2403' subCode='0' protocolType="PB" desc='宠物出战' bodyClazzName='com.road.ddt.gen.PetInMsg$PetBattleInProto'/>
+		<ProtoConfig   type='UP' code='2404' subCode='0' protocolType="PB" desc='宠物购买' bodyClazzName='com.road.ddt.gen.PetInMsg$PetBuyInProto'/>
+		<ProtoConfig   type='UP' code='2405' subCode='0' protocolType="PB" desc='碎片合成宠物' bodyClazzName='com.road.ddt.gen.PetInMsg$FragmentCompoundInProto'/>
+		<ProtoConfig   type='UP' code='2406' subCode='0' protocolType="PB" desc='宠物抽取' bodyClazzName='com.road.ddt.gen.PetInMsg$PetExtractInProto'/>
+		<ProtoConfig   type='UP' code='2407' subCode='0' protocolType="PB" desc='宠物吞噬' bodyClazzName='com.road.ddt.gen.PetInMsg$PetDevourInProto //前身：PetLevelupInProto'/>
+		<ProtoConfig   type='UP' code='2408' subCode='0' protocolType="PB" desc='宠物加锁' bodyClazzName='com.road.ddt.gen.PetInMsg$PetLockProto'/>
+		<ProtoConfig   type='UP' code='2409' subCode='0' protocolType="PB" desc='神级宠物合成' bodyClazzName='com.road.ddt.gen.PetInMsg$PetSuperComposeInProto'/>
+		<ProtoConfig   type='UP' code='2410' subCode='0' protocolType="PB" desc='宠物图鉴列表' bodyClazzName='com.road.ddt.gen.PetInMsg$PetPokedexListInProto'/>
+		<ProtoConfig   type='UP' code='2411' subCode='0' protocolType="PB" desc='宠物放生' bodyClazzName='com.road.ddt.gen.PetInMsg$PetReleaseInProto'/>
+		<ProtoConfig   type='UP' code='2412' subCode='0' protocolType="PB" desc='宠物购买-新接口' bodyClazzName='com.road.ddt.gen.PetInMsg$PetBuyNewInProto'/>
+		<ProtoConfig   type='UP' code='2413' subCode='0' protocolType="PB" desc='宠物超过成功返回，融合，合成等返回' bodyClazzName='com.road.ddt.gen.PetInMsg$PetInspireResetInProto'/>
+		<ProtoConfig   type='UP' code='2414' subCode='0' protocolType="PB" desc='潜能激发结果接受与否' bodyClazzName='com.road.ddt.gen.PetInMsg$PetInspireVoteInProto'/>
+		<ProtoConfig   type='UP' code='2415' subCode='0' protocolType="PB" desc='潜能激发结果接受与否' bodyClazzName='com.road.ddt.gen.PetInMsg$PetInspireAttributeInProto'/>
+		<ProtoConfig   type='UP' code='2416' subCode='0' protocolType="PB" desc='宠物升级' bodyClazzName='com.road.ddt.gen.PetInMsg$PetLvUpInProto'/>
+		<ProtoConfig   type='UP' code='2417' subCode='0' protocolType="PB" desc='宠物一键放生' bodyClazzName='com.road.ddt.gen.PetInMsg$PetOneKeyReleaseInProto'/>
+		<ProtoConfig   type='UP' code='2418' subCode='0' protocolType="PB" desc='宠物阵法锁孔解锁' bodyClazzName='com.road.ddt.gen.PetInMsg$PetMatrixUnlockInProto'/>
+		<ProtoConfig   type='UP' code='2420' subCode='0' protocolType="PB" desc='宠物阵法宠物上阵或交换位置' bodyClazzName='com.road.ddt.gen.PetInMsg$PetMatrixFormationInProto'/>
+	</module>
+	<module name='gvg' desc='gvg'>
+		<ProtoConfig   type='DOWN' code='3000' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.GVGOutMsg$GVGAllMoveOutProto'/>
+		<ProtoConfig   type='DOWN' code='3001' subCode='0' protocolType="PB" desc='公会战聊天' bodyClazzName='com.road.ddt.gen.GVGOutMsg$GVGChatOutProto'/>
+		<ProtoConfig   type='DOWN' code='3002' subCode='0' protocolType="PB" desc='公会战进入游戏' bodyClazzName='com.road.ddt.gen.GVGOutMsg$GVGEnterGame'/>
+		<ProtoConfig   type='DOWN' code='3003' subCode='0' protocolType="PB" desc='公会战创建单位' bodyClazzName='com.road.ddt.gen.GVGOutMsg$GVGAddPlayer'/>
+		<ProtoConfig   type='DOWN' code='3004' subCode='0' protocolType="PB" desc='公会战移除单位' bodyClazzName='com.road.ddt.gen.GVGOutMsg$GVGRemoveEntity'/>
+		<ProtoConfig   type='DOWN' code='3500' subCode='0' protocolType="PB" desc='发送公会7日活跃' bodyClazzName='com.road.ddt.gen.GVGOutMsg$GvgGuildRepVitality'/>
+		<ProtoConfig   type='DOWN' code='3501' subCode='0' protocolType="PB" desc='进入循环赛页面返回' bodyClazzName='com.road.ddt.gen.GVGOutMsg$GvgEnterQualifierResp'/>
+		<ProtoConfig   type='DOWN' code='3502' subCode='0' protocolType="PB" desc='报名返回' bodyClazzName='com.road.ddt.gen.GVGOutMsg$GvgGuildRespApply'/>
+		<ProtoConfig   type='DOWN' code='3505' subCode='0' protocolType="PB" desc='进入淘汰赛页面返回' bodyClazzName='com.road.ddt.gen.GVGOutMsg$GvgEnterKnockOutResp'/>
+		<ProtoConfig   type='UP' code='8003' subCode='0' protocolType="PB" desc='工会战移动协议' bodyClazzName='com.road.ddt.gen.GVGInMsg$GVGMoveInProto'/>
+		<ProtoConfig   type='UP' code='8004' subCode='0' protocolType="PB" desc='公会战使用技能' bodyClazzName='com.road.ddt.gen.GVGInMsg$GVGUseSkillInProto'/>
+		<ProtoConfig   type='UP' code='8005' subCode='0' protocolType="PB" desc='公会战聊天' bodyClazzName='com.road.ddt.gen.GVGInMsg$GVGChatInProto'/>
+		<ProtoConfig   type='UP' code='8006' subCode='0' protocolType="PB" desc='公会战购买' bodyClazzName='com.road.ddt.gen.GVGInMsg$GVGBuyInProto'/>
+		<ProtoConfig   type='UP' code='8007' subCode='0' protocolType="PB" desc='公会战进入' bodyClazzName='com.road.ddt.gen.GVGInMsg$GVGEnterGame'/>
+		<ProtoConfig   type='UP' code='8008' subCode='0' protocolType="PB" desc='公会战退出' bodyClazzName='com.road.ddt.gen.GVGInMsg$GVGExitGame'/>
+		<ProtoConfig   type='UP' code='8501' subCode='0' protocolType="PB" desc='请求7日活跃' bodyClazzName='com.road.ddt.gen.GVGInMsg$GvgGuildReqVitality'/>
+		<ProtoConfig   type='UP' code='8502' subCode='0' protocolType="PB" desc='进入循环赛页面' bodyClazzName='com.road.ddt.gen.GVGInMsg$GvgEnterQualifierReq'/>
+		<ProtoConfig   type='UP' code='8503' subCode='0' protocolType="PB" desc='报名' bodyClazzName='com.road.ddt.gen.GVGInMsg$GvgGuildReqApply'/>
+		<ProtoConfig   type='UP' code='8506' subCode='0' protocolType="PB" desc='进入淘汰赛页面' bodyClazzName='com.road.ddt.gen.GVGInMsg$GvgEnterKnockOutReq'/>
+	</module>
+	<module name='summer' desc='summer'>
+		<ProtoConfig   type='DOWN' code='1800' subCode='0' protocolType="PB" desc='夏季锦标赛信息' bodyClazzName='com.road.ddt.gen.SummerOutMsg$SummerInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='1801' subCode='0' protocolType="PB" desc='宝箱奖励信息提示' bodyClazzName='com.road.ddt.gen.SummerOutMsg$SummerChestInfoOutProto'/>
+		<ProtoConfig   type='UP' code='3850' subCode='0' protocolType="PB" desc='天梯打开宝箱' bodyClazzName='com.road.ddt.gen.SummerInMsg$SummerOpenChestInProto'/>
+	</module>
+	<module name='group' desc='group'>
+		<ProtoConfig   type='DOWN' code='2050' subCode='0' protocolType="PB" desc='群组列表' bodyClazzName='com.road.ddt.gen.GroupOutMsg$GroupListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2051' subCode='0' protocolType="PB" desc='群组详细信息' bodyClazzName='com.road.ddt.gen.GroupOutMsg$GroupDetailOutProto'/>
+		<ProtoConfig   type='DOWN' code='2052' subCode='0' protocolType="PB" desc='群组变化' bodyClazzName='com.road.ddt.gen.GroupOutMsg$GroupChangeOutProto'/>
+		<ProtoConfig   type='DOWN' code='2053' subCode='0' protocolType="PB" desc='群组消息通知' bodyClazzName='com.road.ddt.gen.GroupOutMsg$GroupNoticeOutProto'/>
+		<ProtoConfig   type='UP' code='7000' subCode='0' protocolType="PB" desc='群组列表' bodyClazzName='com.road.ddt.gen.GroupInMsg$GroupListInProto'/>
+		<ProtoConfig   type='UP' code='7001' subCode='0' protocolType="PB" desc='创建群组' bodyClazzName='com.road.ddt.gen.GroupInMsg$GroupCreateInProto'/>
+		<ProtoConfig   type='UP' code='7002' subCode='0' protocolType="PB" desc='群组邀请' bodyClazzName='com.road.ddt.gen.GroupInMsg$GroupInviteInProto'/>
+		<ProtoConfig   type='UP' code='7003' subCode='0' protocolType="PB" desc='群组详细信息' bodyClazzName='com.road.ddt.gen.GroupInMsg$GroupDetailInProto'/>
+		<ProtoConfig   type='UP' code='7004' subCode='0' protocolType="PB" desc='群组踢出' bodyClazzName='com.road.ddt.gen.GroupInMsg$GroupKickInProto'/>
+		<ProtoConfig   type='UP' code='7005' subCode='0' protocolType="PB" desc='群组解散' bodyClazzName='com.road.ddt.gen.GroupInMsg$GroupDissolveInProto'/>
+		<ProtoConfig   type='UP' code='7006' subCode='0' protocolType="PB" desc='群组功能设置' bodyClazzName='com.road.ddt.gen.GroupInMsg$GroupSetUpInProto'/>
+		<ProtoConfig   type='UP' code='7007' subCode='0' protocolType="PB" desc='退出群组' bodyClazzName='com.road.ddt.gen.GroupInMsg$GroupExitInProto'/>
+		<ProtoConfig   type='UP' code='7008' subCode='0' protocolType="PB" desc='群组消息获取' bodyClazzName='com.road.ddt.gen.GroupInMsg$GroupMsgListInProto'/>
+	</module>
+	<module name='channel' desc='channel'>
+		<ProtoConfig   type='DOWN' code='503' subCode='0' protocolType="PB" desc='支线版本' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$ChannelVersionResProto'/>
+		<ProtoConfig   type='DOWN' code='504' subCode='0' protocolType="PB" desc='频道信息' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$ChannelHostResProto'/>
+		<ProtoConfig   type='DOWN' code='511' subCode='0' protocolType="PB" desc='切换频道' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$ChannelChangeResProto'/>
+		<ProtoConfig   type='DOWN' code='512' subCode='0' protocolType="PB" desc='区服列表' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$ChannelListResProto'/>
+		<ProtoConfig   type='DOWN' code='522' subCode='0' protocolType="PB" desc='区服帐号列表' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$AccountListResProto'/>
+		<ProtoConfig   type='DOWN' code='24' subCode='0' protocolType="PB" desc='服务维护公告' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$ServerMaintainNoticeResProto'/>
+		<ProtoConfig   type='DOWN' code='9008' subCode='0' protocolType="PB" desc='服务器停服前通知客户端' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$ServerStopNotifyOutProto'/>
+		<ProtoConfig   type='DOWN' code='523' subCode='0' protocolType="PB" desc='通知客户端改变登录地址' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$AuditInfoListOutProto'/>
+		<ProtoConfig   type='DOWN' code='527' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$LoginQueueingOutProto'/>
+		<ProtoConfig   type='DOWN' code='530' subCode='0' protocolType="PB" desc='' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$PlatformInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='538' subCode='0' protocolType="PB" desc='切换host信息' bodyClazzName='com.road.ddt.gen.ChannelHostOutMsg$SwitchHostProto'/>
+		<ProtoConfig   type='UP' code='5' subCode='0' protocolType="PB" desc='支线版本' bodyClazzName='com.road.ddt.gen.ChannelHostInMsg$ChannelVersionReqProto'/>
+		<ProtoConfig   type='UP' code='6' subCode='0' protocolType="PB" desc='频道信息' bodyClazzName='com.road.ddt.gen.ChannelHostInMsg$ChannelHostReqProto'/>
+		<ProtoConfig   type='UP' code='15' subCode='0' protocolType="PB" desc='区服列表' bodyClazzName='com.road.ddt.gen.ChannelHostInMsg$ChannelListReqProto'/>
+		<ProtoConfig   type='UP' code='16' subCode='0' protocolType="PB" desc='帐号列表' bodyClazzName='com.road.ddt.gen.ChannelHostInMsg$AccountListReqProto'/>
+		<ProtoConfig   type='UP' code='25' subCode='0' protocolType="PB" desc='审核信息' bodyClazzName='com.road.ddt.gen.ChannelHostInMsg$AuditInfoInProto'/>
+	</module>
+	<module name='zone' desc='zone'>
+		<ProtoConfig   type='DOWN' code='2100' subCode='0' protocolType="PB" desc='玩家空间面板信息' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneBoardInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='2101' subCode='0' protocolType="PB" desc='玩家空间说说链表' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneTalkListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2102' subCode='0' protocolType="PB" desc='玩家空间留言链表' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneLeaveMessageListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2103' subCode='0' protocolType="PB" desc='玩家空间相片链表' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZonePhotoOutProto'/>
+		<ProtoConfig   type='DOWN' code='2104' subCode='0' protocolType="PB" desc='玩家删除' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneDeleteInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='2105' subCode='0' protocolType="PB" desc='玩家次数的更新' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneRecordUpdateOutProto'/>
+		<ProtoConfig   type='DOWN' code='2106' subCode='0' protocolType="PB" desc='玩家上传成功后md5的返回，这里主要是省下照片的字节流' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneUploadPhotoOutProto'/>
+		<ProtoConfig   type='DOWN' code='2107' subCode='0' protocolType="PB" desc='登录空间服' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$LoginZoneServerOutProto'/>
+		<ProtoConfig   type='DOWN' code='2108' subCode='0' protocolType="PB" desc='退出空间服' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$LogoutZoneServerOutProto'/>
+		<ProtoConfig   type='DOWN' code='2109' subCode='0' protocolType="PB" desc='频道心跳消息' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$PlayerPingZoneBackOutProto'/>
+		<ProtoConfig   type='DOWN' code='2110' subCode='0' protocolType="PB" desc='玩家空间相片MD5链表' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZonePhotoMD5OutProto'/>
+		<ProtoConfig   type='DOWN' code='2111' subCode='0' protocolType="PB" desc='空间弹窗的玩家的个人信息请求' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneUserInfoOutProto'/>
+		<ProtoConfig   type='DOWN' code='2112' subCode='0' protocolType="PB" desc='登录认证失败' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneUserCheckFailOutProto'/>
+		<ProtoConfig   type='DOWN' code='2113' subCode='0' protocolType="PB" desc='新玩家空间说说链表' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneTalkListExOutProto'/>
+		<ProtoConfig   type='DOWN' code='2114' subCode='0' protocolType="PB" desc='玩家空间回复' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneTalkReplyListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2115' subCode='0' protocolType="PB" desc='玩家空间点赞表' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneTalkLikeListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2116' subCode='0' protocolType="PB" desc='玩家本人空间点赞状态' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneTalkLikeStateOutProto'/>
+		<ProtoConfig   type='DOWN' code='2117' subCode='0' protocolType="PB" desc='玩家空间状态更新' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneUpdateOutProto'/>
+		<ProtoConfig   type='DOWN' code='2118' subCode='0' protocolType="PB" desc='玩家空间踩列表' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneStepListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2119' subCode='0' protocolType="PB" desc='玩家空间送礼列表' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneGiftListOutProto'/>
+		<ProtoConfig   type='DOWN' code='2120' subCode='0' protocolType="PB" desc='奖励触发了' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneGiftTriggerOutProto'/>
+		<ProtoConfig   type='DOWN' code='2121' subCode='0' protocolType="PB" desc='提示有新的消息，请注意查收' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneNewMsgOutProto'/>
+		<ProtoConfig   type='DOWN' code='2122' subCode='0' protocolType="PB" desc='空间热点返回' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneHotMoodOutProto'/>
+		<ProtoConfig   type='DOWN' code='2123' subCode='0' protocolType="PB" desc='空间朋友圈' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneFriendCircleOutProto'/>
+		<ProtoConfig   type='DOWN' code='2124' subCode='0' protocolType="PB" desc='朋友圈通知列表' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneFriendCircleNotifyOutProto'/>
+		<ProtoConfig   type='DOWN' code='2125' subCode='0' protocolType="PB" desc='朋友圈通知数量' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneFriendCircleNewNotifyNumOutProto'/>
+		<ProtoConfig   type='DOWN' code='2126' subCode='0' protocolType="PB" desc='朋友圈通知数量' bodyClazzName='com.road.ddt.gen.ZoneOutMsg$ZoneNewPanelOutProto'/>
+		<ProtoConfig   type='UP' code='7200' subCode='0' protocolType="PB" desc='玩家空间面板信息' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneBoardInfoInProto'/>
+		<ProtoConfig   type='UP' code='7201' subCode='0' protocolType="PB" desc='玩家空间说说' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneTalkListInProto'/>
+		<ProtoConfig   type='UP' code='7202' subCode='0' protocolType="PB" desc='玩家空间留言' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneLeaveMessageListInProto'/>
+		<ProtoConfig   type='UP' code='7203' subCode='0' protocolType="PB" desc='玩家相片' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZonePhotoListInProto'/>
+		<ProtoConfig   type='UP' code='7204' subCode='0' protocolType="PB" desc='玩家删除' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneDeleteInfoInProto'/>
+		<ProtoConfig   type='UP' code='7205' subCode='0' protocolType="PB" desc='玩家踩一下' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneStepOnInProto'/>
+		<ProtoConfig   type='UP' code='7206' subCode='0' protocolType="PB" desc='玩家发说说' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneTalkInProto'/>
+		<ProtoConfig   type='UP' code='7207' subCode='0' protocolType="PB" desc='玩家发留言' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneLeaveMessageInProto'/>
+		<ProtoConfig   type='UP' code='7208' subCode='0' protocolType="PB" desc='玩家上传相片' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZonePhotoInProto'/>
+		<ProtoConfig   type='UP' code='7209' subCode='0' protocolType="PB" desc='玩家发评论' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneTalkReplyInProto'/>
+		<ProtoConfig   type='UP' code='7210' subCode='0' protocolType="PB" desc='玩家修改个人说明' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneChangeDescriptionInProto'/>
+		<ProtoConfig   type='UP' code='7211' subCode='0' protocolType="PB" desc='玩家说说点赞' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneTalkLikeInProto'/>
+		<ProtoConfig   type='UP' code='7212' subCode='0' protocolType="PB" desc='玩家说说取消点赞' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneTalkLikeCancelInProto'/>
+		<ProtoConfig   type='UP' code='7213' subCode='0' protocolType="PB" desc='登录聊天服' bodyClazzName='com.road.ddt.gen.ZoneInMsg$LoginZoneServerInProto'/>
+		<ProtoConfig   type='UP' code='7214' subCode='0' protocolType="PB" desc='退出聊天服' bodyClazzName='com.road.ddt.gen.ZoneInMsg$LogoutZoneServerInProto'/>
+		<ProtoConfig   type='UP' code='7215' subCode='0' protocolType="PB" desc='频道心跳消息' bodyClazzName='com.road.ddt.gen.ZoneInMsg$PlayerPingZoneInProto'/>
+		<ProtoConfig   type='UP' code='7216' subCode='0' protocolType="PB" desc='玩家相片md5请求' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZonePhotoMD5ListInProto'/>
+		<ProtoConfig   type='UP' code='7217' subCode='0' protocolType="PB" desc='空间弹窗的玩家的个人信息请求' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneUserInfoInProto'/>
+		<ProtoConfig   type='UP' code='7218' subCode='0' protocolType="PB" desc='空间说说二次load的数据' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneTalkInfoInProto'/>
+		<ProtoConfig   type='UP' code='7219' subCode='0' protocolType="PB" desc='空间换方框' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneChangePaneInProto'/>
+		<ProtoConfig   type='UP' code='7220' subCode='0' protocolType="PB" desc='空间踩列表请求' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneStepListInProto'/>
+		<ProtoConfig   type='UP' code='7221' subCode='0' protocolType="PB" desc='空间礼物列表请求' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneGiftListInProto'/>
+		<ProtoConfig   type='UP' code='7222' subCode='0' protocolType="PB" desc='空间礼物设置份数' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneStepGiftSetInProto'/>
+		<ProtoConfig   type='UP' code='7223' subCode='0' protocolType="PB" desc='空间热点心情' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneHotMoodInProto'/>
+		<ProtoConfig   type='UP' code='7224' subCode='0' protocolType="PB" desc='指定空间说说详细数据' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneTalkDetailInfoInProto'/>
+		<ProtoConfig   type='UP' code='7225' subCode='0' protocolType="PB" desc='空间朋友圈' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneFriendCircleInProto'/>
+		<ProtoConfig   type='UP' code='7226' subCode='0' protocolType="PB" desc='玩家朋友圈更新通知' bodyClazzName='com.road.ddt.gen.ZoneInMsg$FriendCircleUpdateNotifyListInProto'/>
+		<ProtoConfig   type='UP' code='7227' subCode='0' protocolType="PB" desc='玩家朋友圈更新通知数量' bodyClazzName='com.road.ddt.gen.ZoneInMsg$FriendCircleNewNotifyNumInProto'/>
+		<ProtoConfig   type='UP' code='7229' subCode='0' protocolType="PB" desc='玩家修改屏蔽非好友的留言' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneChangeShieldInProto'/>
+		<ProtoConfig   type='UP' code='7300' subCode='0' protocolType="PB" desc='举报玩家空间照片' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneReportPhotoProto'/>
+		<ProtoConfig   type='UP' code='7301' subCode='0' protocolType="PB" desc='举报玩家心情' bodyClazzName='com.road.ddt.gen.ZoneInMsg$ZoneReportModeProto'/>
+	</module>
+	<module name='mall' desc='mall'>
+		<ProtoConfig   type='DOWN' code='1600' subCode='0' protocolType="PB" desc='商品列表' bodyClazzName='com.road.ddt.gen.MallOutMsg$MallGoodsListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1601' subCode='0' protocolType="PB" desc='购买记录列表' bodyClazzName='com.road.ddt.gen.MallOutMsg$MallPurchaseListOutProto'/>
+		<ProtoConfig   type='DOWN' code='1602' subCode='0' protocolType="PB" desc='商城物品购买结果' bodyClazzName='com.road.ddt.gen.MallOutMsg$MallPurchaseResult'/>
+		<ProtoConfig   type='DOWN' code='1603' subCode='0' protocolType="PB" desc='武器宝箱购买' bodyClazzName='com.road.ddt.gen.MallOutMsg$WeaponBoxBuyOutProto'/>
+		<ProtoConfig   type='UP' code='3302' subCode='0' protocolType="PB" desc='物品购买列表' bodyClazzName='com.road.ddt.gen.MallInMsg$MallPurchaseGoodsListInProto'/>
+		<ProtoConfig   type='UP' code='3303' subCode='0' protocolType="PB" desc='获取商城商品页列表' bodyClazzName='com.road.ddt.gen.MallInMsg$GetMallGoodsListProto'/>
+		<ProtoConfig   type='UP' code='3304' subCode='0' protocolType="PB" desc='购买武器' bodyClazzName='com.road.ddt.gen.MallInMsg$PurchaseWeaponProto'/>
+		<ProtoConfig   type='UP' code='3305' subCode='0' protocolType="PB" desc='购买武器' bodyClazzName='com.road.ddt.gen.MallInMsg$ResourceConvInProto'/>
+		<ProtoConfig   type='UP' code='3306' subCode='0' protocolType="PB" desc='限时商店刷新' bodyClazzName='com.road.ddt.gen.MallInMsg$ItemMallRefreshInProto'/>
+	</module>
+
+</root>

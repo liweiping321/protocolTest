@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_111"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/GameFramwork"/>
+	<classpathentry kind="lib" path="/Lib/lib/dom4j-1.6.1.jar" sourcepath="C:/Users/jason.lin/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jaxen-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/mina-core-2.0.13.jar" sourcepath="/Lib/lib/mina-core-2.0.13-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jackson-databind-2.5.3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jackson-dataformat-protobuf-2.8.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/protobuf-java-format-1.2.jar" sourcepath="/Lib/lib/protobuf-java-format-1.2-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/bcprov-jdk16-145.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/bonecp-0.7.1-fixed.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/class-agent-1.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/gotye-api-client-1.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/httpasyncclient-4.1.1.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/httpcore-nio-4.4.4.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jackson-annotations-2.5.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jackson-core-2.5.3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jackson-core-2.6.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jackson-jr-all-2.4.3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/javacsv-2.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/javax.el-3.0.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/javax.servlet.jsp-2.3.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/javax.servlet.jsp-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/javax.servlet.jsp.jstl-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-continuation-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-http-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-io-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-jsp-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-schemas-3.1.M0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-security-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-server-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-servlet-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-util-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-webapp-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-xml-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/json-lib-2.4-jdk15.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/mysql-connector-java-5.1.38.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/org.eclipse.jdt.core-3.8.2.v20130121.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/quartz-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/slf4j-log4j12-1.7.21.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/swingx-0.9.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-lang-2.6.jar" sourcepath="/Lib/lib/commons-lang-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/fastjson-1.2.24.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/netty-all-4.1.8.Final.jar" sourcepath="/Lib/lib/netty-all-4.1.8.Final-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/protobuf-java-2.5.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/ddt_proto_1.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

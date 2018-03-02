@@ -1,0 +1,9 @@
+--[V_Consortia_Users]
+CREATE VIEW [dbo].[V_Consortia_Users] AS 
+SELECT     dbo.Consortia_Users.ID, dbo.Consortia_Users.ConsortiaID, dbo.Consortia_Users.UserID, dbo.Consortia_Users.UserName, 
+                      isnull(dbo.Consortia_Users.RatifierID,0) RatifierID, dbo.Consortia_Users.RatifierName, dbo.Consortia_Users.DutyID, dbo.Consortia_Users.Remark, 
+                      dbo.Consortia_Users.IsBanChat, dbo.Consortia_Users.IsExist, dbo.Sys_Users_Detail.Grade, dbo.Sys_Users_Detail.GP, ISNULL(C.Repute, 0) 
+											dbo.OldPlayerInfo ON dbo.Consortia_Users.UserID = dbo.OldPlayerInfo.PlayerID
+
+
+GO

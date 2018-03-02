@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<module name="player" desc="登录模块">
+		<protocol  key="up_1_0" desc="玩家登录">
+			<BinProperty type="boolean" name="isChangeChannel"  desc="测试描述" /> 
+			<BinProperty type="int" name="version"  desc="测试描述" /> 
+			<BinProperty type="int" name="other"  desc="测试描述" /> 
+			<BinProperty type="bytes" name="src"  desc="测试描述" /> 
+		</protocol>
+		
+		<protocol key="down_0x05_0" desc="同步服务器时间">
+			<BinProperty type="date" name="sysDate"  desc="测试描述" /> 
+		</protocol>
+	
+		<protocol key="down_80_0" desc="世界活动开启状态">
+				<BinProperty type="boolean" name="switchName"  desc="测试描述" /> 
+		</protocol>
+	</module>
+	
+	<module name="shop" desc="商店模块">
+		<protocol key="up_0x159_0" desc="购买">
+				<BinProperty type="int" name="count"/>
+				<BinProperty type="int" name="goodType"/>
+				<BinProperty type="int" name="shopGoodsId"/>
+				<BinProperty type="int" name="type"/>
+				<BinProperty type="string" name="color"/>
+				<BinProperty type="boolean" name="isDress"/>
+				<BinProperty type="string" name="skin"/>
+				<BinProperty type="int" name="place"/>
+				<BinProperty type="boolean" name="isBindMoney"/>
+				<BinProperty type="int" name="buyFrom"/>
+				
+				<BinProperty type="list" sizeType="int" name="items">
+					<BinProperty type="int" name="shopGoodsId"/>
+					<BinProperty type="int" name="type"/>
+					<BinProperty type="string" name="color"/>
+					<BinProperty type="boolean" name="isDress"/>
+					<BinProperty type="string" name="skin"/>
+				</BinProperty>
+				<BinProperty type="int" name="count"/>
+		</protocol>
+	</module>
+</root>
+ 

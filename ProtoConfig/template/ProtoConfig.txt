@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root >
+    
+    <#list modules as mod>
+	    <module name='${mod.name}' desc='${mod.name}'>
+	      <#list (mod.msgs) as msg>
+	       <ProtoConfig   type='${msg.directType}' code='${msg.code?c}' subCode='0' protocolType="PB" desc='${msg.desc}' bodyClazzName='${msg.className}'/>
+	      </#list>
+	    </module>
+	</#list>
+
+</root>
+ 

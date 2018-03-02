@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<protocol>
+	<BinProperty type="boolean" name="isChangeChannel"  desc="测试描述" /> 
+	<BinProperty type="int" name="version"  desc="测试描述" /> 
+	<BinProperty type="int" name="other"  desc="测试描述" /> 
+	<BinProperty type="bytes" name="src"  desc="测试描述" /> 
+</protocol>

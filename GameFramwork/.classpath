@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_111"/>
+	<classpathentry kind="lib" path="/Lib/lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/class-agent-1.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-beanutils-1.9.2.jar" sourcepath="/Lib/lib/commons-beanutils-1.9.2-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-codec-1.9.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/gotye-api-client-1.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/httpasyncclient-4.1.1.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/httpclient-4.5.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/httpcore-4.4.4.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/httpcore-nio-4.4.4.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jackson-annotations-2.5.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jackson-core-2.5.3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jackson-databind-2.5.3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/javacsv-2.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-http-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-io-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-security-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-server-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-servlet-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jetty-util-9.2.15.v20160210.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/mina-core-2.0.13.jar" sourcepath="C:/Users/jason.lin/.m2/repository/org/apache/mina/mina-core/2.0.13/mina-core-2.0.13-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/mysql-connector-java-5.1.38.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/quartz-2.2.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/slf4j-api-1.7.21.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/slf4j-log4j12-1.7.21.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/bcprov-jdk16-145.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/bonecp-0.7.1-fixed.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/c3p0-0.9.1.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/dom4j-1.6.1.jar" sourcepath="C:/Users/jason.lin/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-lang-2.6.jar" sourcepath="/Lib/lib/commons-lang-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/log4j-api-2.6.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/log4j-core-2.6.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/log4j-slf4j-impl-2.6.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/log4j-web-2.6.2.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jaxen-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/fastjson-1.2.24.jar" sourcepath="/Lib/lib/fastjson-1.2.24-sources.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/netty-all-4.1.8.Final.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/protobuf-java-2.5.0.jar" sourcepath="C:/Users/lip.li/.m2/repository/com/google/protobuf/protobuf-java/2.6.1/protobuf-java-2.6.1-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

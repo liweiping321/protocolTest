@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project default="upload" name="TSServerBuilder" basedir="./">
+	<description>
+		TS-Server版本自动编译打包脚本
+	</description>
+
+	<echo>start to build DDT_JAVA...</echo>
+	<echo>${basedir}</echo>
+	
+	<tstamp>  
+		<format property="TODAY_CN" pattern="yyyy-MM-dd" locale="en"/>  
+    </tstamp> 
+
+	<property name="host" value="172.16.1.95" />
+	<property name="port" value="16333" />
+	<property name="user" value="root" />
+	<property name="password" value="ChYw@zhuan%Y0ng" />
+	<property name="remotePath" value="/data/tsserver" />
+	
+	<!--游戏名-->
+	<property name="appName" value="ddtQQGame" />
+	<property name="java-version" value="1.7" />
+	<property name="app-version" value="0.1" />
+	
+	<!--打包路径设置-->
+	<property name="target_path" value="${basedir}/target" />
+	<property name="lib-out" value="${target_path}/lib" />
+	<property name="config-out" value="${target_path}/config" />
+	<property name="app_out" value="${target_path}/${appName}" />
+	
+	<!--原路径设置-->
+	<property name="lib_src" value="../Lib/lib" />
+	<property name="config_src" value="./config" />
+	<property name="app_src" value="${basedir}/${appName}" />
+
+	<path id="lib-out">
+		<fileset dir="${lib-out}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<!-- 上传到服务器-->
+	<target name="upload" depends="deploy">
+		<echo>==========================start upload==========================</echo>
+		<!-- 上传FightingServer到 FTP 服务器-->
+		<scp port="${port}" todir="${user}:${password}@${host}:${remotePath}" trust="true" verbose="true">
+			<fileset dir="${target_path}">
+			</fileset>
+		</scp>
+		<echo>==========================start upload==========================</echo>
+	</target>
+	
+	<!-- 打包-->
+	<target name="deploy" depends="init">
+		<!--打包Framwork-->
+		<javac encoding="utf-8" includeAntRuntime="false" srcdir="../GameFramwork/src" destdir="../GameFramwork/bin" source="${java-version}" target="${java-version}" debug="${is-debug}">
+			<classpath refid="lib-out" />
+		</javac>
+		<jar basedir="../GameFramwork/bin" destfile="${lib-out}/ddt_gameframework_${app-version}.jar" />
+		
+		<!--打包TSServer-->
+		<javac encoding="utf-8" includeAntRuntime="false" srcdir="${basedir}/src" destdir="${basedir}/bin" source="${java-version}" target="${java-version}" debug="${is-debug}">
+			<classpath refid="lib-out" />
+		</javac>
+		<jar basedir="${basedir}/bin" destfile="${target_path}/ddt_tsserver_${app-version}.jar" />
+	</target>
+
+	<!-- 清除已生成的旧版本文件 -->
+	<target name="clean">
+		<delete dir="${lib-out}" />
+		<delete dir="${config-out}" />
+		<delete dir="${app_out}" />
+	</target>
+	
+	<!-- 创建部署文件所需路径 -->
+	<target name="init" depends="clean">
+		<copydir dest="${lib-out}" src="${lib_src}" excludes="*-sources.jar"/>
+		<!-- copydir dest="${config-out}" src="${config_src}" / -->
+		<copydir dest="${app_out}" src="${app_src}" excludes="*.xml"/>
+	</target>
+</project>

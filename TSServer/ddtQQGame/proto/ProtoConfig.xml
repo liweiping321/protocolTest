@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root >
+    <module name='filters' desc='过滤'>
+      <ProtoConfig filter='true' type='UP' code='0x04' subCode='0' protocolType="PB" desc='心跳' bodyClazzName=''/>
+      <ProtoConfig filter='true' type='DOWN' code='0x04' subCode='0' protocolType="PB" desc='心跳' bodyClazzName=''/>
+      <ProtoConfig filter='true' type='DOWN' code='0x06' subCode='0' protocolType="PB" desc='心跳' bodyClazzName=''/>
+    </module>
+	<module name='player' desc='玩家模块'>
+		<ProtoConfig loginName='logic' type='UP' code='1' subCode='0' protocolType="PB" desc='登录' bodyClazzName='com.road.ddt.pb.command.LoginReqProto$LoginReq'/>
+		<ProtoConfig updateKey='true' type='DOWN' code='0xc2' subCode='0' protocolType="BIN" desc='等待登录个数' bodyClazzName=''/>
+	</module>
+	
+	<module name='item' desc='物品模块'>
+		<ProtoConfig compress='true' type='DOWN' code='0x40' subCode='0' protocolType="PB" desc='格子物品' bodyClazzName='com.road.ddt.pb.command.GridGoodResProto$GridGoodRes'/>
+		<ProtoConfig type='UP' code='0x2c' protocolType="PB" desc='购买物品' bodyClazzName='com.road.ddt.pb.command.BuyItemReqProto$BuyItemReq'/>
+		<ProtoConfig type='DOWN' code='0x2c' protocolType="BIN" desc='购买物品' bodyClazzName=''/>
+	</module>
+	<module name="pets" desc="宠物模块">
+        <ProtoConfig type="UP" code="0x200" subCode="0x01" desc="请求宠物信息,p1用户ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x01" desc="返回宠物信息,p1用户ID" protocolType="PB" bodyClazzName="com.road.ddt.pb.pets.PetsInfoListRes$UserPetsListRes"/>
+        <ProtoConfig type="UP" code="0x200" subCode="0x0a" desc="开启被动技能栏位,p1宠物ID" protocolType="BIN" bodyClazzName="up_0x200_0x0a_PetsOpenSkillBox"/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x0a" desc="开启被动技能结果,p1宠物ID" protocolType="BIN" bodyClazzName="down_0x200_0x0a_PetsOpenSkillBox"/>
+        <ProtoConfig type="UP" code="0x200" subCode="0x05" desc="洗练宠物,p1宠物ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x05" desc="洗练宠物结果,p1宠物ID" protocolType="PB" bodyClazzName="com.road.ddt.pb.pets.PetsPolishInfoRes$UserPetsPolishInfoRes"/>
+        <ProtoConfig type="UP" code="0x200" subCode="0x03" desc="放生宠物,p1宠物ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x03" desc="放生宠物结果,p1宠物ID" protocolType="BIN" bodyClazzName="down_0x200_0x03_PetsRelease"/>
+        <ProtoConfig type="UP" code="0x200" subCode="0x02" desc="宠物改名,p1宠物ID" protocolType="BIN" bodyClazzName="up_0x200_0x02_PetsRename"/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x02" desc="宠物改名结果,p1宠物ID" protocolType="BIN" bodyClazzName="down_0x200_0x02_PetsRename"/>
+        <ProtoConfig type="UP" code="0x200" subCode="0x04" desc="宠物出战,p1宠物ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x04" desc="宠物出战结果,p1宠物ID" protocolType="BIN" bodyClazzName="down_0x200_0x04_PetsSetFight"/>
+        <ProtoConfig type="UP" code="0x200" subCode="0x06" desc="宠物进阶,p1宠物ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x06" desc="宠物进阶结果,p1宠物ID" protocolType="PB" bodyClazzName="com.road.ddt.pb.pets.PetsPolishInfoRes$UserPetsPolishInfoRes"/>
+        <ProtoConfig type="UP" code="0x200" subCode="0x09" desc="使用宠物蛋,p1背包开始位置" protocolType="BIN" bodyClazzName="up_0x200_0x09_PetsUseBornEgg"/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x09" desc="使用宠物蛋结果,p1背包开始位置" protocolType="PB" bodyClazzName="com.road.ddt.pb.pets.PetsPolishInfoRes$UserPetsPolishInfoRes"/>
+        <ProtoConfig type="UP" code="0x200" subCode="0x07" desc="使用宠物技能书,p1宠物ID" protocolType="BIN" bodyClazzName="up_0x200_0x09_PetsUseSkillBook"/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x07" desc="使用宠物技能书结果,p1宠物ID" protocolType="PB" bodyClazzName="com.road.ddt.pb.pets.PetsPolishInfoRes$UserPetsPolishInfoRes"/>
+        <ProtoConfig type="UP" code="0x200" subCode="0x08" desc="使用宠物药水,p1宠物ID" protocolType="BIN" bodyClazzName="up_0x200_0x09_PetsUseTrainLiquid"/>
+        <ProtoConfig type="DOWN" code="0x200" subCode="0x08" desc="使用宠物药水结果,p1宠物ID" protocolType="PB" bodyClazzName="com.road.ddt.pb.pets.PetsPolishInfoRes$UserPetsPolishInfoRes"/>
+    </module>
+    <module name="social" desc="社交模块">
+        <ProtoConfig type="UP" code="0x201" subCode="0x01" desc="添加好友分组" protocolType="BIN" bodyClazzName="up_0x201_0x01_AddFriendsGroup"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x01" desc="添加好友分组结果" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialMessages$AddFriendsGroupRes"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x08" desc="添加成员到群组,p1群组ID,p2用户ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x08" desc="添加成员到群组结果,p1群组ID,p2用户ID" protocolType="BIN" bodyClazzName="down_0x201_0x08_AddMemberToSocialGroup"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x04" desc="创建群组" protocolType="BIN" bodyClazzName="up_0x201_0x04_AddSocialGroup"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x04" desc="创建群组结果" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialMessages$AddSocialGroupRes"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x13" desc="踩空间,p1用户ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x13" desc="踩空间结果,p1用户ID" protocolType="BIN" bodyClazzName="down_0x201_0x13_AddSocialSiteStep"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x0f" desc="发空间动态" protocolType="BIN" bodyClazzName="up_0x201_0x0f_AddSocialTrend"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x0f" desc="发空间动态结果" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialMessages$AddSocialTrendRes"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x11" desc="评论空间动态,p1动态ID,p2评论的评论ID" protocolType="BIN" bodyClazzName="up_0x201_0x11_AddSocialTrendComment"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x11" desc="评论空间动态,p1动态ID,p2评论的评论ID" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialMessages$AddSocialTrendCommentRes"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x10" desc="动态点赞,p1动态ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x10" desc="动态点赞结果,p1动态ID" protocolType="BIN" bodyClazzName="down_0x201_0x10_AddSocialTrendLike"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x02" desc="删除好友分组,p1分组ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x02" desc="删除好友分组结果,p1分组ID" protocolType="BIN" bodyClazzName="down_0x201_0x02_DelFriendsGroup"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x07" desc="删除群组,p1群组ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x07" desc="删除群组结果,p1群组ID" protocolType="BIN" bodyClazzName="down_0x201_0x07_DelSocialGroup"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x16" desc="删除空间动态,p1动态ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x16" desc="删除空间动态结果,p1动态ID" protocolType="BIN" bodyClazzName="down_0x201_0x16_DelSocialTrend"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x17" desc="删除空间评论,p1评论ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x17" desc="删除空间评论结果,p1评论ID" protocolType="BIN" bodyClazzName="down_0x201_0x17_DelSocialTrendComment"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x06" desc="写群组简介,p1群组ID" protocolType="BIN" bodyClazzName="up_0x201_0x06_DescribeSocialGroup"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x06" desc="写群组简介结果,p1群组ID" protocolType="BIN" bodyClazzName="down_0x201_0x06_DescribeSocialGroup"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x21" desc="一键添加好友" protocolType="BIN" bodyClazzName="up_0x201_0x21_OnkeyAddFriends"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x21" desc="一键添加好友结果" protocolType="PB" bodyClazzName="com.road.ddt.pb.friend.AddFriendResProto$AddFriendRes"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x03" desc="好友分组改名,p1好友分组ID" protocolType="BIN" bodyClazzName="up_0x201_0x03_RenameFriendsGroup"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x03" desc="好友分组改名结果,p1好友分组ID" protocolType="BIN" bodyClazzName="down_0x201_0x03_RenameFriendsGroup"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x05" desc="群组改名,p1群组组ID" protocolType="BIN" bodyClazzName="up_0x201_0x05_RenameSocialGroup"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x05" desc="群组改名结果,p1群组ID" protocolType="BIN" bodyClazzName="down_0x201_0x05_RenameSocialGroup"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x0a" desc="设置群组聊天字体颜色" protocolType="BIN" bodyClazzName="up_0x201_0x0a_ScoialGroupChatStyle"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x20" desc="社交中心,p1类型0查好友1查师徒2按名称查找" protocolType="BIN" bodyClazzName="up_0x201_0x20_SocialCenterInfo"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x20" desc="社交中心结果" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialMessages$SocialCenterInfoRes"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x22" desc="礼品商店,p1礼品类型,p2页码" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x22" desc="礼品商店,p1礼品类型,p2页码" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialGiftMessages$SocialGiftRes"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x25" desc="礼品记录" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x25" desc="礼品记录结果" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialGiftMessages$SocialGiftRecordRes"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x26" desc="从背包赠送礼品,p1用ID,p2礼品模版ID" protocolType="BIN" bodyClazzName="up_0x201_0x26_SocialGiveGift2"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x26" desc="从背包赠送礼品结果,p1用ID,p2礼品模版ID" protocolType="BIN" bodyClazzName="down_0x201_0x26_SocialGiveGift2"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x23" desc="赠送礼品,p1用ID,p2礼品模版ID" protocolType="BIN" bodyClazzName="up_0x201_0x26_SocialGiveGift"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x23" desc="赠送礼品结果,p1用ID,p2礼品模版ID" protocolType="BIN" bodyClazzName="down_0x201_0x26_SocialGiveGift"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x09" desc="群组聊天,p1群组ID" protocolType="BIN" bodyClazzName="up_0x201_0x09_SocialGroupChat"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x09" desc="群组聊天结果,p1群组ID" protocolType="BIN" bodyClazzName="down_0x201_0x09_SocialGroupChat"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x24" desc="请求拥有的礼品" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x24" desc="请求拥有的礼品结果" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialGiftMessages$SocialOwnGiftRes"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x0b" desc="空间信息,p1用户ID" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x0b" desc="空间信息结果,p1用户ID" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialMessages$SocialSiteInfo"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x14" desc="写个性签名" protocolType="BIN" bodyClazzName="up_0x201_0x14_SocialSitePersonalText"/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x14" desc="写个性签名" protocolType="BIN" bodyClazzName="down_0x201_0x14_SocialSitePersonalText"/>
+        <ProtoConfig type="UP" code="0x201" subCode="0x0c" desc="空间动态信息,p1用户ID,p2最后一条id" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x201" subCode="0x0c" desc="空间动态信息结果,p1用户ID,p2最后一条id" protocolType="PB" bodyClazzName="com.road.ddt.pb.social.SocialMessages$SocialTrendRes"/>
+    </module>
+    <module name="apprentice" desc="师徒模块">
+        <ProtoConfig type="UP" code="0x8d" subCode="0x05" desc="师徒信息" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x8d" subCode="0x05" desc="师徒信息结果,p1判断0没有师徒1有师徒" protocolType="PB" bodyClazzName="com.road.ddt.pb.apprentice.ApprenticeMessages$ApprenticeInfoRes"/>
+        <ProtoConfig type="UP" code="0x8d" subCode="0x06" desc="师徒消息提示设置,p1判断1提示0不提示" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="UP" code="0x8d" subCode="0x0b" desc="师徒任务奖励领取,p1自己的id或徒弟的id,p2任务id" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x8d" subCode="0x0b" desc="师徒任务奖励领取结果,p1自己的id或徒弟的id,p2任务id" protocolType="BIN" bodyClazzName="down_0x8d_0x0b_ApprenticeQuestAward"/>
+        <ProtoConfig type="UP" code="0x8d" subCode="0x0a" desc="师徒任务进度,p1师傅或徒弟ID,p2任务类型" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x8d" subCode="0x0a" desc="师徒任务进度结果,p1师傅或徒弟ID,p2任务类型" protocolType="PB" bodyClazzName="com.road.ddt.pb.apprentice.ApprenticeMessages$ApprenticeQuestListRes"/>
+        <ProtoConfig type="UP" code="0x8d" subCode="0x02" desc="请求拜师收徒,p1对方id,p2类型（1拜师2收徒）" protocolType="BIN" bodyClazzName="up_0x8d_0x02_SocialSitePersonalText"/>
+        <ProtoConfig type="DOWN" code="0x8d" subCode="0x03" desc="拜师收徒请求,p1对方id,p2类型（1拜师2收徒）" protocolType="BIN" bodyClazzName="down_0x8d_0x03_ApprenticeRequest"/>
+        <ProtoConfig type="UP" code="0x8d" subCode="0x03" desc="拜师收徒响应,p1对方id,p2类型（1拜师2收徒）" protocolType="BIN" bodyClazzName="up_0x8d_0x03_ApprenticeResponse"/>
+        <ProtoConfig type="DOWN" code="0x8d" subCode="0x04" desc="拜师收徒结果,p1对方id,p2类型1成功0失败" protocolType="BIN" bodyClazzName="down_0x8d_0x04_ApprenticeResponse"/>
+        <ProtoConfig type="UP" code="0x8d" subCode="0x07" desc="删除师傅或徒弟,p1对方id,p2类型(1删除师傅2删除徒弟)" protocolType="BIN" bodyClazzName=""/>
+        <ProtoConfig type="DOWN" code="0x8d" subCode="0x07" desc="删除师傅或徒弟结果,p1对方id,p2类型(1删除师傅2删除徒弟)" protocolType="BIN" bodyClazzName="down_0x8d_0x07_ApprenticeshipRemove"/>
+    </module>
+	<module name='sign' desc='签到模块'>
+		<ProtoConfig type='UP' code='0x220' subCode='0' protocolType="BIN" desc='签到' bodyClazzName=''/>		
+		<ProtoConfig type='DOWN' code='0x220' subCode='0' protocolType="PB" desc='签到结果' bodyClazzName='com.road.ddt.pb.sign.SignResProto$SignRes'/>
+		
+		<ProtoConfig type='UP' code='0x221' subCode='0' protocolType="PB" desc='补签' bodyClazzName='com.road.ddt.pb.sign.SignReqProto$SignPatchReq'/>		
+		<ProtoConfig type='DOWN' code='0x221' subCode='0' protocolType="PB" desc='补签结果' bodyClazzName='com.road.ddt.pb.sign.SignResProto$SignPatchRes'/>
+		
+		<ProtoConfig type='UP' code='0x222' subCode='0' protocolType="PB" desc='领取累积签到奖励' bodyClazzName='com.road.ddt.pb.sign.SignReqProto$SignAmassRewardReq'/>	
+		<ProtoConfig type='DOWN' code='0x222' subCode='0' protocolType="PB" desc='领取累积签到奖励结果' bodyClazzName='com.road.ddt.pb.sign.SignResProto$SignAmassRewardRes'/>
+	</module>
+	<module name='sevenday' desc='七天登录模块'>
+		<ProtoConfig type='UP' code='0x241' subCode='0' protocolType="PB" desc='领取七天登陆奖励' bodyClazzName='com.road.ddt.pb.sevenday.SevendayReqProto$SevendayRewardReq'/>		
+		<ProtoConfig type='DOWN' code='0x241' subCode='0' protocolType="PB" desc='领取七天登陆奖励结果' bodyClazzName='com.road.ddt.pb.sevenday.SevendayResProto$SevendayRewardRes'/>
+	</module>
+	<module name='qqactivity' desc='腾讯特权模块'>
+		<ProtoConfig type='UP' code='0x251' subCode='0' protocolType="PB" desc='领取黄钻/蓝钻特权奖励' bodyClazzName='com.road.ddt.pb.qqactivity.QQActivityReqProto$QQActivityRewardReq'/>		
+		<ProtoConfig type='DOWN' code='0x251' subCode='0' protocolType="PB" desc='领取黄钻/蓝钻特权奖励结果' bodyClazzName='com.road.ddt.pb.qqactivity.QQActivityResProto$QQActivityRewardRes'/>
+		
+		<ProtoConfig type='UP' code='0x253' subCode='0' protocolType="PB" desc='领取大厅特权奖励' bodyClazzName='com.road.ddt.pb.qqactivity.QQActivityReqProto$QQGameRewardReq'/>	
+		<ProtoConfig type='DOWN' code='0x253' subCode='0' protocolType="PB" desc='领取大厅特权奖励结果' bodyClazzName='com.road.ddt.pb.qqactivity.QQActivityResProto$QQGameRewardRes'/>
+	</module>
+	<module name='gem' desc='宝石模块'>
+		<ProtoConfig type='UP' code='0x260' subCode='0' protocolType="BIN" desc='查看玩家已镶嵌上的宝石信息' bodyClazzName='up_0x260_0_GemInfo'/>		
+		<ProtoConfig type='DOWN' code='0x260' subCode='0' protocolType="PB" desc='玩家已镶嵌上的宝石信息' bodyClazzName='com.road.ddt.pb.command.GemResProto$GemRes'/>
+		
+		<ProtoConfig type='UP' code='0x261' subCode='0' protocolType="PB" desc='宝石合成' bodyClazzName='com.road.ddt.pb.gem.GemReqProto$GemCompoundReq'/>		
+		<ProtoConfig type='DOWN' code='0x261' subCode='0' protocolType="BIN" desc='宝石合成结果' bodyClazzName='down_0x261_0_GemCompound'/>
+		
+		<ProtoConfig type='UP' code='0x262' subCode='0' protocolType="BIN" desc='宝石拆分' bodyClazzName='up_0x262_0_GemSplit'/>		
+		<ProtoConfig type='DOWN' code='0x262' subCode='0' protocolType="BIN" desc='宝石拆分结果' bodyClazzName='down_0x262_0_GemSplit'/>
+	</module>
+	<module name='necklace' desc='项链培养模块'>
+		<ProtoConfig type='UP' code='0x271' subCode='0' protocolType="BIN" desc='项链培养' bodyClazzName=''/>		
+		<ProtoConfig type='DOWN' code='0x271' subCode='0' protocolType="BIN" desc='项链培养结果' bodyClazzName='down_0x271_0_NecklaceFoster'/>
+		
+		<ProtoConfig type='UP' code='0x272' subCode='0' protocolType="BIN" desc='项链升阶' bodyClazzName='up_0x272_0_NecklaceDegreeRaising'/>		
+		<ProtoConfig type='DOWN' code='0x272' subCode='0' protocolType="BIN" desc='项链升阶结果' bodyClazzName='down_0x272_0_NecklaceDegreeRaising'/>
+	</module>
+	<module name='datashow' desc='个人战绩数据展示模块'>
+		<ProtoConfig type='UP' code='0x290' subCode='0' protocolType="BIN" desc='查看个人战绩(Param1为玩家ID)' bodyClazzName=''/>		
+		<ProtoConfig type='DOWN' code='0x290' subCode='0' protocolType="PB" desc='个人战绩数据' bodyClazzName='com.road.ddt.pb.datashow.DataShowResProto$DataShowRes'/>
+		
+		<ProtoConfig type='UP' code='0x291' subCode='0' protocolType="BIN" desc='全服战绩奖励领取(Param1为领取的奖励类型)' bodyClazzName=''/>		
+		<ProtoConfig type='DOWN' code='0x291' subCode='0' protocolType="BIN" desc='全服战绩奖励领取结果' bodyClazzName='down_0x291_0_DataShowReward'/>
+	</module>
+	<module name='marryfere' desc='伴侣系统模块'>
+		<ProtoConfig type='UP' code='0x601' subCode='0' protocolType="BIN" desc='婚礼抢红包(Param1为婚礼房间主人ID)' bodyClazzName=''/>		
+		<ProtoConfig type='DOWN' code='0x601' subCode='0' protocolType="BIN" desc='婚礼抢红包结果(Param1为物品ID,Param2为物品数量)' bodyClazzName='down_0x601_0_LootRedbag'/>
+		
+		<ProtoConfig type='UP' code='0x611' subCode='0' protocolType="BIN" desc='领取情义值礼包' bodyClazzName='up_0x611_0_FeelingsValueReward'/>
+	</module>
+	<module name='Rune' desc='符文模块（param1，param2 指pb里的参数，不是协议头的）'>
+		<ProtoConfig type='UP' code='0x100' subCode='1' protocolType="PB" desc='兑换符文' bodyClazzName='com.road.ddt.pb.rune.RuneReqProto$RuneReq'/>
+		<ProtoConfig type='UP' code='0x100' subCode='2' protocolType="PB" desc='佩戴符文 param1：符文页id，param2：位置' bodyClazzName='com.road.ddt.pb.rune.RuneReqProto$RuneReq'/>
+		<ProtoConfig type='UP' code='0x100' subCode='3' protocolType="PB" desc='取下符文 param1：符文页id，param2：位置' bodyClazzName='com.road.ddt.pb.rune.RuneReqProto$RuneReq'/>
+		<ProtoConfig type='UP' code='0x100' subCode='4' protocolType="PB" desc='升级符文 param1：次数，param2：资源id（1,2,3）' bodyClazzName='com.road.ddt.pb.rune.RuneReqProto$RuneReq'/>
+		<ProtoConfig type='UP' code='0x100' subCode='5' protocolType="PB" desc='进阶符文' bodyClazzName='com.road.ddt.pb.rune.RuneReqProto$RuneReq'/>
+		<ProtoConfig type='UP' code='0x100' subCode='6' protocolType="PB" desc='符文页改名 param1：符文页id，param2：名字' bodyClazzName='com.road.ddt.pb.rune.RuneReqProto$RuneReq'/>
+		<ProtoConfig type='UP' code='0x100' subCode='7' protocolType="PB" desc='设置使用符文页 param1：符文页id' bodyClazzName='com.road.ddt.pb.rune.RuneReqProto$RuneReq'/>
+		<ProtoConfig type='UP' code='0x100' subCode='8' protocolType="PB" desc='符文光暗属性转换 param1：技能id（1,2,3）' bodyClazzName='com.road.ddt.pb.rune.RuneReqProto$RuneReq'/>
+		<ProtoConfig type='UP' code='0x100' subCode='10' protocolType="PB" desc='批量设置符文页 param2：符文页数据' bodyClazzName='com.road.ddt.pb.rune.RuneReqProto$RuneReq'/>
+	</module>
+	<module name='Equip' desc='装备模块'>
+		<ProtoConfig type='UP' code='0x102' subCode='0' protocolType="PB" desc='装备打造 option：1、打造，2、修理，3、领取精工值奖励' bodyClazzName='com.road.ddt.pb.equip.EquipReqProto$EquipReq'/>
+	</module>
+	<module name='ConsortiaSkill' desc='公会技能模块'>
+		<ProtoConfig type='UP' code='0x10e' subCode='1' protocolType="BIN" desc='请求公会技能数据' bodyClazzName='up_10e_1_ConsortiaSkill'/>
+		<ProtoConfig type='UP' code='0x10e' subCode='2' protocolType="BIN" desc='公会技能升级' bodyClazzName='up_10e_2_ConsortiaSkill'/>
+	</module>
+	<module name='VIP' desc='VIP模块'>
+		<ProtoConfig type='UP' code='0x10f' subCode='1' protocolType="BIN" desc='请求商城数据' bodyClazzName='up_10f_1_vip'/>
+		<ProtoConfig type='UP' code='0x10f' subCode='2' protocolType="BIN" desc='领vip奖励' bodyClazzName='up_10f_2_vip'/>
+		<ProtoConfig type='UP' code='0x10f' subCode='3' protocolType="BIN" desc='vip续费' bodyClazzName='up_10f_3_vip'/>
+		<ProtoConfig type='UP' code='0x10f' subCode='4' protocolType="BIN" desc='vip商城购买' bodyClazzName='up_10f_4_vip'/>
+	</module>
+	<module name='AnswerQuestions' desc='答题模块'>
+		<ProtoConfig type='UP' code='0x110' subCode='1' protocolType="BIN" desc='获取答题数据' bodyClazzName='up_110_1_getQuestions'/>
+		<ProtoConfig type='UP' code='0x110' subCode='2' protocolType="BIN" desc='回答问题' bodyClazzName='up_110_2_getQuestions'/>
+		<ProtoConfig type='UP' code='0x110' subCode='3' protocolType="BIN" desc='去假存真' bodyClazzName='up_110_3_getQuestions'/>
+		<ProtoConfig type='UP' code='0x110' subCode='4' protocolType="BIN" desc='火眼金睛' bodyClazzName='up_110_4_getQuestions'/>
+		<ProtoConfig type='UP' code='0x110' subCode='5' protocolType="BIN" desc='领取基础奖励' bodyClazzName='up_110_5_getQuestions'/>
+		<ProtoConfig type='UP' code='0x110' subCode='6' protocolType="BIN" desc='开始答题' bodyClazzName='up_110_6_getQuestions'/>
+	</module>
+	<module name='Quest' desc='任务模块'>
+		<ProtoConfig type='UP' code='0xb3' subCode='0' protocolType="BIN" desc='领取任务奖励' bodyClazzName='up_b3_0_getQuestReward'/>
+		<ProtoConfig type='UP' code='0x10c' subCode='0' protocolType="BIN" desc='领取活跃度奖励' bodyClazzName='up_10c_0_getAtIveReward'/>
+	</module>
+    <module name="consortia" desc="公会模块">
+        <ProtoConfig type="UP" code="0x81" subCode="0" protocolType="BIN" desc="入会申请" bodyClazzName="up_0x81_0_ConsortiaApplyLogin" />
+        <ProtoConfig type="DOWN" code="0x81" subCode="0" protocolType="BIN" desc="入会申请结果" bodyClazzName="down_0x81_0_ConsortiaApplyLogin" />
+        <ProtoConfig type="UP" code="0x86" subCode="0" protocolType="BIN" desc="取消入会申请" bodyClazzName="up_0x86_0_ConsortiaApplyLoginDelete" />
+        <ProtoConfig type="DOWN" code="0x86" subCode="0" protocolType="BIN" desc="取消入会申请结果" bodyClazzName="down_0x86_0_ConsortiaApplyLoginDelete" />
+        <ProtoConfig type="UP" code="0x85" subCode="0" protocolType="BIN" desc="同意入会申请" bodyClazzName="up_0x85_0_ConsortiaApplyLoginPass" />
+        <ProtoConfig type="DOWN" code="0x85" subCode="0" protocolType="BIN" desc="同意入会申请结果" bodyClazzName="down_0x85_0_ConsortiaApplyLoginPass" />
+        <ProtoConfig type="UP" code="0x405" subCode="0" protocolType="BIN" desc="购买公会徽章,p1公会ID" bodyClazzName="" />
+        <ProtoConfig type="DOWN" code="0x405" subCode="0" protocolType="BIN" desc="购买公会徽章结果,p1公会ID" bodyClazzName="down_0x405_0_ConsortiaBuyBadge" />
+        <ProtoConfig type="UP" code="0x9a" subCode="0" protocolType="BIN" desc="会长转让" bodyClazzName="up_0x9a_0_ConsortiaChangeChairman" />
+        <ProtoConfig type="DOWN" code="0x9a" subCode="0" protocolType="BIN" desc="会长转让结果" bodyClazzName="down_0x9a_0_ConsortiaChangeChairman" />
+        <ProtoConfig type="UP" code="0x82" subCode="0" protocolType="BIN" desc="创建公会" bodyClazzName="up_0x82_0_ConsortiaCreate" />
+        <ProtoConfig type="DOWN" code="0x82" subCode="0" protocolType="PB" desc="创建公会结果" bodyClazzName="com.road.ddt.pb.consortia.ConsortiaCreateResProto$ConsortiaCreateRes" />
+        <ProtoConfig type="UP" code="0x95" subCode="0" protocolType="BIN" desc="更新公会宣言" bodyClazzName="up_0x95_0_ConsortiaDescriptionUpdate" />
+        <ProtoConfig type="DOWN" code="0x95" subCode="0" protocolType="BIN" desc="更新公会宣言结果" bodyClazzName="down_0x95_0_ConsortiaDescriptionUpdate" />
+        <ProtoConfig type="UP" code="0x83" subCode="0" protocolType="BIN" desc="公会解散" bodyClazzName="" />
+        <ProtoConfig type="DOWN" code="0x83" subCode="0" protocolType="PB" desc="公会解散结果" bodyClazzName="com.road.ddt.pb.consortia.ConsortiaDisbandResProto$ConsortiaDisbandRes" />
+        <ProtoConfig type="UP" code="0x8b" subCode="0" protocolType="PB" desc="更新职务" bodyClazzName="com.road.ddt.pb.command.ConsortiaDutyUpdateReqProto$ConsortiaDutyUpdateReq" />
+        <ProtoConfig type="DOWN" code="0x8b" subCode="0" protocolType="PB" desc="更新职务结果" bodyClazzName="com.road.ddt.pb.consortia.ConsortiaDutyUpdateResProto$ConsortiaDutyUpdateRes" />
+        <ProtoConfig type="UP" code="0x404" subCode="0" protocolType="BIN" desc="请求公会信息" bodyClazzName="" />
+        <ProtoConfig type="DOWN" code="0x404" subCode="0" protocolType="PB" desc="请求公会信息结果" bodyClazzName="com.road.ddt.pb.consortia.ConsortiaInfoResProto$ConsortiaInfoRes" />
+        <ProtoConfig type="UP" code="0x8c" subCode="0" protocolType="BIN" desc="邀请入会" bodyClazzName="up_0x8c_0_ConsortiaInviteAdd" />
+        <ProtoConfig type="DOWN" code="0x8c" subCode="0" protocolType="BIN" desc="邀请入会结果" bodyClazzName="down_0x8c_0_ConsortiaInviteAdd" />
+        <ProtoConfig type="UP" code="0x8f" subCode="0" protocolType="BIN" desc="删除入会邀请" bodyClazzName="up_0x8f_0_ConsortiaInviteDelete" />
+        <ProtoConfig type="DOWN" code="0x8f" subCode="0" protocolType="BIN" desc="删除入会邀请结果" bodyClazzName="down_0x8f_0_ConsortiaInviteDelete" />
+        <ProtoConfig type="UP" code="0x8e" subCode="0" protocolType="BIN" desc="通过入会邀请" bodyClazzName="up_0x8e_0_ConsortiaInvitePass" />
+        <ProtoConfig type="DOWN" code="0x8e" subCode="0" protocolType="PB" desc="通过入会邀请结果" bodyClazzName="com.road.ddt.pb.consortia.ConsortiaInvitePassResProto$ConsortiaInvitePassRes" />
+        <ProtoConfig type="UP" code="0x97" subCode="0" protocolType="BIN" desc="公会禁言" bodyClazzName="up_0x97_0_ConsortiaIsBanChat" />
+        <ProtoConfig type="DOWN" code="0x97" subCode="0" protocolType="BIN" desc="公会禁言结果" bodyClazzName="down_0x97_0_ConsortiaIsBanChat" />
+        <ProtoConfig type="UP" code="0xd7" subCode="0" protocolType="BIN" desc="发送公会邮件" bodyClazzName="up_0xd7_0_ConsortiaMail" />
+        <ProtoConfig type="DOWN" code="0xd7" subCode="0" protocolType="BIN" desc="发送公会邮件结果" bodyClazzName="down_0xd7_0_ConsortiaMail" />
+        <ProtoConfig type="UP" code="0x96" subCode="0" protocolType="BIN" desc="更新公会公告" bodyClazzName="up_0x96_0_ConsortiaPlacardUpdate" />
+        <ProtoConfig type="DOWN" code="0x96" subCode="0" protocolType="BIN" desc="更新公会公告结果" bodyClazzName="down_0x96_0_ConsortiaPlacardUpdate" />
+        <ProtoConfig type="UP" code="0x09" subCode="0x01" protocolType="BIN" desc="支付公会使命" bodyClazzName="up_0x09_0x01_ConsortiaQuest" />
+        <ProtoConfig type="DOWN" code="0x10f" subCode="0" protocolType="PB" desc="公会使命信息" bodyClazzName="com.road.ddt.pb.consortia.ConsortiaQuestResProto$ConsortiaQuestRes" />
+        <ProtoConfig type="UP" code="0x09" subCode="0x02" protocolType="BIN" desc="重新随机公会使命" bodyClazzName="" />
+        <ProtoConfig type="UP" code="0x09" subCode="0x03" protocolType="BIN" desc="续时公会使命" bodyClazzName="" />
+        <ProtoConfig type="UP" code="0x09" subCode="0x04" protocolType="BIN" desc="请求公会使命信息" bodyClazzName="" />
+        <ProtoConfig type="UP" code="0x09" subCode="0x05" protocolType="BIN" desc="请求公会使命排行" bodyClazzName="" />
+        <ProtoConfig type="DOWN" code="0x110" subCode="0" protocolType="BIN" desc="公会使命排行" bodyClazzName="down_0x110_0_ConsortiaQuestRank" />
+        <ProtoConfig type="UP" code="0x09" subCode="0x06" protocolType="BIN" desc="发布公会使命" bodyClazzName="" />
+        <ProtoConfig type="UP" code="0x87" subCode="0" protocolType="BIN" desc="公会捐献,p1类型1金币2点券" bodyClazzName="up_0x87_0_ConsortiaRichesOffer" />
+        <ProtoConfig type="DOWN" code="0x87" subCode="0" protocolType="BIN" desc="公会捐献结果,p1类型1金币2点券,p2增长财富" bodyClazzName="down_0x87_0_ConsortiaRichesOffer" />
+        <ProtoConfig type="UP" code="0x407" subCode="0" protocolType="BIN" desc="购买公会商城物品,p1商品ID" bodyClazzName="" />
+        <ProtoConfig type="UP" code="0x9e" subCode="0" protocolType="BIN" desc="公会商城升级" bodyClazzName="" />
+        <ProtoConfig type="DOWN" code="0x9e" subCode="0" protocolType="BIN" desc="公会商城升级结果" bodyClazzName="down_0x9e_0_ConsortiaShopUpGrade" />
+        <ProtoConfig type="UP" code="0x9c" subCode="0" protocolType="BIN" desc="公会技能塔升级" bodyClazzName="" />
+        <ProtoConfig type="DOWN" code="0x9c" subCode="0" protocolType="BIN" desc="公会技能塔升级结果" bodyClazzName="down_0x9c_0_ConsortiaSkillTowerUpGrade" />
+        <ProtoConfig type="UP" code="0x9f" subCode="0" protocolType="BIN" desc="公会升级" bodyClazzName="" />
+        <ProtoConfig type="DOWN" code="0x9f" subCode="0" protocolType="BIN" desc="公会升级结果" bodyClazzName="down_0x9f_0_ConsortiaUpGrade" />
+        <ProtoConfig type="UP" code="0x84" subCode="0" protocolType="BIN" desc="开除公会成员" bodyClazzName="up_0x84_0_ConsortiaUserDelete" />
+        <ProtoConfig type="DOWN" code="0x84" subCode="0" protocolType="BIN" desc="开除公会成员结果" bodyClazzName="down_0x84_0_ConsortiaUserDelete" />
+        <ProtoConfig type="UP" code="0x99" subCode="0" protocolType="BIN" desc="更新成员职务" bodyClazzName="up_0x99_0_ConsortiaUserGradeUpdate" />
+        <ProtoConfig type="DOWN" code="0x99" subCode="0" protocolType="BIN" desc="更新成员职务结果" bodyClazzName="down_0x99_0_ConsortiaUserGradeUpdate" />
+        <ProtoConfig type="UP" code="0x403" subCode="0" protocolType="BIN" desc="会长选举投票,p1待选用户ID" bodyClazzName="" />
+        <ProtoConfig type="DOWN" code="0x402" subCode="0" protocolType="PB" desc="会长选举投票信息" bodyClazzName="com.road.ddt.pb.consortia.ConsortiaVoteInfoResProto$ConsortiaVoteInfoRes" />
+        <ProtoConfig type="UP" code="0x88" subCode="0" protocolType="BIN" desc="设置公会是否可申请" bodyClazzName="up_0x88_0_ConsotiaApplyState" />
+        <ProtoConfig type="DOWN" code="0x88" subCode="0" protocolType="BIN" desc="设置公会是否可申请结果" bodyClazzName="down_0x88_0_ConsotiaApplyState" />
+    </module>
+	<module name='Marry' desc='结婚模块'>
+		<ProtoConfig type='UP' code='0xf8' subCode='0' protocolType="BIN" desc='离婚请求' bodyClazzName='up_f8_0_divorce'/>
+		<ProtoConfig type='UP' code='0x104' subCode='0' protocolType="PB" desc='离婚答复' bodyClazzName='com.road.ddt.pb.marry.DivorceApplyReplyReqProto$DivorceApplyReplyReq'/>
+		<ProtoConfig type='UP' code='0x108' subCode='0' protocolType="BIN" desc='离婚好友支付答复' bodyClazzName='up_108_0_divorce'/>
+		<ProtoConfig type='UP' code='0x55' subCode='0' protocolType="BIN" desc='获取伴侣信息' bodyClazzName='up_55_0_marry'/>
+		<ProtoConfig type='UP' code='0xf7' subCode='0' protocolType="PB" desc='求婚' bodyClazzName='com.road.ddt.pb.marry.MarryApplyReqProto$MarryApplyReq'/>
+		<ProtoConfig type='UP' code='0xfa' subCode='0' protocolType="PB" desc='求婚答复' bodyClazzName='com.road.ddt.pb.marry.MarryApplyReplyReqProto$MarryApplyReplyReq'/>
+		<ProtoConfig type='UP' code='0xf1' subCode='0' protocolType="PB" desc='创建礼堂' bodyClazzName='com.road.ddt.pb.marry.CreateMarryRoomReqProto$CreateMarryRoomReq'/>
+		<ProtoConfig type='UP' code='0xfd' subCode='0' protocolType="PB" desc='更新礼堂信息' bodyClazzName='com.road.ddt.pb.marry.UpdateMarryRoomReqProto$UpdateMarryRoomReq'/>
+		<ProtoConfig type='UP' code='0xf2' subCode='0' protocolType="PB" desc='进入礼堂' bodyClazzName='com.road.ddt.pb.marry.LoginMarryRoomReqProto$LoginMarryRoomReq'/>
+		<ProtoConfig type='UP' code='0xe9' subCode='0' protocolType="BIN" desc='结婚场景切换' bodyClazzName='up_e9_0_marry'/>
+		<ProtoConfig type='UP' code='0xf6' subCode='0' protocolType="BIN" desc='获取玩家结婚状态' bodyClazzName='up_f6_0_marry'/>
+		<ProtoConfig type='UP' code='0xf4' subCode='0' protocolType="BIN" desc='退出礼堂' bodyClazzName='up_f4_0_marry'/>
+		<ProtoConfig type='UP' code='0xf9' subCode='3' protocolType="BIN" desc='延长结婚时间' bodyClazzName='up_f9_3_marry'/>
+		<ProtoConfig type='UP' code='0xf9' subCode='8' protocolType="BIN" desc='禁止玩家进入婚礼房间' bodyClazzName='up_f9_8_marry'/>
+		<ProtoConfig type='UP' code='0xf9' subCode='2' protocolType="BIN" desc='举行结婚典礼' bodyClazzName='up_f9_2_marry'/>
+		<ProtoConfig type='UP' code='0xf9' subCode='4' protocolType="BIN" desc='邀请宾客' bodyClazzName='up_f9_4_marry'/>
+		<ProtoConfig type='UP' code='0xf9' subCode='7' protocolType="BIN" desc='结婚礼堂踢人' bodyClazzName='up_f9_7_marry'/>
+		<ProtoConfig type='UP' code='0xf9' subCode='5' protocolType="BIN" desc='发放礼金' bodyClazzName='up_f9_5_marry'/>
+		<ProtoConfig type='UP' code='0xf9' subCode='1' protocolType="BIN" desc='婚礼房间移动' bodyClazzName='up_f9_1_marry'/>
+		<ProtoConfig type='UP' code='0xf9' subCode='10' protocolType="BIN" desc='婚礼房间玩家位置更新' bodyClazzName='up_f9_10_marry'/>
+		<ProtoConfig type='UP' code='0xf9' subCode='6' protocolType="BIN" desc='放烟花' bodyClazzName='up_f9_6_marry'/>
+	</module>
+	<module name='Bag' desc='背包模块'>
+	    <ProtoConfig type='UP' code='0x31' subCode='0' protocolType="PB" desc='背包物品移动' bodyClazzName='com.road.ddt.pb.command.ChangePlaceItemReqProto$ChangePlaceItemReq'/>
+		<ProtoConfig type='UP' code='0x7c' subCode='0' protocolType="PB" desc='整理背包' bodyClazzName='com.road.ddt.pb.command.ArrangeBagReqProto$ArrangeBagReq'/>
+		<ProtoConfig type='UP' code='0x7c' subCode='0' protocolType="BIN" desc='出售物品' bodyClazzName='up_7c_0_bag'/>
+		<ProtoConfig type='UP' code='0x29' subCode='1' protocolType="PB" desc='穿时装' bodyClazzName='com.road.ddt.pb.command.ClothUpdateReqProto$ClothUpdateReq'/>
+		<ProtoConfig type='UP' code='0x29' subCode='6' protocolType="BIN" desc='整理时装背包' bodyClazzName='up_29_6_cloth'/>
+		<ProtoConfig type='UP' code='0x29' subCode='2' protocolType="BIN" desc='设置使用时装组' bodyClazzName='up_29_2_cloth'/>
+		<ProtoConfig type='UP' code='0x3e' subCode='0' protocolType="PB" desc='物品续费' bodyClazzName='com.road.ddt.pb.command.UserItemContinueReqProto$UserItemContinueReq'/>
+		<ProtoConfig type='UP' code='0x19' subCode='0' protocolType="PB" desc='二级密码相关' bodyClazzName='com.road.ddt.pb.command.PasswordTwoReqProto$PasswordTwoReq'/>
+		<ProtoConfig type='UP' code='0xb7' subCode='0' protocolType="PB" desc='使用物品' bodyClazzName='com.road.ddt.pb.command.CardUseReqProto$CardUseReq'/>
+		<ProtoConfig type='UP' code='0x2c' subCode='0' protocolType="PB" desc='商城购买' bodyClazzName='com.road.ddt.pb.command.BuyItemReqProto$BuyItemReq'/>
+	</module>
+</root>
+ 
